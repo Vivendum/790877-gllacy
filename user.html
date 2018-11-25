@@ -2,25 +2,29 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Регистрация пользователя магазина мороженного GllacyShop</title>
+    <title>Личный кабинет пользователя магазина мороженного GllacyShop</title>
   </head>
   <body>
     <!-- header  -->
     <main class="container">
-      <h1 class="visually-hidden">Вход в аккаунт пользователя</h1>
-      <form class="user" method="post" action="https://echo.htmlacademy.ru">
+      <section class="modal modal-user">
+        <h1 class="visually-hidden">Личный кабинет</h1>
+        <form class="user-form" method="post" action="https://echo.htmlacademy.ru">
+          <p>
+            <label class="visually-hidden" for="user-mail-id">Электоронная почта</label>
+            <input class="user-mail" id="user-mail-id" type="email" name="email" placeholder="Электронная почта">
+          </p>
+          <p>
+            <label class="visually-hidden" for="user-password-id">Пароль</label>
+            <input class="user-password" id="user-password-id" type="password" name="password" placeholder="Пароль">
+          </p>
+          <button class="button" type="submit">Войти</button>
+        </form>
         <p>
-          <label class="visually-hidden" for="mail-id">Электоронная почта</label>
-          <input class="user-mail" id="mail-id" type="email" name="email" placeholder="Электронная почта">
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
         </p>
-        <p>
-          <label class="visually-hidden" for="password-id">Пароль</label>
-          <input class="user-password" id="password-id" type="password" name="password" placeholder="Пароль">
-        </p>
-        <button class="button" type="submit">Войти</button>
-        <a href="#">Забыли пароль?</a>
-        <a href="#">Новая регистрация</a>
-      </form>
+      </section>
     </main>
     <!-- footer -->
   </body>
