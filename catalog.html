@@ -11,22 +11,60 @@
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li>
-            <a class="catalog-current">Каталог</a>
-       <!-- <ul class="catalog-navigation">
+          <li class="site-navigation-item-current">
+            <a href="catalog.html">Каталог</a>
+            <!-- Думаю здесь должна быть ссылка "на саму себя" т.к. её интуитивно могут использовать для сброса фильтра -->
+            <!--
+            <ul class="catalog-navigation">
               <li><a href="#"><b>Новинки</b></a></li>
               <li><a href="#">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
               <li><a href="#">Мелорин</a></li>
-            </ul> -->
+            </ul>
+            -->
           </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="search"><a href="search.html">Поиск</a></li>
-          <li class="login-link"><a href="user.html">Вход</a></li>
+          <li class="search">
+            <a href="search.html">Поиск</a>
+            <!--
+            <section class="modal modal-search">
+              <h2 class="visually-hidden">Поиск по сайту</h2>
+              <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+                <p>
+                  <label class="visually-hidden" for="search-id">Поиск</label>
+                  <input class="search" id="search-id" name="search" type="search" placeholder="Что ищем?">
+                </p>
+              </form>
+            </section>
+            -->
+          </li>
+          <li class="login-link">
+            <a href="user.html">Вход</a>
+            <!--
+            <section class="modal modal-user">
+              <h2 class="visually-hidden">Личный кабинет</h2>
+              <form class="user-form" method="post" action="https://echo.htmlacademy.ru">
+                <p>
+                  <label class="visually-hidden" for="user-mail-id">Электоронная почта</label>
+                  <input class="user-mail" id="user-mail-id" type="email" name="email" placeholder="Электронная почта">
+                </p>
+                <p>
+                  <label class="visually-hidden" for="user-password-id">Пароль</label>
+                  <input class="user-password" id="user-password-id" type="password" name="password" placeholder="Пароль">
+                </p>
+                <button class="button" type="submit">Войти</button>
+              </form>
+              <p>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </p>
+            </section>
+            -->
+          </li>
           <li class="basket"><a href="basket.html">2 товара</a></li>
         </ul>
       </nav>
@@ -199,7 +237,7 @@
       </section>
       <ul class="paginator-list">
         <li class="paginator-item paginator-item-current">1</li>
-        <li class="paginator-item"><a href="#">2</a></li>
+        <li class="paginator-item "><a href="#">2</a></li>
         <li class="paginator-item"><a href="#">3</a></li>
         <li class="paginator-item"><a href="#">4</a></li>
         <li class="paginator-item"><a href="#">5</a></li>
