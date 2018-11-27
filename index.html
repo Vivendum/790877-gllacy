@@ -37,7 +37,27 @@
               </form>
             </section>
           </li>
-          <li class="login-link"><a href="user.html">Вход</a></li>
+          <li class="login-link">
+            <a href="user.html">Вход</a>
+            <section class="modal modal-user">
+              <h2 class="visually-hidden">Личный кабинет</h2>
+              <form class="user-form" method="post" action="https://echo.htmlacademy.ru">
+                <p>
+                  <label class="visually-hidden" for="user-mail-id">Электоронная почта</label>
+                  <input class="user-mail" id="user-mail-id" type="email" name="email" placeholder="Электронная почта">
+                </p>
+                <p>
+                  <label class="visually-hidden" for="user-password-id">Пароль</label>
+                  <input class="user-password" id="user-password-id" type="password" name="password" placeholder="Пароль">
+                </p>
+                <button class="button" type="submit">Войти</button>
+              </form>
+              <p>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </p>
+            </section>
+          </li>
           <li class="basket"><a href="#">Пусто</a></li>
         </ul>
       </nav>
