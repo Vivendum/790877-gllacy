@@ -25,7 +25,18 @@
           <li><a href="#">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="search"><a href="search.html">Поиск</a></li>
+          <li class="search">
+            <a href="search.html">Поиск</a>
+            <section class="modal modal-search">
+              <h2 class="visually-hidden">Поиск по сайту</h2>
+              <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+                <p>
+                  <label class="visually-hidden" for="search-id">Поиск</label>
+                  <input class="search" id="search-id" name="search" type="search" placeholder="Что ищем?">
+                </p>
+              </form>
+            </section>
+          </li>
           <li class="login-link"><a href="user.html">Вход</a></li>
           <li class="basket"><a href="#">Пусто</a></li>
         </ul>
