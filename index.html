@@ -204,5 +204,25 @@
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
       </div>
     </footer>
+    <section class="modal modal-connection">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <p><b>Мы обязательно вам ответим!</b></p>
+      <form class="connection-form" method="post" action="https://echo.htmlacademy.ru">
+        <p>
+          <label class="visually-hidden" for="connection-name-id">Имя</label>
+          <input class="connection-name" id="connection-name-id" type="text" name="name" placeholder="Как вас зовут?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="connection-mail-id">Электронная почта</label>
+          <input class="connection-name" id="connection-mail-id" type="email" name="email" placeholder="Ваша почта для ответа?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="connection-comment-id">Комментарий</label>
+          <textarea class="connection-comment" id="connection-comment-id" name="comment" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
