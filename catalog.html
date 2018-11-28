@@ -121,7 +121,86 @@
       <h1>Словочное мороженное</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Форма фильтра -->
+        <form class="filters-form" method="post" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=price.value">
+          <p>
+            <label for="sorting-id">Сортировка:</label>
+            <select id="sorting-id" name="sorting">
+              <option value="popularity" selected>по популярности</option>
+              <option value="example-1">пример 1</option>
+              <option value="example-2">пример 2</option>
+              <!-- Потом проверю есть ли в макете какие то другие значения -->
+            </select>
+          </p>
+          <p>
+            <label for="price-id">Цена:</label>
+            <output name="priceoutput"></output> руб.
+            <input id="price-id" type="range" name="price" min="50" max="1000" step="50" value="250">
+            <!-- Не знаю как сделать два ползунка на одной полоске :( Могу визуально присобачить псевдоэлемент, но работать он не будет -->
+          </p>
+            <fieldset class="fat">
+              <legend>Жирность:</legend>
+              <ul class="fat-list">
+                <li class="fat-item">
+                  <label>
+                    <input type="radio" name="radio" value="0">
+                    0%
+                  </label>
+                </li>
+                <li class="fat-item">
+                  <label>
+                    <input type="radio" name="radio" value="below-10" checked>
+                    до 10%
+                  </label>
+                </li>
+                <li class="fat-item">
+                  <label>
+                    <input type="radio" name="radio" value="below-30">
+                    до 30%
+                  </label>
+                </li>
+                <li class="fat-item">
+                  <label>
+                    <input type="radio" name="radio" value="above-30">
+                    выше 30%
+                  </label>
+                </li>
+            </fieldset>
+            <fieldset class="filler">
+              <legend>Наполнители:</legend>
+              <ul class="filler-list">
+                <li class="filler-item">
+                  <label>
+                    <input type="checkbox" name="chocolate" checked>
+                    шоколадные
+                  </label>
+                </li>
+                <li class="filler-item">
+                  <label>
+                    <input type="checkbox" name="sugar-powder" checked>
+                    сахарные присыпки
+                  </label>
+                </li>
+                <li class="filler-item">
+                  <label>
+                    <input type="checkbox" name="fruit">
+                    фрукты
+                  </label>
+                </li>
+                <li class="filler-item">
+                  <label>
+                    <input type="checkbox" name="syrup">
+                    сиропы
+                  </label>
+                </li>
+                <li class="filler-item">
+                  <label>
+                    <input type="checkbox" name="jam">
+                    джемы
+                  </label>
+                </li>
+            </fieldset>
+            <button class="button" type="submit">Применить</button>
+        </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список сливочного мороженного</h2>
