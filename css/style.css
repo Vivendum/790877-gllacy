@@ -2,6 +2,22 @@
   display: none;
 }
 /* ========================================================================== */
-.body {
+body {
   font-family: "Roboto", Arial, sans-serif;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+a {
+  color: #ffffff;
+
+  text-decoration: underline solid rgba(255, 255, 255, 0.3);
+}
+
+a:hover,
+a:active {
+  color: #ffbc9e;
+
+  text-decoration: underline solid rgba(255, 188, 158, 0.3);
 }
