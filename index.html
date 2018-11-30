@@ -72,11 +72,12 @@
         <p class="mode">С 10 до 20, ежедневно<p>
         <p class="phone">8 812 450-25-25</p>
       </div>
+      <!-- А в этом случае что будет adress? operation или phone? -->
       <section class="advertising">
         <h2 class="visually-hidden">Реклама</h2>
         <ul class="advertising-list">
           <li class="advertising-item">
-            <a href="#">
+            <a class="title" href="#">
               <h3>Крем-брюле и пломбир с малиновым джемом</h3>
             </a>
             <a class="button" href="#">Давайте оба!</a>
@@ -188,15 +189,12 @@
       </section>
       <div class="address">
         <img class="address-map" src="img/map.png" width="1200" height="430" alt="Местонахождение по адресу Большая Конюшенная 19/8 в Санкт-Петербурге">
-        <!-- Это всё таки контентное изображение. Я сначала подумал, что оно информативно дублирует абзац с адресом, но в действительности оно показывает местоположение относительно других объектов, чего в абзаце нет. -->
-        <div class="address-connection">
+        <address class="address-connection">
           <p>Адрес главного офиса и офлайн-магазина <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
           <p>Для заказа по телефону: <b>8 812 450-25-25</b> (с 10 до 20 ежедневно)</p>
           <a class="button" href="connection.html">Форма обратной связи</a>
-        </div>
+        </address>
       </div>
-      <!-- В задании этот блок помечен к вёрстке но я тут формы не вижу -->
-      <!-- Хочу применить тег address - не могу понять что лучше заменить div.address или div.address-connection? -->
     </main>
     <footer class="main-footer">
       <div class="footer-social">

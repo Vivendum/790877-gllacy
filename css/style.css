@@ -4,35 +4,70 @@
 /* ========================================================================== */
 body {
   font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
   color: #ffffff;
 
   background-color: #849d8f;
 }
 
-a {
+a:not(.button) {
   color: #ffffff;
 
   text-decoration: underline solid rgba(255, 255, 255, 0.3);
 }
 
-a:hover,
-a:active {
+a:not(.button):hover,
+a:not(.button):active {
   color: #ffbc9e;
 
   text-decoration: underline solid rgba(255, 188, 158, 0.3);
 }
 
+.button {
+  font-family: inherit;
+  font-weight: 700;
+
+  color: #ffffff;
+
+  background-color: #e94f38;
+  border: none;
+  text-decoration: none;
+  /* Памятка: градиент и тень */
+}
+
+.button:hover {
+  background-color: #f07a63;
+}
+
+.button:active {
+  /* Памятка: градиент и тень в обратном направлении */
+}
+
+/*
+input:placeholder,
+textarea:placeholder-shown {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #999999;
+
+  background-color: #ffffff;
+}
+  Не работает
+*/
+
 .main-navigation .site-navigation {
   font-size: 16px;
   line-height: 18px;
-  font-weight: 700;
 
   list-style: none;
 }
 
 .main-navigation .user-navigation {
   font-size: 14px;
-  line-heigth: 16px;
+  line-height: 16px;
   font-weight: 500;
 
   list-style: none;
@@ -41,35 +76,36 @@ a:active {
 .operation .mode {
   font-size: 14px;
   line-height: 16px;
-  font-weight: 700;
 }
 
 .operation .phone {
   font-size: 22px;
   line-height: 24px;
-  font-weight: 700;
 }
 
 .advertising {
-  background-image: url("img/background-advertising-sentence-1");
+  background-image: url("img/background-advertising-sentence-1.jpg");
   /* background-position: 0 0; */
   background-repeat: no-repeat;
+  /* Что то не так с фоновыми изображениями, не могу разобраться почему не включаются, вроде все проверил */
 }
 
 .advertising .advertising-list {
   list-style: none;
 }
 
-.advertising h3 {
+.advertising .title {
   font-size: 60px;
   line-height: 60px;
-  font-weight: 700;
+
+  text-align: center;
+
+  text-decoration: none;
 }
 
 .advertising .button {
   font-size: 32px;
   line-height: 44px;
-  font-weight: 700px;
 }
 
 .presents .presents-list {
@@ -93,19 +129,16 @@ a:active {
 .presents h3 {
   font-size: 35px;
   line-height: 41px;
-  font-weight: 700;
 }
 
 .presents p {
   font-size: 18px;
   line-height: 22px;
-  font-weight: 700;
 }
 
 .presents .button {
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
 }
 
 .catalog h3 {
@@ -117,13 +150,11 @@ a:active {
 .catalog .price {
   font-size: 45px;
   line-height: 45px;
-  font-weight: 700;
 }
 
 .catalog .weight {
   font-size: 30px;
   line-height: 45px;
-  font-weight: 700;
 }
 
 .features {
@@ -180,5 +211,90 @@ a:active {
 }
 
 .appointment {
+  color: #5a5a5a;
 
+  background-color: #f8f7f4;
+  border: 6px solid #92cdff;
+}
+
+.appointment p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.appointment .button {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.address {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+.address address {
+  font-style: normal;
+}
+
+.address p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.address b {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer .useful-item,
+.main-footer p {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.main-footer b {
+  font-weight: 700;
+}
+/* ========================================================================== */
+.catalog-header .breadcrubs {
+  font-size: 13px;
+  line-height: 18px;
+
+  list-style: none;
+}
+.title-catalog {
+  font-size: 35px;
+  line-height: 41px;
+}
+.filters .button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+
+  color: #ffffff;
+
+  background-color: #9cb0a4;
+  border: 2px solid #ffffff;
+}
+
+.filters .button:hover {
+  color: #000000;
+
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.filters .button:active {
+  color: #000000;
+
+  background-color: #eaeaea;
+  border: 2px solid #eaeaea;
+  /* Памятка: внутренняя тень */
 }
