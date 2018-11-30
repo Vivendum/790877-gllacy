@@ -21,3 +21,164 @@ a:active {
 
   text-decoration: underline solid rgba(255, 188, 158, 0.3);
 }
+
+.main-navigation .site-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+
+  list-style: none;
+}
+
+.main-navigation .user-navigation {
+  font-size: 14px;
+  line-heigth: 16px;
+  font-weight: 500;
+
+  list-style: none;
+}
+
+.operation .mode {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.operation .phone {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.advertising {
+  background-image: url("img/background-advertising-sentence-1");
+  /* background-position: 0 0; */
+  background-repeat: no-repeat;
+}
+
+.advertising .advertising-list {
+  list-style: none;
+}
+
+.advertising h3 {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.advertising .button {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700px;
+}
+
+.presents .presents-list {
+  list-style: none;
+}
+
+.presents .present-raspberry {
+  background-color: #671223;
+  background-image: url("img/background-presents-raspberry.jpg");
+  /* background-position: 0 0; */
+  background-repeat: no-repeat;
+}
+
+.presents .present-chocolate {
+  background-color: #3c2317;
+  background-image: url("img/background-presents-chocolate.jpg");
+  /* background-position: 0 0; */
+  background-repeat: no-repeat;
+}
+
+.presents h3 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.presents p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.presents .button {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.catalog h3 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.catalog .price {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.catalog .weight {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.features {
+  color: #000000;
+
+  background-color: #ebdec1;
+}
+
+.features p {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.features .features-list {
+  list-style: none;
+}
+
+.features .feature-item {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.new-blog {
+  color: #000000;
+
+  background-color: #ffffff;
+  background-image: url("img/background-blog-stawberry.jpg");
+  /* background-position: 0 0; */
+  background-repeat: no-repeat;
+}
+
+.new-blog h2 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.new-blog a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+
+  text-decoration: underline solid #000000;
+}
+
+.new-blog a:hover,
+.new-blog a:active {
+  color: #e84d37;
+
+  text-decoration: underline solid rgba(232, 077, 055, 0.3);
+}
+
+.appointment {
+
+}
