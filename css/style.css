@@ -1,10 +1,15 @@
+/* Модальные окна */
+/* ========================================================================== */
+
 .modal {
   display: none;
 }
+
+/* Глобальные стили */
 /* ========================================================================== */
+
 body {
   font-family: "Roboto", Arial, sans-serif;
-  font-weight: 700;
   color: #ffffff;
 
   background-color: #849d8f;
@@ -24,9 +29,6 @@ a:not(.button):active {
 }
 
 .button {
-  font-family: inherit;
-  font-weight: 700;
-
   color: #ffffff;
 
   background-color: #e94f38;
@@ -58,11 +60,35 @@ textarea:placeholder-shown {
   Не работает
 */
 
+/* Шапка сайта */
+/* ========================================================================== */
+
 .main-navigation .site-navigation {
   font-size: 16px;
   line-height: 18px;
+  font-weight: 700;
 
   list-style: none;
+}
+
+.site-navigation .button-navigation:hover {
+  color: #000000;
+
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.site-navigation .button-navigation:active {
+  text-decoration: none;
+  /* Памятка: внутренняя тень */
+}
+
+.site-navigation .button-navigation-current,
+.site-navigation .button-navigation-current:hover {
+  color: #000000;
+
+  background-color: #d07058;
+  text-decoration: none;
 }
 
 .main-navigation .user-navigation {
@@ -73,31 +99,49 @@ textarea:placeholder-shown {
   list-style: none;
 }
 
+.user-navigation .button-navigation {
+  color: #ffffff;
+
+  background-color: #a1b4a9;
+  text-decoration: none;
+}
+
+.user-navigation .button-navigation:hover {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+/* Главная страница */
+/* ========================================================================== */
+
 .operation .mode {
   font-size: 14px;
   line-height: 16px;
+  font-weight: 700;
 }
 
 .operation .phone {
   font-size: 22px;
   line-height: 24px;
+  font-weight: 700;
 }
 
 .advertising {
-  background-image: url("img/background-advertising-sentence-1.jpg");
-  /* background-position: 0 0; */
+  background-color: #849d8f;
+  background-image: url("../img/background-advertising-sentence-1.png");
+  background-position: center center;
   background-repeat: no-repeat;
-  /* Что то не так с фоновыми изображениями, не могу разобраться почему не включаются, вроде все проверил */
 }
 
-.advertising .advertising-list {
+.advertising ul {
   list-style: none;
 }
 
 .advertising .title {
   font-size: 60px;
   line-height: 60px;
-
+  font-weight: 700;
   text-align: center;
 
   text-decoration: none;
@@ -106,41 +150,49 @@ textarea:placeholder-shown {
 .advertising .button {
   font-size: 32px;
   line-height: 44px;
+  font-weight: 700;
 }
 
-.presents .presents-list {
+.presents ul {
   list-style: none;
 }
 
-.presents .present-raspberry {
+.presents .item-raspberry {
   background-color: #671223;
-  background-image: url("img/background-presents-raspberry.jpg");
-  /* background-position: 0 0; */
+  background-image: url("../img/background-presents-raspberry.jpg");
+  background-position: left top;
   background-repeat: no-repeat;
 }
 
-.presents .present-chocolate {
+.presents .item-chocolate {
   background-color: #3c2317;
-  background-image: url("img/background-presents-chocolate.jpg");
-  /* background-position: 0 0; */
+  background-image: url("../img/background-presents-chocolate.jpg");
+  background-position: left top;
   background-repeat: no-repeat;
 }
 
 .presents h3 {
   font-size: 35px;
   line-height: 41px;
+  font-weight: 700;
 }
 
 .presents p {
   font-size: 18px;
   line-height: 22px;
+  font-weight: 700;
 }
 
 .presents .button {
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
 }
 
+/* определяет стили и для списка каталога на странице каталога */
+.catalog ul {
+  list-style: none;
+}
 .catalog h3 {
   font-size: 16px;
   line-height: 22px;
@@ -150,11 +202,13 @@ textarea:placeholder-shown {
 .catalog .price {
   font-size: 45px;
   line-height: 45px;
+  font-weight: 700;
 }
 
 .catalog .weight {
   font-size: 30px;
   line-height: 45px;
+  font-weight: 700;
 }
 
 .features {
@@ -169,7 +223,7 @@ textarea:placeholder-shown {
   font-weight: 500;
 }
 
-.features .features-list {
+.features ul {
   list-style: none;
 }
 
@@ -183,8 +237,8 @@ textarea:placeholder-shown {
   color: #000000;
 
   background-color: #ffffff;
-  background-image: url("img/background-blog-stawberry.jpg");
-  /* background-position: 0 0; */
+  background-image: url("../img/background-blog-strawberry.jpg");
+  background-position: left top;
   background-repeat: no-repeat;
 }
 
@@ -226,6 +280,7 @@ textarea:placeholder-shown {
 .appointment .button {
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
 }
 
 .address {
@@ -233,6 +288,7 @@ textarea:placeholder-shown {
 
   background-color: #ffffff;
 }
+
 .address address {
   font-style: normal;
 }
@@ -246,7 +302,11 @@ textarea:placeholder-shown {
 .address b {
   font-size: 18px;
   line-height: 20px;
+  font-weight: 700;
 }
+
+/* Подвал сайта */
+/* ========================================================================== */
 
 .main-footer ul {
   list-style: none;
@@ -262,17 +322,28 @@ textarea:placeholder-shown {
 .main-footer b {
   font-weight: 700;
 }
+
+/* Страница каталога */
 /* ========================================================================== */
+
 .catalog-header .breadcrubs {
   font-size: 13px;
   line-height: 18px;
+  font-weight: 700;
 
   list-style: none;
 }
+
+.breadcrubs .breadcrubs-current {
+  text-decoration: none;
+}
+
 .title-catalog {
   font-size: 35px;
   line-height: 41px;
+  font-weight: 700;
 }
+
 .filters .button {
   font-size: 16px;
   line-height: 18px;
@@ -297,4 +368,18 @@ textarea:placeholder-shown {
   background-color: #eaeaea;
   border: 2px solid #eaeaea;
   /* Памятка: внутренняя тень */
+}
+
+.paginator-list {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  list-style: none;
+}
+
+.paginator-list .paginator-item-current,
+.paginator-list .paginator-item-current:hover {
+  color: #000000;
+
+  background-color: #ffffff;
 }
