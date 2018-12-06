@@ -9,10 +9,18 @@
 /* ========================================================================== */
 
 body {
+  padding-top: 10px;
+
   font-family: "Roboto", Arial, sans-serif;
   color: #ffffff;
 
   background-color: #849d8f;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  pading: 0 30px;
 }
 
 a:not(.button) {
@@ -63,12 +71,43 @@ textarea:placeholder-shown {
 /* Шапка сайта */
 /* ========================================================================== */
 
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-header .main-header-logo {
+  width: 154px;
+  height: 64px;
+  margin-right: 25px;
+}
+
+.main-header .main-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
 .main-navigation .site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-right: 25px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
 
   list-style: none;
+}
+
+.site-navigation li + li {
+  margin-left: 30px;
 }
 
 .site-navigation .button-navigation:hover {
@@ -92,11 +131,21 @@ textarea:placeholder-shown {
 }
 
 .main-navigation .user-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
 
   list-style: none;
+}
+
+.user-navigation li + li {
+  margin-left: 10px;
 }
 
 .user-navigation .button-navigation {
