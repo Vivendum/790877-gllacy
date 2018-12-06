@@ -1,0 +1,8 @@
+.container {
+  outline: 1px solid red;
+}
+.main-header,
+.operation-main,
+.advertising {
+  outline: 2px solid black;
+}

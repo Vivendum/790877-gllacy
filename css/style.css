@@ -20,7 +20,15 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  pading: 0 30px;
+  padding: 0 30px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 a:not(.button) {
@@ -75,6 +83,8 @@ textarea:placeholder-shown {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  min-height: 64px;
+  margin-bottom: 10px;
 }
 
 .main-header .main-header-logo {
@@ -87,8 +97,10 @@ textarea:placeholder-shown {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .main-navigation .site-navigation {
@@ -97,7 +109,9 @@ textarea:placeholder-shown {
   justify-content: space-between;
   flex-wrap: wrap;
   align-content: flex-start;
+  margin: 0;
   margin-right: 25px;
+  padding: 0;
 
   font-size: 16px;
   line-height: 18px;
@@ -136,6 +150,8 @@ textarea:placeholder-shown {
   justify-content: space-between;
   flex-wrap: wrap;
   align-content: flex-start;
+  margin: 0;
+  padding: 0;
 
   font-size: 14px;
   line-height: 16px;
@@ -164,7 +180,21 @@ textarea:placeholder-shown {
 /* Главная страница */
 /* ========================================================================== */
 
+.operation-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.operation p {
+  margin: 0;
+  padding: 0;
+}
+
 .operation .mode {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
@@ -177,17 +207,44 @@ textarea:placeholder-shown {
 }
 
 .advertising {
-  background-color: #849d8f;
-  background-image: url("../img/background-advertising-sentence-1.png");
-  background-position: center center;
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
 }
 
-.advertising ul {
+.advertising .advertising-list {
+  height: 495px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.advertising .advertising-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 490px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 280px;
+
+  background-color: #849d8f;
+  background-image: url("../img/background-advertising-sentence-1.png");
+  background-position: center -20px;
+  background-repeat: no-repeat;
+  /* Нужна рекомендация/совет как стилизовать фон */
+}
+
 .advertising .title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 35px;
+
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
@@ -196,14 +253,49 @@ textarea:placeholder-shown {
   text-decoration: none;
 }
 
+.advertising-item h3 {
+  margin: 0;
+  padding: 0;
+}
+
 .advertising .button {
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
 }
 
-.presents ul {
+.advertising .slider {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.slider li + li {
+  margin-left: 8px;
+}
+
+.presents .presents-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.presents li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 560px;
+  height: 230px;
 }
 
 .presents .item-raspberry {
@@ -221,27 +313,61 @@ textarea:placeholder-shown {
 }
 
 .presents h3 {
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  padding: 0;
+
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
 }
 
 .presents p {
+  margin-top: 0;
+  margin-right: 20px;
+  margin-left: 15px;
+
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
 }
 
 .presents .button {
+  align-self: flex-end;
+  margin-top: auto;
+  margin-right: 20px;
+  margin-bottom: 25px;
+
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
 }
 
-/* определяет стили и для списка каталога на странице каталога */
-.catalog ul {
+/* Определяет стили и для списка каталога на странице каталога */
+.catalog .catalog-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin: 0;
+  padding: 0;
+  /* Вопрос: почуму многострочный каталог не выравнивается по одной линии? */
+
   list-style: none;
 }
+
+.catalog .catalog-item {
+  width: 267px;
+  height: 400px;
+  /* Памятка: временный размер */
+  margin: 0;
+  padding: 0;
+}
+
 .catalog h3 {
   font-size: 16px;
   line-height: 22px;
