@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1140px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -279,6 +279,10 @@ textarea:placeholder-shown {
   margin-left: 8px;
 }
 
+.presents {
+  margin-bottom: 35px;
+}
+
 .presents .presents-list {
   display: flex;
   flex-direction: row;
@@ -346,6 +350,10 @@ textarea:placeholder-shown {
 }
 
 /* Определяет стили и для списка каталога на странице каталога */
+.catalog-main {
+  margin-bottom: 35px;
+}
+
 .catalog .catalog-list {
   display: flex;
   flex-direction: row;
@@ -355,23 +363,38 @@ textarea:placeholder-shown {
   align-content: space-between;
   margin: 0;
   padding: 0;
-  /* Вопрос: почуму многострочный каталог не выравнивается по одной линии? */
 
   list-style: none;
 }
 
 .catalog .catalog-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   width: 267px;
-  height: 400px;
-  /* Памятка: временный размер */
+  min-height: 327px;
   margin: 0;
   padding: 0;
 }
 
+.catalog a {
+  order: 1;
+}
+
 .catalog h3 {
+  margin: 0;
+  padding: 0;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
+  text-align: center;
+}
+
+.catalog p {
+  margin: 0;
+  padding: 0;
 }
 
 .catalog .price {
@@ -387,28 +410,65 @@ textarea:placeholder-shown {
 }
 
 .features {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 20px;
+  padding-bottom: 0;
+
   color: #000000;
 
   background-color: #ebdec1;
 }
 
 .features p {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
 }
 
 .features ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .features .feature-item {
+  width: 485px;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  padding-left: 60px;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
 }
 
+.blog-appointment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
 .new-blog {
+  width: 520px;
+  min-height: 195px;
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
+
   color: #000000;
 
   background-color: #ffffff;
@@ -417,13 +477,25 @@ textarea:placeholder-shown {
   background-repeat: no-repeat;
 }
 
+.new-blog .wrapper {
+  width: 285px;
+}
+
 .new-blog h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
 }
 
 .new-blog a {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -440,6 +512,12 @@ textarea:placeholder-shown {
 }
 
 .appointment {
+  width: 508px;
+  min-height: 178px;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+
   color: #5a5a5a;
 
   background-color: #f8f7f4;
@@ -447,9 +525,26 @@ textarea:placeholder-shown {
 }
 
 .appointment p {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+}
+
+.appointment .appointment-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 35px;
+}
+
+.appointment-form p {
+  margin: 0;
+  padding: 0;
 }
 
 .appointment .button {
@@ -459,16 +554,32 @@ textarea:placeholder-shown {
 }
 
 .address {
-  color: #000000;
-
-  background-color: #ffffff;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .address address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 255px;
+  min-height: 245px;
+  margin: 0;
+  padding-top: 30px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+
+  color: #000000;
+
+  background-color: #ffffff;
   font-style: normal;
 }
 
 .address p {
+  margin: 0;
+  padding: 0;
+
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -482,13 +593,64 @@ textarea:placeholder-shown {
 
 /* Подвал сайта */
 /* ========================================================================== */
+.main-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
 
-.main-footer ul {
+.main-footer .list-social {
+  /* Отключает флекс, что бы надписи кнопок много места не занимали
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  */
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+
   list-style: none;
+}
+/* Отклчает отступ, что бы надписи кнопок много места не занимали
+.footer-social li + li {
+  margin-left: 10px;
+}
+*/
+.main-footer .list-useful {
+  /*
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 350px;
+ */
+  column-count: 2;
+  column-gap: 25px;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.list-useful li {
+  margin: 0;
+  padding: 0;
 }
 
 .main-footer .useful-item,
 .main-footer p {
+  margin: 0;
+  padding: 0;
+
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;

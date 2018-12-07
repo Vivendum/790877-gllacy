@@ -1,8 +1,21 @@
 .container {
   outline: 1px solid red;
 }
+
 .main-header,
 .operation-main,
-.advertising {
+.advertising,
+.presents,
+.catalog {
   outline: 2px solid black;
+}
+
+.catalog .catalog-item,
+.features .feature-item {
+  outline: 3px solid green;
+}
+
+.blog-appointment .appointment .appointment-form,
+.list-useful {
+  outline: 4px solid yellow;
 }
