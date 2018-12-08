@@ -87,7 +87,7 @@ textarea:placeholder-shown {
   margin-bottom: 10px;
 }
 
-.main-header .main-header-logo {
+.main-header .logo-gllacyshop {
   width: 154px;
   height: 64px;
   margin-right: 25px;
@@ -103,7 +103,7 @@ textarea:placeholder-shown {
   padding: 0;
 }
 
-.main-navigation .site-navigation {
+.main-navigation .list-navigation-site {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -120,31 +120,31 @@ textarea:placeholder-shown {
   list-style: none;
 }
 
-.site-navigation li + li {
-  margin-left: 30px;
+.list-navigation-site .item-navigation-site {
+  margin-right: 30px;
 }
 
-.site-navigation .button-navigation:hover {
+.list-navigation-site .button-navigation:hover {
   color: #000000;
 
   background-color: #ffffff;
   text-decoration: none;
 }
 
-.site-navigation .button-navigation:active {
+.list-navigation-site .button-navigation:active {
   text-decoration: none;
   /* Памятка: внутренняя тень */
 }
 
-.site-navigation .button-navigation-current,
-.site-navigation .button-navigation-current:hover {
+.list-navigation-site .button-navigation-current,
+.list-navigation-site .button-navigation-current:hover {
   color: #000000;
 
   background-color: #d07058;
   text-decoration: none;
 }
 
-.main-navigation .user-navigation {
+.main-navigation .list-navigation-user {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -160,18 +160,18 @@ textarea:placeholder-shown {
   list-style: none;
 }
 
-.user-navigation li + li {
+.list-navigation-user .item-navigation-user {
   margin-left: 10px;
 }
 
-.user-navigation .button-navigation {
+.list-navigation-user .button-navigation {
   color: #ffffff;
 
   background-color: #a1b4a9;
   text-decoration: none;
 }
 
-.user-navigation .button-navigation:hover {
+.list-navigation-user .button-navigation:hover {
   color: #000000;
 
   background-color: #ffffff;

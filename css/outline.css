@@ -3,6 +3,7 @@
 }
 
 .main-header,
+
 .operation-main,
 .advertising,
 .presents,
@@ -10,10 +11,16 @@
   outline: 2px solid black;
 }
 
+.logo-gllacyshop,
+.main-navigation,
+
 .catalog .catalog-item,
 .features .feature-item {
   outline: 3px solid green;
 }
+
+.list-navigation-site,
+.list-navigation-user,
 
 .blog-appointment .appointment .appointment-form,
 .list-useful {

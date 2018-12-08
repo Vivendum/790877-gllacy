@@ -11,15 +11,18 @@
   <body>
 
     <div class="container">
+
       <header class="main-header">
-        <a class="main-header-logo" href="index.html">
+
+        <a class="logo-gllacyshop" href="index.html">
           <img src="img/logo-gllacyshop.svg" width="154" height="64" alt="Логотип GllacyShop">
         </a>
+
         <nav class="main-navigation">
-          <ul class="site-navigation">
-            <li>
+
+          <ul class="list-navigation-site">
+            <li class="item-navigation-site">
               <a class="button-navigation-current">Каталог</a>
-              <!-- Но если сделать <a>Каталог</a> ссылка же не будет обновлять стр. и тем самыс сбрасывать фильтр -->
               <!-- Памятка: присвоен класс -->
               <ul class="modal catalog-navigation">
                 <li><a href="#"><b>Новинки</b></a></li>
@@ -29,11 +32,12 @@
                 <li><a href="#">Мелорин</a></li>
               </ul>
             </li>
-            <li><a class="button-navigation" href="#">Доставка и оплата</a></li>
-            <li><a class="button-navigation" href="#">О компании</a></li>
+            <li class="item-navigation-site"><a class="button-navigation" href="#">Доставка и оплата</a></li>
+            <li class="item-navigation-site"><a class="button-navigation" href="#">О компании</a></li>
           </ul>
-          <ul class="user-navigation">
-            <li class="search">
+
+          <ul class="list-navigation-user">
+            <li class="item-navigation-user search">
               <a class="button-navigation" href="search.html">Поиск</a>
               <section class="modal modal-search">
                 <h2 class="visually-hidden">Поиск по сайту</h2>
@@ -45,7 +49,7 @@
                 </form>
               </section>
             </li>
-            <li class="login-link">
+            <li class="item-navigation-user login-link">
               <a class="button-navigation" href="user.html">Вход</a>
               <section class="modal modal-user">
                 <h2 class="visually-hidden">Личный кабинет</h2>
@@ -66,7 +70,7 @@
                 </p>
               </section>
             </li>
-            <li class="basket">
+            <li class="item-navigation-user basket">
               <a class="button-navigation" href="basket.html">2 товара</a>
               <section class="modal modal-basket">
                 <h2 class="visually-hidden">Корзина</h2>
@@ -105,11 +109,12 @@
               </section>
             </li>
           </ul>
-        </nav>
-      </header>
-    </div>
 
-    <main class="container">
+        </nav>
+
+      </header>
+
+    <main>
 
       <header class="catalog-header">
         <ul class="breadcrubs">
@@ -368,8 +373,6 @@
       </ul>
 
     </main>
-
-    <div class="container">
 
       <footer class="main-footer">
         <ul class="list-social">
