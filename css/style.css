@@ -365,9 +365,9 @@ textarea:placeholder-shown {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
-  align-content: space-between;
+  align-content: stretch;
   margin: 0;
   padding: 0;
 
