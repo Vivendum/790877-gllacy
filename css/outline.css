@@ -1,28 +1,43 @@
-.container {
+.container,
+.container-address {
   outline: 1px solid red;
 }
 
 .main-header,
-
 .operation-main,
 .advertising,
-.presents,
-.catalog {
+.presents .list-presents,
+.catalog .list-catalog,
+.features .list-features,
+.blog-appointment,
+.address-connection,
+.main-footer,
+.header-catalog,
+.filters .form-filters {
   outline: 2px solid black;
 }
 
-.logo-gllacyshop,
-.main-navigation,
-
-.catalog .catalog-item,
-.features .feature-item {
+.main-header .logo-gllacyshop,
+.main-header .main-navigation,
+.advertising .list-advertising,
+.advertising .list-slider,
+.presents .list-presents .item-raspberry,
+.presents .list-presents .item-chocolate,
+.catalog .list-catalog .item-catalog,
+.appointment .form-appointment,
+.main-footer .list-social,
+.main-footer .list-useful,
+.main-footer .footer-copyrightn,
+.header-catalog .list-breadcrubs,
+.header-catalog .operation,
+.filters .form-filters .block-filters {
   outline: 3px solid green;
 }
 
-.list-navigation-site,
-.list-navigation-user,
-
-.blog-appointment .appointment .appointment-form,
-.list-useful {
+.main-header .main-navigation .list-navigation-site,
+.main-header .main-navigation .list-navigation-user,
+.advertising .list-advertising .item-advertising,
+.main-footer .list-useful .item-useful,
+.filters .form-filters .block-filters .list-fat {
   outline: 4px solid yellow;
 }

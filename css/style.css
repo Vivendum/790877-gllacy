@@ -121,7 +121,9 @@ textarea:placeholder-shown {
 }
 
 .list-navigation-site .item-navigation-site {
+  margin: 0;
   margin-right: 30px;
+  padding: 0;
 }
 
 .list-navigation-site .button-navigation:hover {
@@ -161,7 +163,9 @@ textarea:placeholder-shown {
 }
 
 .list-navigation-user .item-navigation-user {
+  margin: 0;
   margin-left: 10px;
+  padding: 0;
 }
 
 .list-navigation-user .button-navigation {
@@ -211,51 +215,49 @@ textarea:placeholder-shown {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 35px;
+  padding-bottom: 35px;
+  /* Для прозрачного фона */
 }
 
-.advertising .advertising-list {
-  height: 495px;
+.advertising .list-advertising {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.advertising .advertising-item {
+.list-advertising .item-advertising {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
-  height: 490px;
-  margin: 0 auto;
-  padding: 0;
-  padding-top: 280px;
+  height: 240px;
+  margin: 0;
+  margin-top: -30px;
+  margin-bottom: -60px;
+  padding: 0 230px;
+  padding-top: 315px;
 
-  background-color: #849d8f;
+  background-color: transparent;
   background-image: url("../img/background-advertising-sentence-1.png");
-  background-position: center -20px;
+  background-position: top center;
   background-repeat: no-repeat;
-  /* Нужна рекомендация/совет как стилизовать фон */
 }
 
-.advertising .title {
+.item-advertising a {
+  margin-bottom: 30px;
+
+  text-decoration: none;
+}
+
+.item-advertising h3 {
   margin: 0;
   padding: 0;
-  padding-bottom: 35px;
 
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
   text-align: center;
-
-  text-decoration: none;
-}
-
-.advertising-item h3 {
-  margin: 0;
-  padding: 0;
 }
 
 .advertising .button {
@@ -264,7 +266,7 @@ textarea:placeholder-shown {
   font-weight: 700;
 }
 
-.advertising .slider {
+.advertising .list-slider {
   align-self: flex-start;
   display: flex;
   flex-direction: row;
@@ -275,15 +277,17 @@ textarea:placeholder-shown {
   list-style: none;
 }
 
-.slider li + li {
-  margin-left: 8px;
+.list-slider .item-slider {
+  margin: 0;
+  margin-right: 8px;
+  padding: 0;
 }
 
 .presents {
   margin-bottom: 35px;
 }
 
-.presents .presents-list {
+.presents .list-presents {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -299,7 +303,9 @@ textarea:placeholder-shown {
   justify-content: space-between;
   align-items: flex-start;
   width: 560px;
-  height: 230px;
+  min-height: 230px;
+  margin: 0;
+  padding: 0;
 }
 
 .presents .item-raspberry {
@@ -329,9 +335,11 @@ textarea:placeholder-shown {
 }
 
 .presents p {
-  margin-top: 0;
+  margin: 0;
   margin-right: 20px;
+  margin-bottom: 25px;
   margin-left: 15px;
+  padding: 0;
 
   font-size: 18px;
   line-height: 22px;
@@ -349,12 +357,11 @@ textarea:placeholder-shown {
   font-weight: 700;
 }
 
-/* Определяет стили и для списка каталога на странице каталога */
 .catalog-main {
   margin-bottom: 35px;
 }
 
-.catalog .catalog-list {
+.catalog .list-catalog {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -367,7 +374,7 @@ textarea:placeholder-shown {
   list-style: none;
 }
 
-.catalog .catalog-item {
+.catalog .item-catalog {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -430,7 +437,7 @@ textarea:placeholder-shown {
   font-weight: 500;
 }
 
-.features ul {
+.features .list-features {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -442,7 +449,7 @@ textarea:placeholder-shown {
   list-style: none;
 }
 
-.features .feature-item {
+.features .item-feature {
   width: 485px;
   margin: 0;
   margin-bottom: 25px;
@@ -458,16 +465,14 @@ textarea:placeholder-shown {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0;
   margin-bottom: 40px;
 }
 
 .new-blog {
   width: 520px;
   min-height: 195px;
+  padding: 0 20px;
   padding-top: 25px;
-  padding-right: 20px;
-  padding-left: 20px;
 
   color: #000000;
 
@@ -492,9 +497,8 @@ textarea:placeholder-shown {
 }
 
 .new-blog a {
-  margin: 0;
+  display: block;
   margin-bottom: 25px;
-  padding: 0;
 
   font-size: 24px;
   line-height: 30px;
@@ -514,9 +518,8 @@ textarea:placeholder-shown {
 .appointment {
   width: 508px;
   min-height: 178px;
+  padding: 0 20px;
   padding-top: 30px;
-  padding-right: 20px;
-  padding-left: 20px;
 
   color: #5a5a5a;
 
@@ -524,7 +527,7 @@ textarea:placeholder-shown {
   border: 6px solid #92cdff;
 }
 
-.appointment p {
+.appointment .info-appointment {
   margin: 0;
   margin-bottom: 35px;
   padding: 0;
@@ -534,7 +537,7 @@ textarea:placeholder-shown {
   font-weight: 400;
 }
 
-.appointment .appointment-form {
+.appointment .form-appointment {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -542,7 +545,7 @@ textarea:placeholder-shown {
   margin-bottom: 35px;
 }
 
-.appointment-form p {
+.form-appointment .row-form-appointment {
   margin: 0;
   padding: 0;
 }
@@ -553,22 +556,19 @@ textarea:placeholder-shown {
   font-weight: 700;
 }
 
-.address {
+.container-address {
   width: 1200px;
   margin: 0 auto;
 }
 
-.address address {
+.address-connection {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 255px;
   min-height: 245px;
   margin: 0;
-  padding-top: 30px;
-  padding-right: 25px;
-  padding-bottom: 30px;
-  padding-left: 25px;
+  padding: 30px 25px;
 
   color: #000000;
 
@@ -576,8 +576,9 @@ textarea:placeholder-shown {
   font-style: normal;
 }
 
-.address p {
+.address-connection p {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
 
   font-size: 14px;
@@ -585,14 +586,30 @@ textarea:placeholder-shown {
   font-weight: 400;
 }
 
-.address b {
+.address-connection .row {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.address-connection .row-address {
+  width: 155px;
+}
+
+.address-connection b {
+  display: block;
+
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
 }
 
+.address-connection .row-phone {
+  margin-bottom: 10px;
+}
+
 /* Подвал сайта */
 /* ========================================================================== */
+
 .main-footer {
   display: flex;
   flex-direction: row;
@@ -617,36 +634,38 @@ textarea:placeholder-shown {
 
   list-style: none;
 }
-/* Отклчает отступ, что бы надписи кнопок много места не занимали
-.footer-social li + li {
-  margin-left: 10px;
+/* Отключает отступ, что бы надписи кнопок много места не занимали
+.list-social .item-social {
+  margin: 0;
+  margin-right: 10px;
+  padding: 0;
 }
 */
 .main-footer .list-useful {
-  /*
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  align-content: center;
-  width: 350px;
- */
   column-count: 2;
-  column-gap: 25px;
+  column-gap: 5px;
   margin: 0;
   margin-right: 20px;
   padding: 0;
+  padding-top: 20px;
+
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
 
   list-style: none;
 }
 
-.list-useful li {
+.list-useful .item-useful {
   margin: 0;
   padding: 0;
+  padding-left: 20px;
 }
 
-.main-footer .useful-item,
+.main-footer b {
+  font-weight: 700;
+}
+
 .main-footer p {
   margin: 0;
   padding: 0;
@@ -656,14 +675,26 @@ textarea:placeholder-shown {
   font-weight: 400;
 }
 
-.main-footer b {
-  font-weight: 700;
-}
-
 /* Страница каталога */
 /* ========================================================================== */
 
-.catalog-header .breadcrubs {
+.header-catalog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.header-catalog .list-breadcrubs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 0;
+  margin-right: 25px;
+  padding: 0;
+
   font-size: 13px;
   line-height: 18px;
   font-weight: 700;
@@ -671,17 +702,100 @@ textarea:placeholder-shown {
   list-style: none;
 }
 
-.breadcrubs .breadcrubs-current {
+.list-breadcrubs .item-breadcrubs {
+  margin: 0;
+  margin-right: 10px;
+  padding: 0;
+  padding-left: 15px;
+}
+
+.list-breadcrubs .item-breadcrubs:first-child {
+  padding-left: 0;
+}
+
+.list-breadcrubs .breadcrubs-current {
   text-decoration: none;
 }
 
 .title-catalog {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
 }
 
+.filters {
+  margin-right: 265px;
+  margin-bottom: 35px;
+}
+
+.filters .form-filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: space-between;
+  min-height: 130px;
+}
+
+.form-filters .block-filters {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-width: 195px;
+  margin: 0;
+  margin-right: 10px;
+  padding: 0;
+}
+
+.form-filters .title-block-filters {
+  margin-bottom: 5px;
+}
+
+.form-filters fieldset {
+  border: none;
+}
+
+.block-fat .list-fat,
+.block-fillers .list-filler {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.list-fat .item-fat {
+  margin: 0;
+  margin-right: 15px;
+  padding: 0;
+}
+
+.list-fat .item-fat:last-child {
+  margin-right: 0;
+}
+
+.list-filler .item-filler {
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.list-filler .item-filler:last-child {
+  margin-right: 0;
+}
+
 .filters .button {
+  margin-right: 10px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -707,15 +821,46 @@ textarea:placeholder-shown {
   /* Памятка: внутренняя тень */
 }
 
-.paginator-list {
+.catalog:not(.catalog-main) {
+  margin-bottom: 40px;
+}
+
+.catalog:not(.catalog-main) .item-catalog {
+  margin-bottom: 40px;
+}
+
+.list-paginator {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0 30px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+
   list-style: none;
 }
 
-.paginator-list .paginator-item-current,
-.paginator-list .paginator-item-current:hover {
+.list-paginator .item-paginator {
+  margin: 0;
+  margin-right: 10px;
+  padding: 0;
+}
+
+.list-paginator .item-paginator:last-child {
+  margin-right: 0;
+}
+
+.list-paginator .button-paginator {
+  text-decoration: none;
+}
+
+.list-paginator .button-paginator-current,
+.list-paginator .button-paginator-current:hover {
   color: #000000;
 
   background-color: #ffffff;
