@@ -9,7 +9,7 @@
 /* ========================================================================== */
 
 body {
-  padding-top: 10px;
+  padding-top: 9px;
 
   font-family: "Roboto", Arial, sans-serif;
   color: #ffffff;
@@ -21,6 +21,10 @@ body {
   width: 1146px;
   margin: 0 auto;
   padding: 0 27px;
+}
+
+a {
+  display: block;
 }
 
 a:not(.button) {
@@ -98,32 +102,30 @@ textarea:placeholder-shown {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  min-height: 64px;
   margin-bottom: 10px;
 }
 
 .main-header .logo-gllacyshop {
   width: 154px;
   height: 64px;
-  margin-right: 25px;
+  margin-right: 10px;
 }
 
 .main-header .main-navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  align-items: stretch;
+  flex-grow: 1;
 }
 
 .main-navigation .list-navigation-site {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  align-content: flex-start;
+  align-content: stretch;
+  flex-grow: 2;
   margin: 0;
   margin-right: 25px;
   padding: 0;
@@ -136,9 +138,14 @@ textarea:placeholder-shown {
 }
 
 .list-navigation-site .item-navigation-site {
-  margin: 0;
-  margin-right: 30px;
+  position: relative;
+
+  margin: auto 0;
   padding: 0;
+}
+
+.list-navigation-site .button-navigation {
+  padding: 6px 14px;
 }
 
 .list-navigation-site .button-navigation:hover {
@@ -149,6 +156,9 @@ textarea:placeholder-shown {
 }
 
 .list-navigation-site .button-navigation:active {
+  color: #000000;
+
+  background-color: #ededed;
   text-decoration: none;
   /* Памятка: внутренняя тень */
 }
@@ -161,12 +171,86 @@ textarea:placeholder-shown {
   text-decoration: none;
 }
 
+.item-navigation-site .modal-list-navigation-catalog {
+  position: absolute;
+
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+
+  background-color: #f8f7f4;
+  list-style: none;
+}
+
+.modal-list-navigation-catalog b {
+  font-weight: 700;
+}
+
+.modal-list-navigation-catalog .modal-item-navigation-catalog {
+  margin: 0;
+  padding: 0;
+
+  white-space: nowrap;
+}
+
+.modal-list-navigation-catalog .modal-item-navigation-catalog:first-child {
+  position: relative;
+}
+
+.modal-list-navigation-catalog .modal-item-navigation-catalog:first-child::after {
+  content: "";
+
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+
+  display: block;
+  width: 90%;
+  height: 1px;
+
+  background-color: #d1d0ce;
+}
+
+.modal-list-navigation-catalog a {
+  display: block;
+  padding: 10px 15px;
+
+  color: #000000;
+}
+
+.modal-list-navigation-catalog a:hover {
+  color: #000000;
+
+  background-color: #fbded7;
+}
+
+.modal-list-navigation-catalog a:active {
+  color: #000000;
+
+  background-color: #f6b5a5;
+}
+
+.modal-list-navigation-catalog .modal-button-navigation-catalog-current {
+  color: #ffffff;
+
+  background-color: #d07058;
+  text-decoration: none;
+}
+
+.item-navigation-site:hover .modal-list-navigation-catalog {
+  display: block;
+}
+
 .main-navigation .list-navigation-user {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   flex-wrap: wrap;
-  align-content: flex-start;
+  align-content: stretch;
+  flex-grow: 1;
   margin: 0;
   padding: 0;
 
@@ -178,7 +262,9 @@ textarea:placeholder-shown {
 }
 
 .list-navigation-user .item-navigation-user {
-  margin: 0;
+  position: relative;
+
+  margin: auto 0;
   margin-left: 10px;
   padding: 0;
 }
