@@ -25,6 +25,9 @@ body {
 
 a {
   display: block;
+
+  vertical-align: middle;
+  text-align: center;
 }
 
 a:not(.button) {
@@ -234,7 +237,7 @@ textarea:placeholder-shown {
 }
 
 .modal-list-navigation-catalog .modal-button-navigation-catalog-current {
-  color: #ffffff;
+  /* color: #ffffff; */
 
   background-color: #d07058;
   text-decoration: none;
@@ -269,17 +272,49 @@ textarea:placeholder-shown {
   padding: 0;
 }
 
-.list-navigation-user .button-navigation {
+.list-navigation-user .button-navigation-user {
+  padding-top: 10px;
+  padding-right: 16px;
+  padding-bottom: 6px;
+  padding-left: 45px;
   color: #ffffff;
 
   background-color: #a1b4a9;
   text-decoration: none;
 }
 
-.list-navigation-user .button-navigation:hover {
+.list-navigation-user .button-navigation-user-search {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
+.button-navigation-user svg {
+  position: absolute;
+  top: 6px;
+  left: 16px;
+}
+
+.button-navigation-user-search svg {
+  top: 7px;
+  left: 7px;
+}
+
+.item-navigation-user .button-navigation-user:hover {
   color: #000000;
 
   background-color: #ffffff;
+  text-decoration: none;
+}
+
+.button-navigation-user:hover path,
+.button-navigation-user:hover circle,
+.button-navigation-user:not(.button-navigation-user-basket-full):hover polygon {
+  fill: #343434;
+}
+
+.item-navigation-user-search:hover .modal-search {
+  display: block;
 }
 
 /* Главная страница */
