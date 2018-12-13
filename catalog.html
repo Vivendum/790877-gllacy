@@ -47,7 +47,7 @@
               </a>
               <section class="modal modal-search">
                 <h2 class="visually-hidden">Поиск по сайту</h2>
-                <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+                <form class="form-search" method="get" action="https://echo.htmlacademy.ru">
                   <p>
                     <label class="visually-hidden" for="search-id">Поиск</label>
                     <input class="search" id="search-id" name="search" type="search" placeholder="Что ищем?">
@@ -55,8 +55,8 @@
                 </form>
               </section>
             </li>
-            <li class="item-navigation-user login-link">
-              <a class="button-navigation-user" href="user.html">
+            <li class="item-navigation-user item-navigation-user-login-link">
+              <a class="button-navigation-user button-navigation-user-login-link" href="user.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21px" height="19px" viewBox="0 0 21 19">
                   <g>
                     <polygon fill="#FFFFFF" points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959"/>
@@ -67,7 +67,7 @@
               </a>
               <section class="modal modal-user">
                 <h2 class="visually-hidden">Личный кабинет</h2>
-                <form class="user-form" method="post" action="https://echo.htmlacademy.ru">
+                <form class="form-user" method="post" action="https://echo.htmlacademy.ru">
                   <p>
                     <label class="visually-hidden" for="user-mail-id">Электоронная почта</label>
                     <input class="user-mail" id="user-mail-id" type="email" name="email" placeholder="Электронная почта">
@@ -98,33 +98,28 @@
               </a>
               <section class="modal modal-basket">
                 <h2 class="visually-hidden">Корзина</h2>
-                <table class="basket-table">
+                <table class="table-basket">
                   <caption class="visually-hidden">Список товаров в корзине</caption>
                   <tr class="visually-hidden">
                     <th>Удаление позиции</th>
-                    <!-- Декоративное изображение -->
                     <th>Название</th>
-                    <th>Вес</th>
-                    <!-- декоративный знак умножения -->
-                    <th>Цена за 1 кг</th>
-                    <th>Цена за всё</th>
+                    <th>Масса умноженная на цену за 1 кг</th>
+                    <th>Итого</th>
                   </tr>
-                  <tr>
-                    <td><button class="modal-close" type="button">Удалить</button></td>
-                    <td>Пломбир с апельсиновым джемом</td>
-                    <td>1,5 кг</td>
-                    <td>200 руб.</td>
+                  <tr class="row-basket-product">
+                    <td class="cell-basket-close"><button class="button-basket-close" type="button"><span class="visually-hidden">Удалить</span></button></td>
+                    <td class="cell-product-1"><a href="#product-1">Пломбир с апельсиновым джемом</a></td>
+                    <td>1,5 кг &times; <span>200 руб.</span></td>
                     <td>300 руб.</td>
                   </tr>
-                  <tr>
-                    <td><button class="modal-close" type="button">Удалить</button></td>
-                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                    <td>1,5 кг</td>
-                    <td>300 руб.</td>
-                    <td>450 руб.</td>
+                  <tr class="row-basket-product">
+                    <td class="cell-last-border cell-basket-close"><button class="button-basket-close" type="button"><span class="visually-hidden">Удалить</span></button></td>
+                    <td class="cell-last-border cell-product-3"><a href="#product-3">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+                    <td class="cell-last-border">1,5 кг &times; <span>300 руб.</span></td>
+                    <td class="cell-last-border">450 руб.</td>
                   </tr>
-                  <tr>
-                    <th colspan="4">Итого:</th>
+                  <tr class="row-total">
+                    <th colspan="3">Итого: </th>
                     <td>750 руб.</td>
                   </tr>
                 </table>
@@ -149,8 +144,8 @@
 
           <div class="operation">
             <p class="mode">С 10 до 20, ежедневно<p>
-              <p class="phone">8 812 450-25-25</p>
-            </div>
+            <p class="phone">8 812 450-25-25</p>
+          </div>
 
         </header>
 
@@ -253,7 +248,7 @@
           <h2 class="visually-hidden">Список сливочного мороженного</h2>
 
           <ul class="list-catalog">
-            <li class="item-catalog">
+            <li class="item-catalog" id="product-1">
               <a href="#">
                 <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
               </a>
@@ -277,7 +272,7 @@
                 <span class="weight">/кг</span>
               </p>
             </li>
-            <li class="item-catalog">
+            <li class="item-catalog" id="product-3">
               <a href="#">
                 <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
               </a>

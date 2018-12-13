@@ -3,6 +3,8 @@
 
 .modal {
   display: none;
+
+  background-color: #f8f7f4;
 }
 
 /* Глобальные стили */
@@ -44,6 +46,8 @@ a:not(.button):active {
 }
 
 .button {
+  min-width: 100px;
+  padding: 10px 15px;
   color: #ffffff;
 
   background-color: #e94f38;
@@ -237,7 +241,7 @@ textarea:placeholder-shown {
 }
 
 .modal-list-navigation-catalog .modal-button-navigation-catalog-current {
-  /* color: #ffffff; */
+  color: #ffffff;
 
   background-color: #d07058;
   text-decoration: none;
@@ -313,7 +317,219 @@ textarea:placeholder-shown {
   fill: #343434;
 }
 
+.item-navigation-user-search .modal-search {
+  position: absolute;
+  right: 0;
+
+  width: 311px;
+  padding: 20px 15px;
+}
+
+.form-search p {
+  margin: 0;
+  padding: 0;
+}
+
+.form-search input[type="search"] {
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .item-navigation-user-search:hover .modal-search {
+  display: block;
+}
+
+.item-navigation-user-login-link .modal-user {
+  position: absolute;
+  right: 0;
+
+  width: 240px;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.modal-user .form-user {
+  /* position: relative; */
+}
+
+.modal-user p {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.form-user input[type="email"],
+.form-user input[type="password"] {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.form-user .button {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+
+  padding-right: 25px;
+  padding-left: 25px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.modal-user > p {
+  margin-left: 120px;
+}
+
+.modal-user a {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400px;
+  text-align: left;
+  color: #000000;
+
+  text-decoration: underline;
+}
+
+.item-navigation-user-login-link:hover .modal-user {
+  display: block;
+}
+
+.item-navigation-user-basket-full .modal-basket {
+  position: absolute;
+  right: 0;
+
+  width: 510px;
+  padding: 15px;
+
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400px;
+  color: #000000;
+}
+
+.table-basket {
+  position: relative;
+
+  width: 100%;
+  margin-bottom: 100px;
+
+  border-collapse: collapse;
+}
+
+.table-basket th,
+.table-basket td {
+  padding: 10px 12px;
+
+  text-align: center;
+  vertical-align: center;
+}
+
+.table-basket .cell-basket-close {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.table-basket .button-basket-close {
+  width: 11px;
+  min-height: 11px;
+
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-navigation-basket-cell-close.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.table-basket .cell-basket-close:hover {
+  transform: scale(1.2);
+}
+
+.table-basket .cell-basket-close:active {
+  transform: scale(0.9);
+}
+
+.table-basket td:nth-of-type(2) {
+  position: relative;
+
+  width:233px;
+  padding-left: 53px;
+}
+
+.table-basket td:nth-of-type(2)::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 10px;
+
+  width: 33px;
+  height: 33px;
+  margin-top: -16px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.table-basket .cell-product-1::before {
+  background-image: url("../img/product-1.jpg");
+}
+
+.table-basket .cell-product-3::before {
+  background-image: url("../img/product-3.jpg");
+}
+/* Можно ли как то уменьшить изображение картиники для фона? Или специально нужно вырезать маленькое изображение? */
+
+.table-basket a {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400px;
+  text-align: left;
+  color: #000000;
+
+  text-decoration: none;
+}
+.table-basket span {
+  color: #999999;
+}
+
+.table-basket .row-total {
+  position: absolute;
+  right: 0;
+}
+
+.row-total th,
+.row-total td {
+  padding: 15px 0;
+
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700px;
+}
+
+.table-basket .cell-last-border {
+  border-bottom: 1px solid #cacac7;
+}
+
+.table-basket .row-basket-product:last-of-type td {
+  border-bottom: 1px solid red;
+}
+/* Почему это правило не работает? */
+
+.modal-basket .button {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+
+  margin: 0;
+  padding: 15px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700px;
+}
+
+.item-navigation-user-basket-full:hover .modal-basket {
   display: block;
 }
 
