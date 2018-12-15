@@ -87,11 +87,12 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+/*
 input,
 textarea {
   padding: 15px;
 }
+*/
 
 /*
 input:placeholder,
@@ -946,14 +947,14 @@ textarea:placeholder-shown {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .new-blog {
   width: 520px;
   min-height: 195px;
   padding: 0 20px;
-  padding-top: 25px;
+  padding-top: 23px;
 
   color: #000000;
 
@@ -969,7 +970,7 @@ textarea:placeholder-shown {
 
 .new-blog h2 {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   padding: 0;
 
   font-size: 16px;
@@ -978,15 +979,16 @@ textarea:placeholder-shown {
 }
 
 .new-blog a {
-  display: block;
   margin-bottom: 25px;
 
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  text-align: left;
   color: #000000;
 
   text-decoration: underline solid #000000;
+  text-underline-position: auto;
 }
 
 .new-blog a:hover,
@@ -999,8 +1001,9 @@ textarea:placeholder-shown {
 .appointment {
   width: 508px;
   min-height: 178px;
-  padding: 0 20px;
-  padding-top: 30px;
+  padding: 0 19px;
+  padding-top: 28px;
+  padding-right: 20px;
 
   color: #5a5a5a;
 
@@ -1023,7 +1026,7 @@ textarea:placeholder-shown {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
 .form-appointment .row-form-appointment {
@@ -1031,7 +1034,17 @@ textarea:placeholder-shown {
   padding: 0;
 }
 
+.appointment input[type="email"] {
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .appointment .button {
+  padding-top: 9px;
+  padding-right: 20px;
+  padding-bottom: 13px;
+  padding-left: 17px;
+
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
