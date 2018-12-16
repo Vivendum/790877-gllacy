@@ -1051,18 +1051,24 @@ textarea:placeholder-shown {
 }
 
 .container-address {
+  position: relative;
+
   width: 1200px;
   margin: 0 auto;
 }
 
 .address-connection {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 255px;
+  position: absolute;
+  top: 63px;
+  right: 27px;
+
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  width: 252px;
   min-height: 245px;
   margin: 0;
-  padding: 30px 25px;
+  padding: 29px 25px;
 
   color: #000000;
 
@@ -1072,7 +1078,7 @@ textarea:placeholder-shown {
 
 .address-connection p {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 19px;
   padding: 0;
 
   font-size: 14px;
@@ -1080,26 +1086,26 @@ textarea:placeholder-shown {
   font-weight: 400;
 }
 
-.address-connection .row {
+.address-connection span {
   display: block;
-  margin-bottom: 10px;
 }
 
 .address-connection .row-address {
   width: 155px;
 }
 
+.address-connection .row-phone {
+  margin-bottom: 3px;
+}
+
 .address-connection b {
   display: block;
 
   font-size: 18px;
-  line-height: 20px;
+  line-height: 24px;
   font-weight: 700;
 }
 
-.address-connection .row-phone {
-  margin-bottom: 10px;
-}
 
 /* Подвал сайта */
 /* ========================================================================== */
