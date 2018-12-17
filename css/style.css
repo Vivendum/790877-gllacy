@@ -450,7 +450,7 @@ textarea:placeholder-shown {
 
   border: none;
   background-color: transparent;
-  background-image: url("../img/icon-navigation-basket-cell-close.svg");
+  background-image: url("../img/icon-close.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -1062,9 +1062,6 @@ textarea:placeholder-shown {
   top: 63px;
   right: 27px;
 
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
   width: 252px;
   min-height: 245px;
   margin: 0;
@@ -1086,16 +1083,12 @@ textarea:placeholder-shown {
   font-weight: 400;
 }
 
+.address-connection .block-phone {
+  margin-bottom: 23px;
+}
+
 .address-connection span {
   display: block;
-}
-
-.address-connection .row-address {
-  width: 155px;
-}
-
-.address-connection .row-phone {
-  margin-bottom: 3px;
 }
 
 .address-connection b {
@@ -1104,6 +1097,117 @@ textarea:placeholder-shown {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.address-connection .row-address {
+  width: 155px;
+}
+
+.address-connection .phone {
+  margin-top: 4px;
+  margin-bottom: 3px;
+}
+
+.address-connection .button {
+  padding-top: 10px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 28px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.modal-connection {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  min-width: 427px;
+  margin-top: -221px;
+  margin-left: -239px;
+  padding: 25px;
+  padding-top: 20px;
+
+  background-color: #f8f7f4;
+}
+
+.modal-connection p {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.modal-connection b {
+  color: #000000;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.modal-connection .block-connection-call {
+  margin-bottom: 25px;
+}
+
+.form-connection p:last-of-type {
+  margin-bottom: 70px;
+}
+
+.form-connection input[type="text"],
+.form-connection input[type="email"] {
+  box-sizing: border-box;
+  width: 62%;
+}
+
+.form-connection textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 155px;
+}
+
+.form-connection .button {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+
+  padding-top: 14px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.modal-connection .modal-close {
+  position: absolute;
+  top: 15px;
+  right: 14px;
+
+  width: 17px;
+  height: 17px;
+
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-close.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.modal-connection .modal-close:hover {
+  transform: scale(1.2);
+}
+
+.modal-connection .modal-close:active {
+  transform: scale(0.9);
+}
+
+button.button-connection:target section.modal-connection {
+  display: block;
+  /* перепробывал уже актив, ховер, таргет... Менял в html ссылки и кнопки... Не появляется у меня попап */
 }
 
 

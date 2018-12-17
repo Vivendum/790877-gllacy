@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
-    <!-- <link rel="stylesheet" href="css/outline.css"> -->
+    <!-- <link rel="stylesheet" href="css/DEL-outline.css"> -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -256,9 +256,9 @@
         <img class="map-address" src="img/map.png" width="1200" height="430" alt="Местонахождение по адресу Большая Конюшенная 19/8 в Санкт-Петербурге">
 
         <address class="address-connection">
-          <p><span class="row row-address">Адрес главного офиса и офлайн-магазина:</span> <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
-          <p><span class="row row-phone">Для заказа по телефону:</span> <b>8 812 450-25-25</b> (с 10 до 20 ежедневно)</p>
-          <a class="button" href="connection.html">Форма обратной связи</a>
+          <p><span class="row-address">Адрес главного офиса и офлайн-магазина:</span> <b class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
+          <p class="block-phone"><span class="row-phone">Для заказа по телефону:</span> <b class="phone">8 812 450-25-25</b> <span class="row-times">(с 10 до 20 ежедневно)</span></p>
+          <button class="button button-connection">Форма обратной связи</button>
         </address>
 
       </div>
@@ -294,23 +294,23 @@
 
     <section class="modal modal-connection">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <p><b>Мы обязательно вам ответим!</b></p>
-      <form class="connection-form" method="post" action="https://echo.htmlacademy.ru">
+      <p class="block-connection-call"><b>Мы обязательно вам ответим!</b></p>
+      <form class="form-connection" method="post" action="https://echo.htmlacademy.ru">
         <p>
           <label class="visually-hidden" for="connection-name-id">Имя</label>
           <input class="connection-name" id="connection-name-id" type="text" name="name" placeholder="Как вас зовут?">
         </p>
         <p>
           <label class="visually-hidden" for="connection-mail-id">Электронная почта</label>
-          <input class="connection-name" id="connection-mail-id" type="email" name="email" placeholder="Ваша почта для ответа?">
+          <input class="connection-mail" id="connection-mail-id" type="email" name="email" placeholder="Ваша почта для ответа?">
         </p>
         <p>
           <label class="visually-hidden" for="connection-comment-id">Комментарий</label>
-          <textarea class="connection-comment" id="connection-comment-id" name="comment" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
+          <textarea class="connection-comment" id="connection-comment-id" name="comment" rows="8" cols="50" placeholder="Напишите что-нибудь..."></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
 
   </body>
