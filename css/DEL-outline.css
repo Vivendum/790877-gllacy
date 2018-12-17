@@ -44,10 +44,15 @@
 .advertising .list-advertising .item-advertising,
 .address-connection p span,
 .address-connection p b,
+/* .main-footer .list-social .item-social, */
 .main-footer .list-useful .item-useful,
 .filters .form-filters .block-filters .list-fat,
 .filters .form-filters .block-filters .list-filler,
 .modal-connection .form-connection p,
 .modal-connection .form-connection .button {
   outline: 4px solid yellow;
+}
+
+.main-footer .list-social .item-social .button-social {
+  outline: 5px solid gold;
 }
