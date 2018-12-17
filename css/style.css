@@ -1219,6 +1219,7 @@ button.button-connection:hover section.modal-connection {
   flex-direction: row;
   justify-content: space-between;
   margin: 0;
+  margin-top: 20px;
   padding: 0;
 }
 
@@ -1231,6 +1232,7 @@ button.button-connection:hover section.modal-connection {
   align-content: center;
   margin: 0;
   margin-right: 20px;
+  margin-bottom: 20px;
   padding: 0;
 
   list-style: none;
@@ -1280,6 +1282,7 @@ button.button-connection:hover section.modal-connection {
   column-gap: 5px;
   margin: 0;
   margin-right: 20px;
+  margin-bottom: 20px;
   padding: 0;
   padding-top: 20px;
 
@@ -1307,6 +1310,25 @@ button.button-connection:hover section.modal-connection {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
+}
+
+.footer-copyrightn {
+  margin-top: -1px;
+  margin-bottom: 20px;
+  margin-left: -3px;
+}
+
+.footer-copyrightn img {
+  transform: scale(1.2);
+  margin-bottom: 5px;
+}
+
+.footer-copyrightn p {
+  font-size: 12px;
+}
+
+.footer-copyrightn a {
+  display: inline;
 }
 
 /* Страница каталога */
