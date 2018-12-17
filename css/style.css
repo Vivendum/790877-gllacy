@@ -1231,7 +1231,7 @@ button.button-connection:hover section.modal-connection {
   flex-wrap: wrap;
   align-content: center;
   margin: 0;
-  margin-right: 20px;
+  margin-right: auto;
   margin-bottom: 20px;
   padding: 0;
 
@@ -1279,12 +1279,9 @@ button.button-connection:hover section.modal-connection {
 
 .main-footer .list-useful {
   column-count: 2;
-  column-gap: 5px;
   margin: 0;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-top: 9px;
   padding: 0;
-  padding-top: 20px;
 
   font-size: 13px;
   line-height: 18px;
@@ -1293,10 +1290,33 @@ button.button-connection:hover section.modal-connection {
   list-style: none;
 }
 
+.list-useful a {
+  text-align: left;
+}
+
 .list-useful .item-useful {
+  position: relative;
+
   margin: 0;
+  margin-bottom: 5px;
   padding: 0;
-  padding-left: 20px;
+  padding-left: 21px;
+}
+
+.list-useful .item-useful-heart::before {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  left: 0;
+
+  width: 15px;
+  height: 13px;
+
+  background-color: transparent;
+  background-image: url("../img/icon-heart.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .main-footer b {
@@ -1315,7 +1335,7 @@ button.button-connection:hover section.modal-connection {
 .footer-copyrightn {
   margin-top: -1px;
   margin-bottom: 20px;
-  margin-left: -3px;
+  margin-left: auto;
 }
 
 .footer-copyrightn img {
