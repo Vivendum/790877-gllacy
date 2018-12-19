@@ -116,7 +116,6 @@ textarea:placeholder-shown {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* margin-bottom: 10px; */
 }
 
 .main-header .logo-gllacyshop {
@@ -188,6 +187,7 @@ textarea:placeholder-shown {
 
 .item-navigation-site .modal-list-navigation-catalog {
   position: absolute;
+  z-index: 10;
 
   margin: 0;
   margin-top: 4px;
