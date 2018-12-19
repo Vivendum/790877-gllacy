@@ -191,6 +191,7 @@ textarea:placeholder-shown {
 
   margin: 0;
   margin-top: 4px;
+  margin-left: -6px;
   padding: 0;
 
   font-size: 14px;
@@ -470,6 +471,16 @@ textarea:placeholder-shown {
   padding-left: 53px;
 }
 
+.table-basket img {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+
+  width: 33px;
+  height: 33px;
+  margin-top: -16px;
+}
+/*
 .table-basket td:nth-of-type(2)::before {
   content: "";
 
@@ -492,6 +503,7 @@ textarea:placeholder-shown {
 .table-basket .cell-product-3::before {
   background-image: url("../img/product-3-small.jpg");
 }
+*/
 
 .table-basket a {
   font-size: 13px;
@@ -520,14 +532,13 @@ textarea:placeholder-shown {
   font-weight: 700;
 }
 
-.table-basket .cell-last-border {
-  border-bottom: 1px solid #cacac7;
+.row-total th {
+  padding-right: 4px;
 }
 
-.table-basket .row-basket-product:last-of-type td {
-  border-bottom: 1px solid red;
+.table-basket tr:nth-last-child(2) {
+  border-bottom: 1px solid #cacac7;
 }
-/* Почему это правило не работает? */
 
 .modal-basket .button {
   position: absolute;
@@ -722,8 +733,13 @@ textarea:placeholder-shown {
   font-weight: 700;
 }
 
+.container-catalog {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .catalog-main {
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 }
 
 .catalog .list-catalog {
@@ -733,13 +749,13 @@ textarea:placeholder-shown {
   align-items: stretch;
   flex-wrap: wrap;
   align-content: stretch;
-  margin: 0;
+  margin: 0 15px;
   padding: 0;
 
   list-style: none;
 }
 
-.catalog .item-catalog {
+.list-catalog .item-catalog {
   position: relative;
 
   display: flex;
@@ -747,13 +763,90 @@ textarea:placeholder-shown {
   justify-content: flex-start;
   align-items: center;
   width: 260px;
-  min-height: 399px;
+  /* min-height: 399px; */
   margin: 0;
   padding: 0 13px;
   padding-top: 6px;
 }
 
-.catalog .button-catalog {
+.item-catalog a {
+  order: 1;
+}
+
+.item-catalog h3 {
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.item-catalog p {
+  margin: 0;
+  padding: 0;
+}
+
+.item-catalog .block-image {
+  margin-bottom: 10px;
+}
+
+.block-image img {
+  width: 265px;
+  height: 265px;
+
+  border-radius: 50%;
+}
+
+.item-catalog .block-price {
+  position: absolute;
+  top: 215px;
+  left: 10px;
+}
+
+.block-price .price {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.block-price .weight {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.item-catalog:hover .block-button {
+  z-index: 1;
+  bottom: -84px;
+  left: 0;
+
+  width: 286px;
+  height: 84px;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  white-space: normal;
+
+  clip-path: none;
+  clip: auto;
+  overflow: visible;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.item-catalog .button-catalog {
+  margin: 0 40px;
+  margin-top: 17px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+/*
+.item-catalog .button-catalog {
+  order: auto;
   visibility: hidden;
 
   margin: auto;
@@ -764,68 +857,17 @@ textarea:placeholder-shown {
   font-weight: 700;
 }
 
-.catalog .block-image {
-  margin-bottom: 10px;
-}
-
-.catalog img {
-  width: 265px;
-  height: 265px;
-
-  border-radius: 50%;
-}
-
-.catalog a {
-  order: 1;
-}
-
-.catalog h3 {
-  margin: 0;
-  padding: 0;
-
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 500;
-  text-align: center;
-}
-
-.catalog p {
-  margin: 0;
-  padding: 0;
-}
-
-.catalog .block-price {
-  position: absolute;
-  top: 215px;
-  left: 10px;
-}
-
-.catalog .price {
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: 700;
-}
-
-.catalog .weight {
-  font-size: 30px;
-  line-height: 45px;
-  font-weight: 700;
-}
-
-.catalog .item-catalog:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
 .item-catalog:hover .button-catalog {
   visibility: visible;
 }
+*/
 
 .catalog-main .item-catalog-hit::before {
   content: "";
 
   position: absolute;
-  top: 6px;
-  left: 14px;
+  top: 4px;
+  left: 11px;
 
   width: 62px;
   height: 62px;
@@ -835,6 +877,10 @@ textarea:placeholder-shown {
   background-position: center center;
   background-repeat: no-repeat;
   border-radius: 50%;
+}
+
+.catalog .item-catalog:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /*
@@ -1559,7 +1605,7 @@ button.button-connection:hover section.modal-connection {
 }
 
 .catalog:not(.catalog-main) .item-catalog {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .list-paginator {
