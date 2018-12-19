@@ -762,10 +762,9 @@ textarea:placeholder-shown {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 260px;
-  /* min-height: 399px; */
+  width: 258px;
   margin: 0;
-  padding: 0 13px;
+  padding: 0 14px;
   padding-top: 6px;
 }
 
@@ -1169,6 +1168,7 @@ textarea:placeholder-shown {
   min-height: 245px;
   margin: 0;
   padding: 29px 25px;
+  /* padding-right: 15px; */
 
   color: #000000;
 
@@ -1211,9 +1211,9 @@ textarea:placeholder-shown {
   margin-bottom: 3px;
 }
 
-.address-connection .button {
+.address-connection .button-connection {
   padding-top: 10px;
-  padding-right: 24px;
+  padding-right: 27px;
   padding-bottom: 12px;
   padding-left: 28px;
 
@@ -1308,11 +1308,6 @@ textarea:placeholder-shown {
   transform: scale(0.9);
 }
 
-button.button-connection:hover section.modal-connection {
-  display: block;
-  /* перепробывал уже актив, ховер, таргет... Менял в html ссылки и кнопки... Не появляется у меня попап */
-}
-
 
 /* Подвал сайта */
 /* ========================================================================== */
@@ -1334,7 +1329,7 @@ button.button-connection:hover section.modal-connection {
   flex-wrap: wrap;
   align-content: center;
   margin: 0;
-  margin-right: auto;
+  margin-right: 145px;
   margin-bottom: 20px;
   padding: 0;
 
@@ -1381,6 +1376,7 @@ button.button-connection:hover section.modal-connection {
 }
 
 .main-footer .list-useful {
+  width: 385px;
   column-count: 2;
   margin: 0;
   margin-top: 9px;
@@ -1406,6 +1402,10 @@ button.button-connection:hover section.modal-connection {
   padding-left: 21px;
 }
 
+.column-left {
+  right: -55px;
+}
+
 .list-useful .item-useful-heart::before {
   content: "";
 
@@ -1421,6 +1421,55 @@ button.button-connection:hover section.modal-connection {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+/*
+.main-footer .list-useful {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 360px;
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+
+  list-style: none;
+}
+
+.list-useful .item-useful {
+  position: relative;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  padding-left: 21px;
+}
+
+.item-useful a {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.list-useful .item-useful-heart::before {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  left: 0;
+
+  width: 15px;
+  height: 13px;
+
+  background-color: transparent;
+  background-image: url("../img/icon-heart.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+*/
 
 .main-footer b {
   font-weight: 700;
