@@ -712,7 +712,7 @@ textarea:placeholder-shown {
   justify-content: space-between;
   align-items: flex-start;
   width: 560px;
-  min-height: 230px;
+  min-height: 229px;
   margin: 0;
   padding: 0;
 }
@@ -732,10 +732,9 @@ textarea:placeholder-shown {
 }
 
 .presents h3 {
-  margin-top: 25px;
-  margin-right: 20px;
-  margin-bottom: 30px;
-  margin-left: 15px;
+  margin: 0 19px;
+  margin-top: 16px;
+  margin-bottom: 15px;
   padding: 0;
 
   font-size: 35px;
@@ -744,10 +743,8 @@ textarea:placeholder-shown {
 }
 
 .presents p {
-  margin: 0;
-  margin-right: 20px;
+  margin: 0 19px;
   margin-bottom: 25px;
-  margin-left: 15px;
   padding: 0;
 
   font-size: 18px;
@@ -757,9 +754,9 @@ textarea:placeholder-shown {
 
 .presents .button {
   align-self: flex-end;
-  margin-top: auto;
-  margin-right: 20px;
-  margin-bottom: 25px;
+  margin: auto;
+  margin-right: 21px;
+  margin-bottom: 24px;
 
   font-size: 18px;
   line-height: 24px;
