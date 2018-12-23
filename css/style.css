@@ -596,8 +596,6 @@ textarea:placeholder-shown {
   justify-content: space-between;
   align-items: center;
   margin-bottom: -20px;
-  /* padding-bottom: 35px; */
-  /* Для прозрачного фона */
 }
 
 .advertising .list-advertising {
@@ -757,6 +755,8 @@ textarea:placeholder-shown {
   margin: auto;
   margin-right: 21px;
   margin-bottom: 24px;
+  padding-right: 23px;
+  padding-left: 22px;
 
   font-size: 18px;
   line-height: 24px;
