@@ -115,27 +115,37 @@
           <p class="phone">8 812 450-25-25</p>
         </div>
 
+        <input class="visually-hidden" type="radio" id="advertising-product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="advertising-product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="advertising-product-3" name="toggle">
         <section class="advertising">
           <h2 class="visually-hidden">Реклама</h2>
-          <ul class="list-advertising">
-            <li class="item-advertising">
-              <a href="#">
-                <h3>Крем-брюле и пломбир с малиновым джемом</h3>
-              </a>
-              <a class="button" href="#">Давайте оба!</a>
-            </li>
-            <!-- <li>Второй слайд</li> -->
-            <!-- <li>Третий слайд</li> -->
-          </ul>
           <ul class="list-slider">
             <li class="item-slider">
-              <button class="button-slider button-slider-current" type="button"><span class="visually-hidden">Первый слайд</span></button>
+              <!-- <input class="visually-hidden" type="radio" id="advertising-product-1" name="toggle" checked> -->
+              <label class="button-slider" for="advertising-product-1"><span class="visually-hidden">Первый слайд</span></label>
             </li>
             <li class="item-slider">
-              <button class="button-slider" type="button"><span class="visually-hidden">Второй слайд</span></button>
+              <!-- <input class="visually-hidden" type="radio" id="advertising-product-2" name="toggle"> -->
+              <label class="button-slider" for="advertising-product-2"><span class="visually-hidden">Второй слайд</span></label>
             </li>
             <li class="item-slider">
-              <button class="button-slider" type="button"><span class="visually-hidden">Третий слайд</span></button>
+              <!-- <input class="visually-hidden" type="radio" id="advertising-product-3" name="toggle"> -->
+              <label class="button-slider" for="advertising-product-3"><span class="visually-hidden">Третий слайд</span></label>
+            </li>
+          </ul>
+          <ul class="list-advertising">
+            <li class="item-advertising slide" id="slide-1">
+              <h3 class="title-advertising">Крем-брюле и пломбир с малиновым джемом</h3>
+              <a class="button button-slide" href="#">Давайте оба!</a>
+            </li>
+            <li class="item-advertising slide" id="slide-2">
+              <h3 class="title-advertising">Шоколадный пломбир и лимонный сорбет</h3>
+              <a class="button button-slide" href="#">Давайте оба!</a>
+            </li>
+            <li class="item-advertising slide" id="slide-3">
+              <h3 class="title-advertising">Крем-брюле и пломбир с малиновым джемом</h3>
+              <a class="button button-slide" href="#">Давайте оба!</a>
             </li>
           </ul>
         </section>

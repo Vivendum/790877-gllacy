@@ -169,21 +169,22 @@
 
             <p class="block-filters block-sorting">
               <label class="title-block-filters" for="sorting-id">Сортировка:</label>
-              <select id="sorting-id" name="sorting">
+              <select class="background-block-filters sorting-block-filters" id="sorting-id" name="sorting">
                 <option value="popularity" selected>по популярности</option>
-                <option value="example-1">пример 1</option>
-                <option value="example-2">пример 2</option>
+                <option value="example-1">сначала недорогие</option>
+                <option value="example-2">сначала дорогие</option>
+                <option value="example-2">по жирности</option>
               </select>
             </p>
 
             <p class="block-filters block-price">
               <label class="title-block-filters" for="price-id">Цена: 100 руб. - 500 руб. </label>
-              <input id="price-id" type="range" name="price" min="0" max="1000" value="200">
+              <input class="background-block-filters" id="price-id" type="range" name="price" min="0" max="1000" value="200">
             </p>
 
             <fieldset class="block-filters block-fat">
               <legend class="title-block-filters">Жирность:</legend>
-              <ul class="list-fat">
+              <ul class="background-block-filters list-fat">
                 <li class="item-fat">
                   <label>
                     <input type="radio" name="radio" value="0">
@@ -213,7 +214,7 @@
 
             <fieldset class="block-filters block-fillers">
               <legend class="title-block-filters">Наполнители:</legend>
-              <ul class="list-filler">
+              <ul class="background-block-filters list-filler">
                 <li class="item-filler">
                   <label>
                     <input type="checkbox" name="chocolate" checked>
@@ -255,7 +256,7 @@
 
         </div>
 
-      <div class="container-catalog">
+      <div class="container-catalog catalog-linear">
 
         <section class="catalog">
 
@@ -458,19 +459,17 @@
 
         </section>
 
-      </div>
-
-    <div class="container">
-
         <ul class="list-paginator">
+          <li class="item-paginator-left"><button class="button-left" aria-hidden="Влево" disabled>&#8249;</button></li>
           <li class="item-paginator"><a class="button-paginator button-paginator-current">1</a></li>
           <li class="item-paginator"><a class="button-paginator" href="#">2</a></li>
           <li class="item-paginator"><a class="button-paginator" href="#">3</a></li>
           <li class="item-paginator"><a class="button-paginator" href="#">4</a></li>
           <li class="item-paginator"><a class="button-paginator" href="#">5</a></li>
+          <li class="item-paginator-right"><button class="button-right" aria-hidden="Вправо">&#8250;</button></li>
         </ul>
 
-    </div>
+      </div>
 
       </main>
 
@@ -519,8 +518,8 @@
         </ul>
 
         <ul class="list-useful">
-          <li class="item-useful item-useful-heart"><a href="#"><b>Для поставщиков</b></a></li>
-          <li class="item-useful"><a href="#">О производстве</a></li>
+          <li class="item-useful item-useful-heart column-left"><a href="#"><b>Для поставщиков</b></a></li>
+          <li class="item-useful column-left"><a href="#">О производстве</a></li>
           <li class="item-useful"><a href="#">Наши документы</a></li>
           <li class="item-useful"><a href="#">Экологические стандарты</a></li>
         </ul>
