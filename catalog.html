@@ -177,10 +177,17 @@
               </select>
             </p>
 
-            <p class="block-filters block-price">
-              <label class="title-block-filters" for="price-id">Цена: 100 руб. - 500 руб. </label>
-              <input class="background-block-filters" id="price-id" type="range" name="price" min="0" max="1000" value="200">
-            </p>
+            <div class="block-filters block-range">
+              <span class="title-block-filters">Цена: 100 руб. – 500 руб.</span>
+              <div class="background-block-filters range-block-filter">
+                <div class="scale">
+                  <div class="bar">
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <fieldset class="block-filters block-fat">
               <legend class="title-block-filters">Жирность:</legend>
@@ -264,7 +271,7 @@
 
           <ul class="list-catalog">
             <li class="item-catalog" id="product-1">
-              <a href="#">
+              <a class="title-item-catalog" href="#">
                 <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
               </a>
               <p class="block-image">
@@ -275,12 +282,12 @@
                 <span class="weight">/кг</span>
               </p>
               <!-- <a class="button button-catalog" href="#">Быстрый просмотр</a> -->
-              <div class="block-button visually-hidden">
+              <div class="block-button">
                 <a class="button button-catalog" href="#">Быстрый просмотр</a>
               </div>
             </li>
             <li class="item-catalog">
-              <a href="#">
+              <a class="title-item-catalog" href="#">
                 <h3>Сливочно-кофейное с кусочками шоколада</h3>
               </a>
               <p class="block-image">
@@ -291,12 +298,12 @@
                 <span class="weight">/кг</span>
               </p>
               <!-- <a class="button button-catalog" href="#">Быстрый просмотр</a> -->
-              <div class="block-button visually-hidden">
+              <div class="block-button">
                 <a class="button button-catalog" href="#">Быстрый просмотр</a>
               </div>
             </li>
             <li class="item-catalog" id="product-3">
-              <a href="#">
+              <a class="title-item-catalog" href="#">
                 <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
               </a>
               <p class="block-image">
@@ -307,12 +314,12 @@
                 <span class="weight">/кг</span>
               </p>
               <!-- <a class="button button-catalog" href="#">Быстрый просмотр</a> -->
-              <div class="block-button visually-hidden">
+              <div class="block-button">
                 <a class="button button-catalog" href="#">Быстрый просмотр</a>
               </div>
             </li>
             <li class="item-catalog">
-              <a href="#">
+              <a class="title-item-catalog" href="#">
                 <h3>Сливочное крем-брюле с карамельной подливкой</h3>
               </a>
               <p class="block-image">
@@ -323,12 +330,12 @@
                 <span class="weight">/кг</span>
               </p>
               <!-- <a class="button button-catalog" href="#">Быстрый просмотр</a> -->
-              <div class="block-button visually-hidden">
+              <div class="block-button">
                 <a class="button button-catalog" href="#">Быстрый просмотр</a>
               </div>
             </li>
             <li class="item-catalog">
-              <a href="#">
+              <a class="title-item-catalog" href="#">
                 <h3>Сливочное с брусничным джемом</h3>
               </a>
               <p class="block-image">
@@ -339,12 +346,12 @@
                 <span class="weight">/кг</span>
               </p>
               <!-- <a class="button button-catalog" href="#">Быстрый просмотр</a> -->
-              <div class="block-button visually-hidden">
+              <div class="block-button">
                 <a class="button button-catalog" href="#">Быстрый просмотр</a>
               </div>
             </li>
             <li class="item-catalog">
-              <a href="#">
+              <a class="title-item-catalog" href="#">
                 <h3>Сливочно-черничное с цельными ягодами черники</h3>
               </a>
               <p class="block-image">
@@ -355,12 +362,12 @@
                 <span class="weight">/кг</span>
               </p>
               <!-- <a class="button button-catalog" href="#">Быстрый просмотр</a> -->
-              <div class="block-button visually-hidden">
+              <div class="block-button">
                 <a class="button button-catalog" href="#">Быстрый просмотр</a>
               </div>
             </li>
             <li class="item-catalog">
-              <a href="#">
+              <a class="title-item-catalog" href="#">
                 <h3>Сливочно-лимонное с карамельной присыпкой</h3>
               </a>
               <p class="block-image">
@@ -371,12 +378,12 @@
                 <span class="weight">/кг</span>
               </p>
               <!-- <a class="button button-catalog" href="#">Быстрый просмотр</a> -->
-              <div class="block-button visually-hidden">
+              <div class="block-button">
                 <a class="button button-catalog" href="#">Быстрый просмотр</a>
               </div>
             </li>
             <li class="item-catalog">
-              <a href="#">
+              <a class="title-item-catalog" href="#">
                 <h3>Сливочное с шоколадной стружкой</h3>
               </a>
               <p class="block-image">
@@ -387,12 +394,12 @@
                 <span class="weight">/кг</span>
               </p>
               <!-- <a class="button button-catalog" href="#">Быстрый просмотр</a> -->
-              <div class="block-button visually-hidden">
+              <div class="block-button">
                 <a class="button button-catalog" href="#">Быстрый просмотр</a>
               </div>
             </li>
             <li class="item-catalog">
-              <a href="#">
+              <a class="title-item-catalog" href="#">
                 <h3>Сливочно-ванильное с кусочками шоколада</h3>
               </a>
               <p class="block-image">
@@ -403,12 +410,12 @@
                 <span class="weight">/кг</span>
               </p>
               <!-- <a class="button button-catalog" href="#">Быстрый просмотр</a> -->
-              <div class="block-button visually-hidden">
+              <div class="block-button">
                 <a class="button button-catalog" href="#">Быстрый просмотр</a>
               </div>
             </li>
             <li class="item-catalog">
-              <a href="#">
+              <a class="title-item-catalog" href="#">
                 <h3>Сливочное с ментоловым сиропом</h3>
               </a>
               <p class="block-image">
@@ -419,12 +426,12 @@
                 <span class="weight">/кг</span>
               </p>
               <!-- <a class="button button-catalog" href="#">Быстрый просмотр</a> -->
-              <div class="block-button visually-hidden">
+              <div class="block-button">
                 <a class="button button-catalog" href="#">Быстрый просмотр</a>
               </div>
             </li>
             <li class="item-catalog">
-              <a href="#">
+              <a class="title-item-catalog" href="#">
                 <h3>Сливочное с кусочками черного шоколада</h3>
               </a>
               <p class="block-image">
@@ -435,12 +442,12 @@
                 <span class="weight">/кг</span>
               </p>
               <!-- <a class="button button-catalog" href="#">Быстрый просмотр</a> -->
-              <div class="block-button visually-hidden">
+              <div class="block-button">
                 <a class="button button-catalog" href="#">Быстрый просмотр</a>
               </div>
             </li>
             <li class="item-catalog">
-              <a href="#">
+              <a class="title-item-catalog" href="#">
                 <h3>Сливочное с мятным сиропом</h3>
               </a>
               <p class="block-image">
@@ -451,7 +458,7 @@
                 <span class="weight">/кг</span>
               </p>
               <!-- <a class="button button-catalog" href="#">Быстрый просмотр</a> -->
-              <div class="block-button visually-hidden">
+              <div class="block-button">
                 <a class="button button-catalog" href="#">Быстрый просмотр</a>
               </div>
             </li>
