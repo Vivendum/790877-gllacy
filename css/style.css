@@ -1511,6 +1511,8 @@ textarea:placeholder-shown
 }
 
 .modal-connection {
+  display: block;
+  z-index: 1100;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1522,6 +1524,7 @@ textarea:placeholder-shown
   padding-top: 20px;
 
   background-color: #f8f7f4;
+  border-radius: 15px;
 }
 
 .modal-connection p {
@@ -1550,12 +1553,57 @@ textarea:placeholder-shown
 .form-connection input[type="email"] {
   box-sizing: border-box;
   width: 62%;
+  padding: 10px 15px;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffffff;
+  border: 2px solid rgba(178, 178, 178, 0.5);
+  border-radius: 5px;
 }
 
 .form-connection textarea {
   box-sizing: border-box;
   width: 100%;
-  min-height: 155px;
+  min-height: 125px;
+  padding: 10px 15px;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffffff;
+  border: 2px solid rgba(178, 178, 178, 0.5);
+  border-radius: 5px;
+}
+
+.form-connection input[type="text"]:hover,
+.form-connection input[type="email"]:hover,
+.form-connection textarea:hover {
+  border: 2px solid rgba(154, 154, 154, 0.5);
+}
+
+.form-connection input[type="text"]:focus,
+.form-connection input[type="email"]:focus,
+.form-connection textarea:focus {
+  border: 2px solid rgba(046, 136, 228, 0.5);
+  outline: none;
+}
+
+.form-connection input[type="text"]::placeholder,
+.form-connection input[type="email"]::placeholder,
+.form-connection textarea::placeholder {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
 }
 
 .form-connection .button {
