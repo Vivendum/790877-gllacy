@@ -1012,6 +1012,10 @@ textarea:placeholder-shown
   padding-top: 6px;
 }
 
+.catalog .item-catalog:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .item-catalog .title-item-catalog {
   order: 1;
 }
@@ -1058,7 +1062,7 @@ textarea:placeholder-shown
 }
 
 .item-catalog .block-button {
-  z-index: 1;
+  z-index: 10;
   position: absolute;
   bottom: -84px;
   left: 0;
@@ -1119,9 +1123,6 @@ textarea:placeholder-shown
   border-radius: 50%;
 }
 
-.catalog .item-catalog:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
 
 /*
 .features {
@@ -1511,7 +1512,7 @@ textarea:placeholder-shown
 }
 
 .modal-connection {
-  display: block;
+  /* display: block; */
   z-index: 1100;
   position: fixed;
   top: 50%;
@@ -1937,20 +1938,73 @@ textarea:placeholder-shown
   padding: 0;
   padding-left: 15px;
 
-
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
 }
 
 .form-filters .background-block-filters {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+
   background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50px;
+}
+.form-filters .block-sorting {
+  position: relative;
+}
+.form-filters .block-sorting::after {
+  content: "▼";
+
+  position: absolute;
+  right: 8%;
+  bottom: 17%;
+
+  font-size: 14px;
+
+  pointer-events: none;
+}
+.block-filters-triangle:hover .block-sorting::after {
+  display: none;
+}
+.block-sorting .sorting-block-filters {
+  padding: 8px 10px;
+
+  color: #ffffff;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-.form-filters .sorting-block-filters {
-  padding: 5px 10px;
+.block-sorting:hover .sorting-block-filters {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+.block-sorting:hover::after {
+  content: "▼";
+
+  position: absolute;
+  right: 9%;
+  bottom: 20%;
+
+  font-size: 10px;
+  color: #000000;
+
+  pointer-events: none;
+}
+.sorting-block-filters option {
+  color: #000000;
 }
 
+.block-range .range-block-filter {
+  width: 270px;
+  height: 50px;
+  outline: 2px solid grey;
+}
 .form-filters fieldset {
   border: none;
 }
