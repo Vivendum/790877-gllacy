@@ -1970,7 +1970,7 @@ textarea:placeholder-shown
   display: none;
 }
 .block-sorting .sorting-block-filters {
-  padding: 8px 10px;
+  padding: 9px 14px;
 
   color: #ffffff;
 
@@ -2001,10 +2001,51 @@ textarea:placeholder-shown
 }
 
 .block-range .range-block-filter {
-  width: 270px;
-  height: 50px;
-  outline: 2px solid grey;
+  position: relative;
+
+  width: 220px;
+  height: 35px;
 }
+.range-block-filter .scale {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+
+  width: 80%;
+  height: 4px;
+  margin-top: -2px;
+
+  background-color: rgba(255, 255, 255, 0.5)
+}
+.range-block-filter .bar {
+  position: absolute;
+  left: 9%;
+
+  width: 67%;
+  height: 4px;
+
+  background-color: #ffffff;
+}
+.range-block-filter .range-toggle {
+  position: absolute;
+  top: -8px;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.range-block-filter .range-toggle-min {
+  left: 0;
+
+}
+.range-block-filter .range-toggle-max {
+  right: 0;
+}
+
 .form-filters fieldset {
   border: none;
 }
