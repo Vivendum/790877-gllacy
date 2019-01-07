@@ -1966,9 +1966,6 @@ textarea:placeholder-shown
 
   pointer-events: none;
 }
-.block-filters-triangle:hover .block-sorting::after {
-  display: none;
-}
 .block-sorting .sorting-block-filters {
   padding: 9px 14px;
 
@@ -1985,16 +1982,11 @@ textarea:placeholder-shown
   background-color: #ffffff;
 }
 .block-sorting:hover::after {
-  content: "▼";
-
-  position: absolute;
   right: 9%;
   bottom: 20%;
 
   font-size: 10px;
   color: #000000;
-
-  pointer-events: none;
 }
 .sorting-block-filters option {
   color: #000000;
@@ -2064,12 +2056,39 @@ textarea:placeholder-shown
 
 .list-fat .item-fat {
   margin: 0;
-  margin-right: 15px;
   padding: 0;
+  padding: 9px 14px;
+}
+.block-fat .label-fat {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 29px;
+}
+.block-fat .radio-indicator {
+  position: absolute;
+  left: 0;
+
+  width: 22px;
+  height: 22px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 0 3px #ffffff,
+    inset 0 0 0 7px #849d8f,
+    inset 0 0 0 11px #849d8f;
+}
+.block-fat input:checked + .radio-indicator {
+  box-shadow:
+    inset 0 0 0 3px #ffffff,
+    inset 0 0 0 7px #849d8f,
+    inset 0 0 0 11px #ffffff;
 }
 
-.list-fat .item-fat:last-child {
-  margin-right: 0;
+.block-fat input:focus + .radio-indicator {
+  outline: thin dotted auto;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .list-filler .item-filler {
