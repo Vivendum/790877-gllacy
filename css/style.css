@@ -1907,16 +1907,16 @@ textarea:placeholder-shown
 
 .filters {
   margin-right: 265px;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 .filters .form-filters {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  align-content: flex-start;
+  align-content: space-between;
   min-height: 130px;
 }
 
@@ -2152,8 +2152,9 @@ textarea:placeholder-shown
   fill: #b5c4bc;
 }
 .filters .button-filters {
-  /* margin-right: 7px; */
-  padding: 7px 25px;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 7px 28px;
 
   font-size: 16px;
   line-height: 18px;
@@ -2168,22 +2169,26 @@ textarea:placeholder-shown
 }
 
 .filters .button-filters:hover {
+  padding: 9px 30px;
+
   color: #000000;
 
   background-color: #ffffff;
-  border: 2px solid #ffffff;
+  border: none;
 }
 
 .filters .button-filters:active {
+  padding: 9px 30px;
+
   color: #000000;
 
   background-color: #eaeaea;
-  border: 2px solid #eaeaea;
-  /* Памятка: внутренняя тень */
+  border: none;
+  box-shadow: inset 0 2px 2px #696969;
 }
 
 .catalog:not(.catalog-main) {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .catalog:not(.catalog-main) .item-catalog {
