@@ -2202,14 +2202,15 @@ input[type="radio"].visually-hidden {
 }
 
 .list-paginator .button-paginator {
-  padding: 4px 9px;
+  padding: 4px 8px;
   padding-bottom: 3px;
 
   border-radius: 50%;
   text-decoration: none;
 }
 
-.list-paginator button {
+.list-paginator .button-paginator-left,
+.list-paginator .button-paginator-right {
   vertical-align: middle;
   text-align: center;
   color: #ffffff;
@@ -2229,6 +2230,10 @@ input[type="radio"].visually-hidden {
 
   background-color: rgba(255, 255, 255, 0.2);
   text-decoration: none;
+}
+.list-paginator .button-paginator-left:not(:disabled):hover,
+.list-paginator .button-paginator-right:not(:disabled):hover {
+  transform: scale(3);
 }
 
 .list-paginator .button-paginator-current,
