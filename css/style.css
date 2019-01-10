@@ -540,16 +540,23 @@ input[type="radio"].visually-hidden {
 }
 
 .table-basket .button-basket-close {
+  position: relative;
   width: 11px;
-  min-height: 11px;
+  height: 11px;
 
   border: none;
   background-color: transparent;
-  background-image: url("../img/icon-close.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
 }
+.table-basket .button-basket-close img {
+  position: absolute;
+  top: 50%;
+  left: 0;
 
+
+  width: 11px;
+  height: 11px;
+  margin-top: -6px;
+}
 .table-basket .cell-basket-close:hover {
   transform: scale(1.2);
 }
@@ -573,6 +580,7 @@ input[type="radio"].visually-hidden {
   width: 33px;
   height: 33px;
   margin-top: -16px;
+  border-radius: 50%;
 }
 /*
 .table-basket td:nth-of-type(2)::before {
