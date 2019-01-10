@@ -66,12 +66,14 @@
                   <label class="visually-hidden" for="user-password-id">Пароль</label>
                   <input class="user-password" id="user-password-id" type="password" name="password" placeholder="Пароль">
                 </p>
-                <button class="button" type="submit">Войти</button>
+                <div class="wrapper">
+                  <button class="button" type="submit">Войти</button>
+                  <p>
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </p>
+                </div>
               </form>
-              <p>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </p>
             </section>
           </li>
           <li class="item-navigation-user item-navigation-user-basket-full">
@@ -99,12 +101,12 @@
                 <tr class="row-basket-product">
                   <td class="cell-basket-close">
                     <button class="button-basket-close" type="button">
-                      <img src="img/icon-close.svg" width="11" height="11" alt="Удалить">
+                      <img class="img-close" src="img/icon-close.svg" width="11" height="11" alt="Удалить">
                       <span class="visually-hidden">Удалить строку</span>
                     </button>
                   </td>
                   <td class="cell-product-1">
-                    <img src="img/product-1-small.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                    <img class="img-product" src="img/product-1-small.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
                     <a href="#product-1">Пломбир с апельсиновым джемом</a>
                   </td>
                   <td>1,5 кг &times; <span>200 руб.</span></td>
@@ -113,12 +115,12 @@
                 <tr class="row-basket-product">
                   <td class="cell-basket-close">
                     <button class="button-basket-close" type="button">
-                      <img src="img/icon-close.svg" width="11" height="11" alt="Удалить">
+                      <img class="img-close" src="img/icon-close.svg" width="11" height="11" alt="Удалить">
                       <span class="visually-hidden">Удалить строку</span>
                     </button>
                   </td>
                   <td class="cell-product-3">
-                    <img src="img/product-3-small.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                    <img class="img-product" src="img/product-3-small.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
                     <a href="#product-3">Клубничный пломбир с присыпкой из белого шоколада</a>
                   </td>
                   <td>1,5 кг &times; <span>300 руб.</span></td>
@@ -129,7 +131,9 @@
                   <td>750 руб.</td>
                 </tr>
               </table>
-              <a class="button" href="#">Оформить заказ</a>
+              <div class="wrapper">
+                <a class="button" href="#">Оформить заказ</a>
+              </div>
             </section>
           </li>
         </ul>
