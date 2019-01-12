@@ -44,6 +44,10 @@ img {
   display: none;
 }
 
+.js-modal-open {
+  display: block;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -998,8 +1002,6 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
-
-/*
 .features {
   margin: 0;
   margin-bottom: 40px;
@@ -1010,91 +1012,6 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   background-color: #ebdec1;
-  background-image: url("../img/background-features-wafer.jpg");
-  background-position: top left;
-  background-repeat: no-repeat;
-}
-
-.features p {
-  margin: 0;
-  margin-bottom: 22px;
-  padding: 0;
-
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 500;
-}
-
-.features .list-features {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-content: stretch;
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.features .item-feature {
-  position: relative;
-
-  width: 480px;
-  margin: 0;
-  margin-bottom: 22px;
-  padding: 0;
-  padding-left: 56px;
-
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
-}
-
-.features .item-feature::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 49px;
-  height: 49px;
-  margin-top: -14px;
-
-  background-color: transparent;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.features .item-feature-ice-cream::before {
-  background-image: url("../img/icon-features-ice-cream.svg");
-}
-
-.features .item-feature-cow::before {
-  background-image: url("../img/icon-features-cow.svg");
-}
-
-.features .item-feature-leaf::before {
-  background-image: url("../img/icon-features-leaf.svg");
-}
-
-.features .item-feature-thermometer::before {
-  background-image: url("../img/icon-features-thermometer.svg");
-}
-*/
-
-.features {
-  margin: 0;
-  margin-bottom: 40px;
-  padding: 20px;
-  padding-top: 25px;
-  padding-bottom: 1px;
-
-  color: #000000;
-
-  background-color: #ebdec1;
-
   background-image: url("../img/background-features-wafer.jpg");
   background-position: top left;
   background-repeat: no-repeat;
@@ -1240,11 +1157,7 @@ input[type="radio"].visually-hidden {
   color: #5a5a5a;
 
   background-color: #f8f7f4;
-  /* border: 6px solid #92cdff; */
   border-radius: 15px;
-  /* border-image-source: url("../img/border-gradient.png"); */
-  /* border-image-slice: 7; */
-  /* border-image-repeat: round; */
 }
 
 .appointment .info-appointment {
@@ -1322,17 +1235,18 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 63px;
   right: 27px;
+  z-index: 1;
 
   width: 252px;
   min-height: 245px;
   margin: 0;
   padding: 29px 25px;
-  /* padding-right: 15px; */
 
+  font-style: normal;
   color: #000000;
 
   background-color: #ffffff;
-  font-style: normal;
+  border-radius: 15px;
 }
 
 .address-connection p {
@@ -1382,11 +1296,10 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-connection {
-  /* display: block; */
-  z-index: 1100;
   position: fixed;
   top: 50%;
   left: 50%;
+  z-index: 100;
 
   min-width: 427px;
   margin-top: -221px;
@@ -1414,10 +1327,6 @@ input[type="radio"].visually-hidden {
 
 .modal-connection .block-connection-call {
   margin-bottom: 25px;
-}
-
-.form-connection p:last-of-type {
-  margin-bottom: 70px;
 }
 
 .form-connection input[type="text"],
@@ -1477,11 +1386,13 @@ input[type="radio"].visually-hidden {
   color: #999999;
 }
 
-.form-connection .button {
-  position: absolute;
-  bottom: 25px;
-  right: 25px;
+.form-connection .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
 
+.form-connection .button {
   padding-top: 14px;
   padding-right: 24px;
   padding-bottom: 12px;
@@ -1502,11 +1413,9 @@ input[type="radio"].visually-hidden {
 
   border: none;
   background-color: transparent;
-  /* background-image: url("../img/icon-close.svg"); */
-  /* background-position: center center; */
-  /* background-repeat: no-repeat; */
 }
-.modal-connection .modal-close img {
+
+.modal-connection .img-modal-close {
   position: absolute;
   top: 0;
   left: 0;
@@ -1514,6 +1423,7 @@ input[type="radio"].visually-hidden {
   height: 17px;
   width: 17px;
 }
+
 .modal-connection .modal-close:hover {
   transform: scale(1.2);
 }
@@ -1522,8 +1432,20 @@ input[type="radio"].visually-hidden {
   transform: scale(0.9);
 }
 
+.overley {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
 
-/* Подвал сайта */
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* ПРАВИЛА FOOTER САЙТА */
 /* ========================================================================== */
 
 .main-footer {
