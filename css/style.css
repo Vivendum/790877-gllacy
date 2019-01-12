@@ -857,6 +857,8 @@ input[type="radio"].visually-hidden {
   margin-bottom: 25px;
   padding: 0;
 
+  white-space: pre-wrap;
+
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
@@ -1575,22 +1577,31 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
 }
 
-.footer-copyrightn {
+.footer-copyright {
   margin-top: -1px;
   margin-bottom: 20px;
   margin-left: auto;
 }
 
-.footer-copyrightn img {
-  transform: scale(1.2);
-  margin-bottom: 5px;
+.footer-copyright .a-logo-footer-copyright {
+  display: inline;
 }
 
-.footer-copyrightn p {
+.footer-copyright .a-logo-footer-copyright:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.footer-copyright img {
+  width: 118px;
+  height: 38px;
+}
+
+.footer-copyright p {
   font-size: 12px;
 }
 
-.footer-copyrightn a {
+.footer-copyright .a-footer-copyright {
   display: inline;
 }
 
