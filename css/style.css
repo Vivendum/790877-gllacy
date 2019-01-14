@@ -754,7 +754,7 @@ input[type="radio"].visually-hidden {
 }
 
 .operation p {
-  z-index: 10;
+  z-index: 2;
 
   margin: 0;
   padding: 0;
@@ -964,6 +964,7 @@ input[type="radio"].visually-hidden {
 }
 
 .presents h3 {
+  max-width: 525px;
   margin: 0 19px;
   margin-top: 16px;
   margin-bottom: 15px;
@@ -975,7 +976,7 @@ input[type="radio"].visually-hidden {
 }
 
 .presents p {
-  width: 500px;
+  max-width: 525px;
   margin: 0 19px;
   margin-bottom: 25px;
   padding: 0;
@@ -988,6 +989,7 @@ input[type="radio"].visually-hidden {
 }
 
 .presents .button {
+  max-width: 475px;
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin: auto;
@@ -1048,8 +1050,7 @@ input[type="radio"].visually-hidden {
   width: 265px;
   margin: 0;
   margin-bottom: -50px;
-  padding: 0 14px;
-  padding-top: 6px;
+  padding: 6px 14px;
   border-radius: 5px;
 }
 
@@ -1117,7 +1118,7 @@ input[type="radio"].visually-hidden {
           order: 2;
 
   width: 286px;
-  height: 82px;
+  min-height: 76px;
   margin: 0;
   padding: 0;
 
