@@ -1422,6 +1422,7 @@ input[type="radio"].visually-hidden {
 .map-yandex {
   position: relative;
   z-index: 2;
+  border: 0;
 }
 
 .map-address {
