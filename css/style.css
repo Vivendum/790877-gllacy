@@ -10,6 +10,16 @@ body {
   background-color: #849d8f;
 }
 
+.js-color-1 {
+  background-color: #849d8f;
+}
+.js-color-2 {
+  background-color: #8996a6;
+}
+.js-color-3 {
+  background-color: #9d8b84;
+}
+
 a {
   display: block;
 
