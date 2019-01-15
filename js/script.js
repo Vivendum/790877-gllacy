@@ -69,12 +69,8 @@ open_popup_connection.addEventListener("click", function (evt) {
     };
   });
   form_popup_connection.addEventListener("submit", function (evt) {
-    console.log(name_form_popup_connection.value);
-    console.log(email_form_popup_connection.value);
-    console.log(comment_form_popup_connection.value);
     if (!name_form_popup_connection.value || !email_form_popup_connection.value || !comment_form_popup_connection.value) {
       evt.preventDefault();
-      console.log("Нужно заполнить все строки формы");
       popup_connection.classList.add("js-animation-modal-error");
     } else {
       localStorage.setItem("name", name_form_popup_connection.value);
