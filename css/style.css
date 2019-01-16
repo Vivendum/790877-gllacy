@@ -1706,9 +1706,10 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0;
+  width: 1146px;
+  margin: 0 auto;
   margin-top: 20px;
-  padding: 0;
+  padding: 0 27px;
 }
 
 .main-footer .list-social {
