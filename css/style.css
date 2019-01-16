@@ -2132,7 +2132,6 @@ input[type="radio"].visually-hidden {
 
 .range-block-filter .range-toggle-min {
   left: 0;
-
 }
 
 .range-block-filter .range-toggle-max {
@@ -2162,24 +2161,18 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   list-style: none;
-
-  outline: 1px solid yellow;
 }
 
 .block-fat .item-fat {
   margin: 0;
-  padding: 0;
   padding: 9px 14px;
   padding-top: 10px;
   padding-right: 18px;
 }
 
-.block-fat .item-fat:nth-child(3) {
-  margin-left: -2px;
-}
-
+.block-fat .item-fat:nth-child(3),
 .block-fat .item-fat:nth-child(4) {
-  margin-left: -3px;
+  margin-left: -2px;
 }
 
 .block-fat .item-fat:not(:last-child) {
@@ -2272,20 +2265,28 @@ input[type="radio"].visually-hidden {
     inset 0 0 0 11px #b5c4bc;
 }
 
+.filters .block-fillers {
+  margin-right: 14px;
+}
+
 .block-fillers .item-filler {
   margin: 0;
   padding: 9px 14px;
 }
 
+.block-fillers .item-filler:last-child {
+  padding-right: 19px;
+}
+
 .block-fillers .item-filler:not(:last-child) {
-  padding-right: 12px;
+  padding-right: 5px;
 }
 
 .block-fillers .label-filler {
   position: relative;
   margin: 0;
   padding: 0;
-  padding-left: 29px;
+  padding-left: 34px;
 
   cursor: pointer;
 }
@@ -2298,6 +2299,8 @@ input[type="radio"].visually-hidden {
   width: 27px;
   height: 23px;
   margin-top: -11px;
+
+  transform: scale(0.9);
 }
 
 .checkbox-indicator path {
@@ -2323,9 +2326,10 @@ input[type="radio"].visually-hidden {
 }
 
 .filters .button-filters {
-  margin-top: 20px;
+  margin-top: 22px;
   margin-right: 10px;
   padding: 7px 28px;
+  padding-right: 27px;
 
   font-size: 16px;
   line-height: 18px;
