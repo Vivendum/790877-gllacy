@@ -1959,7 +1959,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filters {
-  margin-right: 275px;
+  /* margin-right: 275px; */
   margin-bottom: 19px;
 }
 
@@ -1971,9 +1971,12 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  /* -webkit-box-pack: justify; */
+      /* -ms-flex-pack: justify; */
+          /* justify-content: space-between; */
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -1982,6 +1985,8 @@ input[type="radio"].visually-hidden {
   -ms-flex-line-pack: justify;
       align-content: space-between;
   min-height: 130px;
+
+  outline: 1px solid grey;
 }
 
 .form-filters .block-filters {
@@ -1998,7 +2003,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  min-width: 195px;
+  /* min-width: 195px; */
   margin: 0;
   margin-right: 10px;
   margin-bottom: 15px;
@@ -2028,13 +2033,15 @@ input[type="radio"].visually-hidden {
 
 .form-filters .block-sorting {
   position: relative;
+
+  margin-right: 16px;
 }
 
 .form-filters .block-sorting::after {
   content: "▼";
 
   position: absolute;
-  right: 8%;
+  right: 6.4%;
   bottom: 17%;
 
   font-size: 14px;
@@ -2043,6 +2050,7 @@ input[type="radio"].visually-hidden {
 }
 
 .block-sorting .sorting-block-filters {
+  min-width: 193px;
   padding: 9px 14px;
 
   color: #ffffff;
@@ -2081,8 +2089,9 @@ input[type="radio"].visually-hidden {
 .block-range .range-block-filter {
   position: relative;
 
-  width: 220px;
-  height: 35px;
+  width: 218px;
+  height: 36px;
+  margin-right: 5px;
 }
 
 .range-block-filter .scale {
@@ -2099,9 +2108,9 @@ input[type="radio"].visually-hidden {
 
 .range-block-filter .bar {
   position: absolute;
-  left: 9%;
+  left: 7.5%;
 
-  width: 67%;
+  width: 67.5%;
   height: 4px;
 
   background-color: #ffffff;
@@ -2153,23 +2162,35 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   list-style: none;
+
+  outline: 1px solid yellow;
 }
 
 .block-fat .item-fat {
   margin: 0;
   padding: 0;
   padding: 9px 14px;
+  padding-top: 10px;
+  padding-right: 18px;
+}
+
+.block-fat .item-fat:nth-child(3) {
+  margin-left: -2px;
+}
+
+.block-fat .item-fat:nth-child(4) {
+  margin-left: -3px;
 }
 
 .block-fat .item-fat:not(:last-child) {
-  padding-right: 11px;
+  padding-right: 7px;
 }
 
 .block-fat .label-fat {
   position: relative;
   margin: 0;
   padding: 0;
-  padding-left: 29px;
+  padding-left: 30px;
 
   cursor: pointer;
 }
@@ -2181,7 +2202,7 @@ input[type="radio"].visually-hidden {
 
   width: 22px;
   height: 22px;
-  margin-top: -11px;
+  margin-top: -12px;
 
   background-color: #e6ebe9;
   border-radius: 50%;
