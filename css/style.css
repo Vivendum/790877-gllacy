@@ -2216,6 +2216,8 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
   margin: 0;
   padding: 0;
 
@@ -2447,6 +2449,7 @@ input[type="radio"].visually-hidden {
           align-items: flex-start;
   margin: 0;
   margin-right: -27px;
+  margin-bottom: 15px;
   padding: 0;
   padding-bottom: 32px;
 
