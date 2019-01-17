@@ -650,11 +650,15 @@ input[type="radio"].visually-hidden {
 }
 
 .table-basket .button-basket-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .table-basket .button-basket-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .table-basket .button-basket-close:hover {
@@ -797,10 +801,8 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   width: 100%;
-  /* min-height: 885px; */
   height: 2023px;
   margin-top: -116px;
-  /* margin-bottom: -630px; */
   margin-bottom: -1767px;
   padding-top: 390px;
 
@@ -948,7 +950,8 @@ input[type="radio"].visually-hidden {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      align-content: space-between;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -1031,6 +1034,7 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   font-weight: 700;
 }
+
 .catalog {
   width: 1200px;
   margin: 0 auto;
@@ -1227,12 +1231,23 @@ input[type="radio"].visually-hidden {
           /* column-count: 2; */
   /* -webkit-column-gap: 26px; */
           /* column-gap: 26px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
-  flex-wrap: wrap;
-  align-content: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
 
   list-style: none;
 }
@@ -1296,7 +1311,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 1146px;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -1702,11 +1719,15 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-connection .modal-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .modal-connection .modal-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .modal-connection .modal-close:hover {
@@ -1721,27 +1742,44 @@ input[type="radio"].visually-hidden {
           transform: scale(0.9);
 }
 
+@-webkit-keyframes open-modal-connection {
+0% { -webkit-transform: translateX(-2000px); transform: translateX(-2000px); }
+50% { -webkit-transform: translateX(300px); transform: translateX(300px); }
+75% { -webkit-transform: translateX(-40px); transform: translateX(-40px); }
+100% { -webkit-transform: translateX(0); transform: translateX(0); }
+}
+
 @keyframes open-modal-connection {
-0% { transform: translateX(-2000px); }
-50% { transform: translateX(300px); }
-75% { transform: translateX(-40px); }
-100% { transform: translateX(0); }
+0% { -webkit-transform: translateX(-2000px); transform: translateX(-2000px); }
+50% { -webkit-transform: translateX(300px); transform: translateX(300px); }
+75% { -webkit-transform: translateX(-40px); transform: translateX(-40px); }
+100% { -webkit-transform: translateX(0); transform: translateX(0); }
 }
 
 .js-animation-modal-open {
-  animation-name: open-modal-connection;
-  animation-duration: 0.6s;
+  -webkit-animation-name: open-modal-connection;
+          animation-name: open-modal-connection;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+@-webkit-keyframes error-modal-connection {
+0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
+10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
 }
 
 @keyframes error-modal-connection {
-0%, 100% { transform: translateX(0); }
-10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-20%, 40%, 60%, 80% { transform: translateX(10px); }
+0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
+10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
 }
 
 .js-animation-modal-error {
-  animation-name: error-modal-connection;
-  animation-duration: 0.5s;
+  -webkit-animation-name: error-modal-connection;
+          animation-name: error-modal-connection;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 .overlay {
@@ -1777,7 +1815,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 1146px;
   min-height: 75px;
   margin: 0 auto;
@@ -2216,8 +2256,10 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   margin: 0;
   padding: 0;
 
@@ -2361,7 +2403,9 @@ input[type="radio"].visually-hidden {
   height: 23px;
   margin-top: -11px;
 
-  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .checkbox-indicator path {
