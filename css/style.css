@@ -632,23 +632,35 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
 }
 
-.button-basket-close .img-close {
+.table-basket .button-basket-close::before,
+.table-basket .button-basket-close::after {
+  content: "";
+
   position: absolute;
-  top: 50%;
+  top: 5px;
   left: 0;
 
   width: 11px;
-  height: 11px;
-  margin-top: -6px;
+  height: 1px;
+
+  background-color: #000000;
 }
 
-.table-basket .cell-basket-close:hover {
+.table-basket .button-basket-close::before {
+  transform: rotate(45deg);
+}
+
+.table-basket .button-basket-close::after {
+  transform: rotate(-45deg);
+}
+
+.table-basket .button-basket-close:hover {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.table-basket .cell-basket-close:active {
+.table-basket .button-basket-close:active {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
           transform: scale(0.9);
@@ -1414,7 +1426,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
-.container-map {
+.map {
   position: relative;
 
   width: 1200px;
@@ -1634,13 +1646,26 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
 }
 
-.modal-connection .img-modal-close {
+.modal-connection .modal-close::before,
+.modal-connection .modal-close::after {
+  content: "";
+
   position: absolute;
-  top: 0;
+  top: 7px;
   left: 0;
 
-  height: 17px;
   width: 17px;
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.modal-connection .modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-connection .modal-close::after {
+  transform: rotate(-45deg);
 }
 
 .modal-connection .modal-close:hover {
