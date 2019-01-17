@@ -136,6 +136,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 1146px;
+  padding: 0 27px;
+  margin: 0 auto;
 }
 
 .main-header .logo-gllacyshop {
@@ -762,6 +765,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  width: 1146px;
+  padding: 0 27px;
+  margin: 0 auto;
 }
 
 .operation p {
@@ -790,9 +796,12 @@ input[type="radio"].visually-hidden {
 .advertising {
   position: relative;
 
-  min-height: 885px;
+  width: 100%;
+  /* min-height: 885px; */
+  height: 2023px;
   margin-top: -116px;
-  margin-bottom: -630px;
+  /* margin-bottom: -630px; */
+  margin-bottom: -1767px;
   padding-top: 390px;
 
   text-align: center;
@@ -829,7 +838,9 @@ input[type="radio"].visually-hidden {
 .advertising .list-slider {
   position: absolute;
   top: 563px;
-  left: 0;
+  left: -27.8%;
+
+  width: 100%;
 
   font-size: 0;
 }
@@ -906,7 +917,7 @@ input[type="radio"].visually-hidden {
 
 .list-advertising .button {
   display: inline-block;
-  padding: 12px 44px;
+  padding: 10px 40px;
 
   vertical-align: baseline;
   font-size: 32px;
@@ -916,7 +927,12 @@ input[type="radio"].visually-hidden {
 }
 
 .presents {
-  margin-bottom: 35px;
+  position: relative;
+  z-index: 1;
+
+  width: 1146px;
+  padding: 0 27px;
+  margin: 0 auto;
 }
 
 .presents .list-presents {
@@ -930,6 +946,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      align-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -937,8 +956,6 @@ input[type="radio"].visually-hidden {
 }
 
 .presents li {
-  z-index: 1;
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -955,6 +972,7 @@ input[type="radio"].visually-hidden {
   width: 560px;
   min-height: 229px;
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
 
   border-radius: 15px;
@@ -1013,10 +1031,15 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   font-weight: 700;
 }
-
-.main-page .catalog {
+.catalog {
   width: 1200px;
   margin: 0 auto;
+}
+
+.main-page .catalog {
+  position: relative;
+  z-index: 2;
+
   margin-bottom: 6px
 }
 
@@ -1169,9 +1192,11 @@ input[type="radio"].visually-hidden {
 }
 
 .features {
-  margin: 0;
+  position: relative;
+  z-index: 1;
+
   margin-bottom: 40px;
-  padding: 20px;
+  padding: 0 20px;
   padding-top: 25px;
   padding-bottom: 1px;
 
@@ -1179,7 +1204,7 @@ input[type="radio"].visually-hidden {
 
   background-color: #ebdec1;
   background-image: url("../img/background-features-wafer.jpg");
-  background-position: top left;
+  background-position: top center;
   background-repeat: no-repeat;
   border-radius: 15px;
 }
@@ -1196,10 +1221,18 @@ input[type="radio"].visually-hidden {
 .features .list-features {
   margin: 0;
   padding: 0;
-  -webkit-column-count: 2;
-          column-count: 2;
-  -webkit-column-gap: 26px;
-          column-gap: 26px;
+  padding-right: 5px;
+  padding-bottom: 22px;
+  /* -webkit-column-count: 2; */
+          /* column-count: 2; */
+  /* -webkit-column-gap: 26px; */
+          /* column-gap: 26px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  align-content: stretch;
 
   list-style: none;
 }
@@ -1250,6 +1283,9 @@ input[type="radio"].visually-hidden {
 }
 
 .blog-appointment {
+  position: relative;
+  z-index: 1;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1260,12 +1296,16 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 39px;
+  align-items: flex-start;
+  width: 1146px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0 27px;
 }
 
 .new-blog {
   width: 520px;
-  min-height: 195px;
+  min-height: 197px;
   padding: 0 20px;
   padding-top: 23px;
 
@@ -1278,11 +1318,8 @@ input[type="radio"].visually-hidden {
   border-radius: 15px;
 }
 
-.new-blog .wrapper {
-  width: 285px;
-}
-
 .new-blog h2 {
+  width: 285px;
   margin: 0;
   margin-bottom: 4px;
   padding: 0;
@@ -1293,6 +1330,7 @@ input[type="radio"].visually-hidden {
 }
 
 .new-blog a {
+  width: 285px;
   margin-bottom: 25px;
 
   font-size: 24px;
@@ -1428,9 +1466,11 @@ input[type="radio"].visually-hidden {
 
 .map {
   position: relative;
+  z-index: 1;
 
   width: 1200px;
   margin: 0 auto;
+  margin-bottom: 12px;
 }
 
 .map-yandex {
@@ -1439,10 +1479,11 @@ input[type="radio"].visually-hidden {
   border: 0;
 }
 
-.map-address {
+.map-image {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .address-connection {
@@ -1723,6 +1764,9 @@ input[type="radio"].visually-hidden {
 /* ========================================================================== */
 
 .main-footer {
+  position: relative;
+  z-index: 1;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1733,9 +1777,10 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  align-items: center;
   width: 1146px;
+  min-height: 75px;
   margin: 0 auto;
-  margin-top: 24px;
   padding: 0 27px;
 }
 
@@ -1759,7 +1804,6 @@ input[type="radio"].visually-hidden {
       align-content: center;
   margin: 0;
   margin-right: 149px;
-  margin-bottom: 20px;
   padding: 0;
 
   list-style: none;
@@ -1809,7 +1853,7 @@ input[type="radio"].visually-hidden {
 .main-footer .list-useful {
   width: 385px;
   margin: 0;
-  margin-top: 8px;
+  margin-top: 4px;
   padding: 0;
   -webkit-column-count: 2;
           column-count: 2;
@@ -1869,8 +1913,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-copyright {
-  margin-top: -8px;
-  margin-bottom: 20px;
+  margin-top: -11px;
   margin-left: auto;
 }
 
