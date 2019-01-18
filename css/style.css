@@ -945,8 +945,8 @@ input[type="radio"].visually-hidden {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      -ms-flex-line-pack: justify;
-          align-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   margin: 0;
   padding: 0;
 
@@ -979,15 +979,17 @@ input[type="radio"].visually-hidden {
 .presents .item-raspberry {
   background-color: #671223;
   background-image: url("../img/background-presents-raspberry.jpg");
-  background-position: left top;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .presents .item-chocolate {
   background-color: #3c2317;
   background-image: url("../img/background-presents-chocolate.jpg");
-  background-position: left top;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .presents h3 {
@@ -1205,7 +1207,7 @@ input[type="radio"].visually-hidden {
 
   background-color: #ebdec1;
   background-image: url("../img/background-features-wafer.jpg");
-  background-position: top center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
@@ -1305,9 +1307,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   width: 1146px;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -1323,8 +1322,9 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   background-image: url("../img/background-blog-strawberry.jpg");
-  background-position: left top;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 15px;
 }
 
