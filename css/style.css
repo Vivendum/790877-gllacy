@@ -1224,10 +1224,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-right: 5px;
   padding-bottom: 22px;
-  /* -webkit-column-count: 2; */
-          /* column-count: 2; */
-  /* -webkit-column-gap: 26px; */
-          /* column-gap: 26px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
