@@ -1031,7 +1031,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog {
-  width: 1200px;
+  width: 1172px;
+  margin: 0 auto;
 }
 
 .main-page .catalog {
@@ -1049,9 +1050,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
@@ -1237,13 +1238,13 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 
   list-style: none;
 }
@@ -2471,8 +2472,6 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-page .catalog {
-  width: 1200px;
-  margin: 0 auto;
   margin-bottom: 52px;
 }
 
@@ -2504,7 +2503,7 @@ input[type="radio"].visually-hidden {
 }
 
 .list-paginator .item-paginator-left {
-  margin-right: 8px;
+  margin-right: 9px;
 }
 
 .list-paginator .item-paginator {
@@ -2513,7 +2512,8 @@ input[type="radio"].visually-hidden {
 }
 
 .list-paginator .item-paginator-right {
-  margin-left: 6px;
+  margin-right: -4px;
+  margin-left: 10px;
 }
 
 .list-paginator .button-paginator {
