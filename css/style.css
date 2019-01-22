@@ -1592,6 +1592,25 @@ input[type="radio"].visually-hidden {
   margin-bottom: 25px;
 }
 
+.form-connection label {
+  position: absolute;
+
+  color: #000000;
+  color: transparent;
+}
+
+.form-connection .label-name {
+  top: 53px;
+}
+
+.form-connection .label-mail {
+  top: 118px;
+}
+
+.form-connection .label-comment {
+  top: 181px;
+}
+
 .form-connection input[type="text"],
 .form-connection input[type="email"] {
   -webkit-box-sizing: border-box;
