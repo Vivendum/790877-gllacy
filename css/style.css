@@ -31,7 +31,8 @@ a {
 
 a:not(.button) {
   -webkit-text-decoration: underline solid rgba(255, 255, 255, 0.3);
-          text-decoration: underline solid rgba(255, 255, 255, 0.3);
+          -moz-text-decoration: underline solid rgba(255, 255, 255, 0.3);
+       text-decoration: underline solid rgba(255, 255, 255, 0.3);
   text-underline-position: under;
   color: #ffffff;
 }
@@ -40,7 +41,8 @@ a:not(.button):hover,
 a:not(.button):active,
 a:not(.button):focus {
   -webkit-text-decoration: underline solid rgba(255, 188, 158, 0.3);
-          text-decoration: underline solid rgba(255, 188, 158, 0.3);
+          -moz-text-decoration: underline solid rgba(255, 188, 158, 0.3);
+       text-decoration: underline solid rgba(255, 188, 158, 0.3);
   color: #ffbc9e;
 }
 
@@ -91,11 +93,15 @@ input[type="radio"].visually-hidden {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f26843), to(#e74a35));
   background-image: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background-image: -o-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background-image: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border: none;
-  border-radius: 50px;
+  -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+          border-radius: 50px;
   -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-          box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+          -moz-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+       box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   outline: none;
 
   cursor: pointer;
@@ -107,18 +113,22 @@ input[type="radio"].visually-hidden {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
   background-image: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background-image: -o-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background-image: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background-image: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
-          box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+          -moz-box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+       box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .button:active {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d84732), to(#e1613e));
   background-image: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background-image: -o-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background-image: -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background-image: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   -webkit-box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-          box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+          -moz-box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+       box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 /* ПРАВИЛА HEADER САЙТА */
@@ -127,13 +137,20 @@ input[type="radio"].visually-hidden {
 .main-header {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
+             -moz-box-pack: justify;
           justify-content: space-between;
   width: 1146px;
   margin: 0 auto;
@@ -155,19 +172,30 @@ input[type="radio"].visually-hidden {
 .main-header .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
+             -moz-box-pack: justify;
           justify-content: space-between;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
+          -webkit-align-items: stretch;
+             -moz-box-align: stretch;
           align-items: stretch;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
+          -webkit-flex-grow: 1;
+             -moz-box-flex: 1;
           flex-grow: 1;
   z-index: 10;
 }
@@ -175,20 +203,31 @@ input[type="radio"].visually-hidden {
 .main-navigation .list-navigation-site {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
+          -webkit-justify-content: flex-start;
+             -moz-box-pack: start;
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
   -ms-flex-line-pack: stretch;
-      align-content: stretch;
+      -webkit-align-content: stretch;
+          align-content: stretch;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
+          -webkit-flex-grow: 2;
+             -moz-box-flex: 2;
           flex-grow: 2;
   margin: 0;
   margin-right: 25px;
@@ -221,7 +260,9 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   background-color: #ffffff;
-  border-radius: 50px;
+  -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+          border-radius: 50px;
 }
 
 .item-navigation-site .button-navigation:active {
@@ -229,9 +270,12 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   background-color: #ededed;
-  border-radius: 50px;
+  -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+          border-radius: 50px;
   -webkit-box-shadow: inset 0 2px 2px #696969;
-          box-shadow: inset 0 2px 2px #696969;
+          -moz-box-shadow: inset 0 2px 2px #696969;
+       box-shadow: inset 0 2px 2px #696969;
 }
 
 .item-navigation-site .button-navigation-current {
@@ -239,7 +283,9 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   background-color: #d07058;
-  border-radius: 50px;
+  -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+          border-radius: 50px;
 }
 
 .item-navigation-site .modal-list-navigation-catalog {
@@ -256,9 +302,12 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
 
   background-color: #f8f7f4;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+          -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+       box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   list-style: none;
 }
 
@@ -298,7 +347,9 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   background-color: #fbded7;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
 }
 
 .modal-item-navigation-catalog a:active {
@@ -313,7 +364,9 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 
   background-color: #d07058;
-  border-radius: 0;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
 }
 
 .modal-item-navigation-catalog b {
@@ -327,20 +380,31 @@ input[type="radio"].visually-hidden {
 .main-navigation .list-navigation-user {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
+          -webkit-justify-content: flex-end;
+             -moz-box-pack: end;
           justify-content: flex-end;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
   -ms-flex-line-pack: stretch;
-      align-content: stretch;
+      -webkit-align-content: stretch;
+          align-content: stretch;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
+          -webkit-flex-grow: 1;
+             -moz-box-flex: 1;
           flex-grow: 1;
   margin: 0;
   padding: 0;
@@ -371,7 +435,9 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 50px;
+  -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+          border-radius: 50px;
 }
 
 .item-navigation-user .button-navigation-user-search {
@@ -379,7 +445,11 @@ input[type="radio"].visually-hidden {
   height: 32px;
   padding: 0;
 
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+
+     -moz-border-radius: 50%;
+
+          border-radius: 50%;
 }
 
 .item-navigation-user .button-navigation-user:hover,
@@ -426,9 +496,12 @@ input[type="radio"].visually-hidden {
   padding: 20px 15px;
 
   background-color: #f8f7f4;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+          -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+       box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .form-search p {
@@ -438,7 +511,8 @@ input[type="radio"].visually-hidden {
 
 .form-search input[type="search"] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+       box-sizing: border-box;
   width: 100%;
   padding: 10px 15px;
 
@@ -450,7 +524,9 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   border: 2px solid rgba(178, 178, 178, 0.5);
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
 }
 
 .form-search input[type="search"]:hover {
@@ -460,6 +536,17 @@ input[type="radio"].visually-hidden {
 .form-search input[type="search"]:focus {
   border: 2px solid rgba(046, 136, 228, 0.5);
   outline: none;
+}
+
+.form-search input[type="search"]::-webkit-input-placeholder,
+.form-search input[type="search"]:-ms-input-placeholder,
+.form-search input[type="search"]::-ms-input-placeholder,
+.form-search input[type="search"]::-webkit-input-placeholder {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
 }
 
 .form-search input[type="search"]::-webkit-input-placeholder,
@@ -488,9 +575,12 @@ input[type="radio"].visually-hidden {
   padding-bottom: 0;
 
   background-color: #f8f7f4;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+          -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+       box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .modal-user p {
@@ -502,7 +592,8 @@ input[type="radio"].visually-hidden {
 .form-user input[type="email"],
 .form-user input[type="password"] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+       box-sizing: border-box;
   width: 100%;
   padding: 10px 15px;
 
@@ -514,7 +605,9 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   border: 2px solid rgba(178, 178, 178, 0.5);
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
 }
 
 .form-user input[type="email"]:hover,
@@ -526,6 +619,21 @@ input[type="radio"].visually-hidden {
 .form-user input[type="password"]:focus {
   border: 2px solid rgba(046, 136, 228, 0.5);
   outline: none;
+}
+
+.form-user input[type="email"]::-webkit-input-placeholder,
+.form-user input[type="email"]:-ms-input-placeholder,
+.form-user input[type="email"]::-ms-input-placeholder,
+.form-user input[type="email"]::-webkit-input-placeholder,
+.form-user input[type="password"]::-webkit-input-placeholder,
+.form-user input[type="password"]:-ms-input-placeholder,
+.form-user input[type="password"]::-ms-input-placeholder,
+.form-user input[type="password"]::-webkit-input-placeholder {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
 }
 
 .form-user input[type="email"]::-webkit-input-placeholder,
@@ -546,21 +654,32 @@ input[type="radio"].visually-hidden {
 .form-user .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
+             -moz-box-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
   -ms-flex-line-pack: center;
-      align-content: center;
+      -webkit-align-content: center;
+          align-content: center;
 }
 
 .form-user .button {
@@ -601,9 +720,12 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   background-color: #f8f7f4;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+          -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+       box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .modal-basket .table-basket {
@@ -651,25 +773,33 @@ input[type="radio"].visually-hidden {
 .table-basket .button-basket-close::before {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+       transform: rotate(45deg);
 }
 
 .table-basket .button-basket-close::after {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+       transform: rotate(-45deg);
 }
 
 .table-basket .button-basket-close:hover {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
-          transform: scale(1.2);
+          -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+       transform: scale(1.2);
 }
 
 .table-basket .button-basket-close:active {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
-          transform: scale(0.9);
+          -moz-transform: scale(0.9);
+            -o-transform: scale(0.9);
+       transform: scale(0.9);
 }
 
 .table-basket td:nth-of-type(2) {
@@ -688,7 +818,11 @@ input[type="radio"].visually-hidden {
   height: 33px;
   margin-top: -16px;
 
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+
+     -moz-border-radius: 50%;
+
+          border-radius: 50%;
 }
 
 .table-basket a {
@@ -727,13 +861,20 @@ input[type="radio"].visually-hidden {
 .modal-basket .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-align: end;
       -ms-flex-align: end;
+          -webkit-align-items: flex-end;
+             -moz-box-align: end;
           align-items: flex-end;
 }
 
@@ -757,16 +898,25 @@ input[type="radio"].visually-hidden {
 .operation-main {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
+          -webkit-flex-direction: column;
+             -moz-box-orient: vertical;
+             -moz-box-direction: normal;
           flex-direction: column;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
+          -webkit-justify-content: flex-start;
+             -moz-box-pack: start;
           justify-content: flex-start;
   -webkit-box-align: end;
       -ms-flex-align: end;
+          -webkit-align-items: flex-end;
+             -moz-box-align: end;
           align-items: flex-end;
   width: 1146px;
   margin: 0 auto;
@@ -856,7 +1006,9 @@ input[type="radio"].visually-hidden {
   height: 17px;
 
   border: 2px solid #ffffff;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
 
   cursor: pointer;
 }
@@ -935,18 +1087,27 @@ input[type="radio"].visually-hidden {
 .presents .list-presents {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
+             -moz-box-pack: justify;
           justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+      -webkit-align-content: flex-start;
+          align-content: flex-start;
   margin: 0;
   padding: 0;
 
@@ -956,16 +1117,25 @@ input[type="radio"].visually-hidden {
 .presents li {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
+          -webkit-flex-direction: column;
+             -moz-box-orient: vertical;
+             -moz-box-direction: normal;
           flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
+             -moz-box-pack: justify;
           justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
+          -webkit-align-items: flex-start;
+             -moz-box-align: start;
           align-items: flex-start;
   width: 560px;
   min-height: 229px;
@@ -973,7 +1143,11 @@ input[type="radio"].visually-hidden {
   margin-bottom: 35px;
   padding: 0;
 
-  border-radius: 15px;
+  -webkit-border-radius: 15px;
+
+     -moz-border-radius: 15px;
+
+          border-radius: 15px;
 }
 
 .presents .item-raspberry {
@@ -981,7 +1155,10 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/background-presents-raspberry.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
 }
 
 .presents .item-chocolate {
@@ -989,7 +1166,10 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/background-presents-chocolate.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
 }
 
 .presents h3 {
@@ -1020,7 +1200,8 @@ input[type="radio"].visually-hidden {
 .presents .button {
   max-width: 475px;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+      -webkit-align-self: flex-end;
+          align-self: flex-end;
   margin: auto;
   margin-right: 21px;
   margin-bottom: 24px;
@@ -1047,21 +1228,32 @@ input[type="radio"].visually-hidden {
 .catalog .list-catalog {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
+          -webkit-justify-content: flex-start;
+             -moz-box-pack: start;
           justify-content: flex-start;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
+          -webkit-align-items: stretch;
+             -moz-box-align: stretch;
           align-items: stretch;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
   -ms-flex-line-pack: stretch;
-      align-content: stretch;
+      -webkit-align-content: stretch;
+          align-content: stretch;
   margin: 0;
   padding: 0;
 
@@ -1073,22 +1265,33 @@ input[type="radio"].visually-hidden {
 
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
+          -webkit-flex-direction: column;
+             -moz-box-orient: vertical;
+             -moz-box-direction: normal;
           flex-direction: column;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
+          -webkit-justify-content: flex-start;
+             -moz-box-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
           align-items: center;
   width: 265px;
   margin: 0;
   margin-bottom: -50px;
   padding: 6px 14px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
 }
 
 .catalog .item-catalog:hover {
@@ -1096,12 +1299,15 @@ input[type="radio"].visually-hidden {
 
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+          -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+       box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .item-catalog .title-item-catalog {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
+          -webkit-order: 1;
+             -moz-box-ordinal-group: 2;
           order: 1;
 
   width: 258px;
@@ -1128,7 +1334,11 @@ input[type="radio"].visually-hidden {
   width: 267px;
   height: 267px;
 
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+
+     -moz-border-radius: 50%;
+
+          border-radius: 50%;
 }
 
 .item-catalog .block-price {
@@ -1152,6 +1362,8 @@ input[type="radio"].visually-hidden {
 .item-catalog .block-button {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
+          -webkit-order: 2;
+             -moz-box-ordinal-group: 3;
           order: 2;
 
   width: 286px;
@@ -1189,7 +1401,9 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-catalog-hit.svg");
   background-position: center center;
   background-repeat: no-repeat;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
 }
 
 .features {
@@ -1209,8 +1423,13 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/background-features-wafer.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 15px;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
 }
 
 .features p {
@@ -1229,21 +1448,32 @@ input[type="radio"].visually-hidden {
   padding-bottom: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
+             -moz-box-pack: justify;
           justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
+          -webkit-align-items: flex-start;
+             -moz-box-align: start;
           align-items: flex-start;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+      -webkit-align-content: flex-start;
+          align-content: flex-start;
 
   list-style: none;
 }
@@ -1299,13 +1529,20 @@ input[type="radio"].visually-hidden {
 
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
+             -moz-box-pack: justify;
           justify-content: space-between;
   width: 1146px;
   margin: 0 auto;
@@ -1324,8 +1561,13 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/background-blog-strawberry.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 15px;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
 }
 
 .new-blog h2 {
@@ -1350,7 +1592,8 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   -webkit-text-decoration: underline solid #000000;
-          text-decoration: underline solid #000000;
+          -moz-text-decoration: underline solid #000000;
+       text-decoration: underline solid #000000;
   text-underline-position: auto;
 }
 
@@ -1359,7 +1602,8 @@ input[type="radio"].visually-hidden {
   color: #e84d37;
 
   -webkit-text-decoration: underline solid rgba(232, 077, 055, 0.3);
-          text-decoration: underline solid rgba(232, 077, 055, 0.3);
+          -moz-text-decoration: underline solid rgba(232, 077, 055, 0.3);
+       text-decoration: underline solid rgba(232, 077, 055, 0.3);
 }
 
 .appointment-gradient {
@@ -1367,6 +1611,8 @@ input[type="radio"].visually-hidden {
 
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   width: 548px;
   min-height: 178px;
@@ -1374,8 +1620,11 @@ input[type="radio"].visually-hidden {
 
   background-image: -webkit-repeating-linear-gradient(315deg, #ffffff, #ffffff 10px, #92cdff 10px, #92cdff 20px, #ffffff 20px, #ffffff 30px, #fe9e90 30px, #fe9e90 40px);
   background-image: -o-repeating-linear-gradient(315deg, #ffffff, #ffffff 10px, #92cdff 10px, #92cdff 20px, #ffffff 20px, #ffffff 30px, #fe9e90 30px, #fe9e90 40px);
+  background-image: -moz-repeating-linear-gradient(315deg, #ffffff, #ffffff 10px, #92cdff 10px, #92cdff 20px, #ffffff 20px, #ffffff 30px, #fe9e90 30px, #fe9e90 40px);
   background-image: repeating-linear-gradient(135deg, #ffffff, #ffffff 10px, #92cdff 10px, #92cdff 20px, #ffffff 20px, #ffffff 30px, #fe9e90 30px, #fe9e90 40px);
-  border-radius: 15px;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
 }
 
 .appointment {
@@ -1386,7 +1635,9 @@ input[type="radio"].visually-hidden {
   color: #5a5a5a;
 
   background-color: #f8f7f4;
-  border-radius: 15px;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
 }
 
 .appointment .info-appointment {
@@ -1402,16 +1653,25 @@ input[type="radio"].visually-hidden {
 .appointment .form-appointment {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
+             -moz-box-pack: justify;
           justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
+          -webkit-align-items: flex-start;
+             -moz-box-align: start;
           align-items: flex-start;
   margin-bottom: 30px;
 }
@@ -1419,6 +1679,8 @@ input[type="radio"].visually-hidden {
 .form-appointment .row-form-appointment {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
+          -webkit-flex-grow: 1;
+             -moz-box-flex: 1;
           flex-grow: 1;
   margin: 0;
   margin-right: 10px;
@@ -1427,7 +1689,8 @@ input[type="radio"].visually-hidden {
 
 .appointment input[type="email"] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+       box-sizing: border-box;
   width: 100%;
   padding: 10px 15px;
 
@@ -1439,7 +1702,9 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   border: 2px solid rgba(178, 178, 178, 0.5);
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
 }
 
 .appointment input[type="email"]:hover {
@@ -1449,6 +1714,17 @@ input[type="radio"].visually-hidden {
 .appointment input[type="email"]:focus {
   border: 2px solid rgba(046, 136, 228, 0.5);
   outline: none;
+}
+
+.appointment input[type="email"]::-webkit-input-placeholder,
+.appointment input[type="email"]:-ms-input-placeholder,
+.appointment input[type="email"]::-ms-input-placeholder,
+.appointment input[type="email"]::-webkit-input-placeholder {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
 }
 
 .appointment input[type="email"]::-webkit-input-placeholder,
@@ -1510,7 +1786,9 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   background-color: #ffffff;
-  border-radius: 15px;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
 }
 
 .address-connection p {
@@ -1571,7 +1849,9 @@ input[type="radio"].visually-hidden {
   padding-top: 20px;
 
   background-color: #f8f7f4;
-  border-radius: 15px;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
 }
 
 .modal-connection p {
@@ -1614,7 +1894,8 @@ input[type="radio"].visually-hidden {
 .form-connection input[type="text"],
 .form-connection input[type="email"] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+       box-sizing: border-box;
   width: 62%;
   padding: 10px 15px;
 
@@ -1626,12 +1907,15 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   border: 2px solid rgba(178, 178, 178, 0.5);
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
 }
 
 .form-connection textarea {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+       box-sizing: border-box;
   width: 100%;
   min-height: 125px;
   padding: 10px 15px;
@@ -1644,7 +1928,9 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   border: 2px solid rgba(178, 178, 178, 0.5);
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
 }
 
 .form-connection input[type="text"]:hover,
@@ -1658,6 +1944,25 @@ input[type="radio"].visually-hidden {
 .form-connection textarea:focus {
   border: 2px solid rgba(046, 136, 228, 0.5);
   outline: none;
+}
+
+.form-connection input[type="text"]::-webkit-input-placeholder,
+.form-connection input[type="text"]:-ms-input-placeholder,
+.form-connection input[type="text"]::-ms-input-placeholder,
+.form-connection input[type="text"]::-webkit-input-placeholder,
+.form-connection input[type="email"]::-webkit-input-placeholder,
+.form-connection input[type="email"]:-ms-input-placeholder,
+.form-connection input[type="email"]::-ms-input-placeholder,
+.form-connection input[type="email"]::-webkit-input-placeholder,
+.form-connection textarea::-webkit-input-placeholder,
+.form-connection textarea:-ms-input-placeholder,
+.form-connection textarea::-ms-input-placeholder,
+.form-connection textarea::-webkit-input-placeholder {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
 }
 
 .form-connection input[type="text"]::-webkit-input-placeholder,
@@ -1682,13 +1987,20 @@ input[type="radio"].visually-hidden {
 .form-connection .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
+          -webkit-justify-content: flex-end;
+             -moz-box-pack: end;
           justify-content: flex-end;
 }
 
@@ -1732,25 +2044,33 @@ input[type="radio"].visually-hidden {
 .modal-connection .modal-close::before {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+       transform: rotate(45deg);
 }
 
 .modal-connection .modal-close::after {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+       transform: rotate(-45deg);
 }
 
 .modal-connection .modal-close:hover {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
-          transform: scale(1.2);
+          -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+       transform: scale(1.2);
 }
 
 .modal-connection .modal-close:active {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
-          transform: scale(0.9);
+          -moz-transform: scale(0.9);
+            -o-transform: scale(0.9);
+       transform: scale(0.9);
 }
 
 @-webkit-keyframes open-modal-connection {
@@ -1760,18 +2080,36 @@ input[type="radio"].visually-hidden {
 100% { -webkit-transform: translateX(0); transform: translateX(0); }
 }
 
+@-moz-keyframes open-modal-connection {
+0% { -webkit-transform: translateX(-2000px); -moz-transform: translateX(-2000px); transform: translateX(-2000px); }
+50% { -webkit-transform: translateX(300px); -moz-transform: translateX(300px); transform: translateX(300px); }
+75% { -webkit-transform: translateX(-40px); -moz-transform: translateX(-40px); transform: translateX(-40px); }
+100% { -webkit-transform: translateX(0); -moz-transform: translateX(0); transform: translateX(0); }
+}
+
+@-o-keyframes open-modal-connection {
+0% { -webkit-transform: translateX(-2000px); -o-transform: translateX(-2000px); transform: translateX(-2000px); }
+50% { -webkit-transform: translateX(300px); -o-transform: translateX(300px); transform: translateX(300px); }
+75% { -webkit-transform: translateX(-40px); -o-transform: translateX(-40px); transform: translateX(-40px); }
+100% { -webkit-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+}
+
 @keyframes open-modal-connection {
-0% { -webkit-transform: translateX(-2000px); transform: translateX(-2000px); }
-50% { -webkit-transform: translateX(300px); transform: translateX(300px); }
-75% { -webkit-transform: translateX(-40px); transform: translateX(-40px); }
-100% { -webkit-transform: translateX(0); transform: translateX(0); }
+0% { -webkit-transform: translateX(-2000px); -moz-transform: translateX(-2000px); -o-transform: translateX(-2000px); transform: translateX(-2000px); }
+50% { -webkit-transform: translateX(300px); -moz-transform: translateX(300px); -o-transform: translateX(300px); transform: translateX(300px); }
+75% { -webkit-transform: translateX(-40px); -moz-transform: translateX(-40px); -o-transform: translateX(-40px); transform: translateX(-40px); }
+100% { -webkit-transform: translateX(0); -moz-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
 }
 
 .js-animation-modal-open {
   -webkit-animation-name: open-modal-connection;
-          animation-name: open-modal-connection;
+          -moz-animation-name: open-modal-connection;
+            -o-animation-name: open-modal-connection;
+       animation-name: open-modal-connection;
   -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
+          -moz-animation-duration: 0.6s;
+            -o-animation-duration: 0.6s;
+       animation-duration: 0.6s;
 }
 
 @-webkit-keyframes error-modal-connection {
@@ -1780,17 +2118,33 @@ input[type="radio"].visually-hidden {
 20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
 }
 
+@-moz-keyframes error-modal-connection {
+0%, 100% { -webkit-transform: translateX(0); -moz-transform: translateX(0); transform: translateX(0); }
+10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); -moz-transform: translateX(-10px); transform: translateX(-10px); }
+20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); -moz-transform: translateX(10px); transform: translateX(10px); }
+}
+
+@-o-keyframes error-modal-connection {
+0%, 100% { -webkit-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); -o-transform: translateX(-10px); transform: translateX(-10px); }
+20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); -o-transform: translateX(10px); transform: translateX(10px); }
+}
+
 @keyframes error-modal-connection {
-0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
-10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
-20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
+0%, 100% { -webkit-transform: translateX(0); -moz-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); -moz-transform: translateX(-10px); -o-transform: translateX(-10px); transform: translateX(-10px); }
+20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); -moz-transform: translateX(10px); -o-transform: translateX(10px); transform: translateX(10px); }
 }
 
 .js-animation-modal-error {
   -webkit-animation-name: error-modal-connection;
-          animation-name: error-modal-connection;
+          -moz-animation-name: error-modal-connection;
+            -o-animation-name: error-modal-connection;
+       animation-name: error-modal-connection;
   -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+          -moz-animation-duration: 0.5s;
+            -o-animation-duration: 0.5s;
+       animation-duration: 0.5s;
 }
 
 .overlay {
@@ -1818,16 +2172,25 @@ input[type="radio"].visually-hidden {
 
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
+             -moz-box-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
           align-items: center;
   width: 1146px;
   min-height: 75px;
@@ -1838,21 +2201,32 @@ input[type="radio"].visually-hidden {
 .main-footer .list-social {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
+          -webkit-justify-content: flex-start;
+             -moz-box-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
   -ms-flex-line-pack: center;
-      align-content: center;
+      -webkit-align-content: center;
+          align-content: center;
   margin: 0;
   margin-right: 149px;
   padding: 0;
@@ -1876,7 +2250,9 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   border: 3px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
 }
 
 .button-social path,
@@ -1907,7 +2283,8 @@ input[type="radio"].visually-hidden {
   margin-top: 4px;
   padding: 0;
   -webkit-column-count: 2;
-          column-count: 2;
+          -moz-column-count: 2;
+       column-count: 2;
 
   font-size: 13px;
   line-height: 18px;
@@ -1992,13 +2369,20 @@ input[type="radio"].visually-hidden {
 .header-catalog {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
+             -moz-box-pack: justify;
           justify-content: space-between;
   width: 1146px;
   margin: 0 auto;
@@ -2008,21 +2392,32 @@ input[type="radio"].visually-hidden {
 .header-catalog .list-breadcrubs {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
+          -webkit-justify-content: flex-start;
+             -moz-box-pack: start;
           justify-content: flex-start;
   -webkit-box-align: end;
       -ms-flex-align: end;
+          -webkit-align-items: flex-end;
+             -moz-box-align: end;
           align-items: flex-end;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
   -ms-flex-line-pack: center;
-      align-content: center;
+      -webkit-align-content: center;
+          align-content: center;
   margin: 0;
   margin-right: 25px;
   padding: 0;
@@ -2087,37 +2482,57 @@ input[type="radio"].visually-hidden {
 .filters .form-filters {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
+          -webkit-justify-content: flex-start;
+             -moz-box-pack: start;
           justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
+          -webkit-align-items: flex-start;
+             -moz-box-align: start;
           align-items: flex-start;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
   -ms-flex-line-pack: justify;
-      align-content: space-between;
+      -webkit-align-content: space-between;
+          align-content: space-between;
   min-height: 130px;
 }
 
 .form-filters .block-filters {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
+          -webkit-flex-direction: column;
+             -moz-box-orient: vertical;
+             -moz-box-direction: normal;
           flex-direction: column;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
+          -webkit-justify-content: flex-start;
+             -moz-box-pack: start;
           justify-content: flex-start;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
+          -webkit-align-items: stretch;
+             -moz-box-align: stretch;
           align-items: stretch;
   margin: 0;
   margin-right: 10px;
@@ -2143,7 +2558,9 @@ input[type="radio"].visually-hidden {
 
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
-  border-radius: 50px;
+  -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+          border-radius: 50px;
 }
 
 .form-filters .block-sorting {
@@ -2185,7 +2602,8 @@ input[type="radio"].visually-hidden {
 
 .block-sorting .sorting-block-filters:focus {
   -webkit-box-shadow: 0 0 0 2px #ffffff;
-          box-shadow: 0 0 0 2px #ffffff;
+          -moz-box-shadow: 0 0 0 2px #ffffff;
+       box-shadow: 0 0 0 2px #ffffff;
   outline: none;
 }
 
@@ -2240,7 +2658,9 @@ input[type="radio"].visually-hidden {
 
   background-color: #ababab;
   border: 8px solid #ffffff;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
 
   cursor: pointer;
 }
@@ -2261,21 +2681,32 @@ input[type="radio"].visually-hidden {
 .block-fillers .list-filler {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
+          -webkit-justify-content: flex-start;
+             -moz-box-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+      -webkit-align-content: flex-start;
+          align-content: flex-start;
   margin: 0;
   padding: 0;
 
@@ -2317,12 +2748,18 @@ input[type="radio"].visually-hidden {
   margin-top: -12px;
 
   background-color: #e6ebe9;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
   -webkit-box-shadow:
     inset 0 0 0 3px #e6ebe9,
     inset 0 0 0 7px #849d8f,
     inset 0 0 0 11px #849d8f;
-          box-shadow:
+          -moz-box-shadow:
+    inset 0 0 0 3px #e6ebe9,
+    inset 0 0 0 7px #849d8f,
+    inset 0 0 0 11px #849d8f;
+       box-shadow:
     inset 0 0 0 3px #e6ebe9,
     inset 0 0 0 7px #849d8f,
     inset 0 0 0 11px #849d8f;
@@ -2333,7 +2770,11 @@ input[type="radio"].visually-hidden {
     inset 0 0 0 3px #e6ebe9,
     inset 0 0 0 7px #849d8f,
     inset 0 0 0 11px #e6ebe9;
-          box-shadow:
+          -moz-box-shadow:
+    inset 0 0 0 3px #e6ebe9,
+    inset 0 0 0 7px #849d8f,
+    inset 0 0 0 11px #e6ebe9;
+       box-shadow:
     inset 0 0 0 3px #e6ebe9,
     inset 0 0 0 7px #849d8f,
     inset 0 0 0 11px #e6ebe9;
@@ -2344,7 +2785,11 @@ input[type="radio"].visually-hidden {
     inset 0 0 0 3px #ffffff,
     inset 0 0 0 7px #849d8f,
     inset 0 0 0 11px #849d8f;
-          box-shadow:
+          -moz-box-shadow:
+    inset 0 0 0 3px #ffffff,
+    inset 0 0 0 7px #849d8f,
+    inset 0 0 0 11px #849d8f;
+       box-shadow:
     inset 0 0 0 3px #ffffff,
     inset 0 0 0 7px #849d8f,
     inset 0 0 0 11px #849d8f;
@@ -2356,7 +2801,11 @@ input[type="radio"].visually-hidden {
     inset 0 0 0 3px #ffffff,
     inset 0 0 0 7px #849d8f,
     inset 0 0 0 11px #ffffff;
-          box-shadow:
+          -moz-box-shadow:
+    inset 0 0 0 3px #ffffff,
+    inset 0 0 0 7px #849d8f,
+    inset 0 0 0 11px #ffffff;
+       box-shadow:
     inset 0 0 0 3px #ffffff,
     inset 0 0 0 7px #849d8f,
     inset 0 0 0 11px #ffffff;
@@ -2367,7 +2816,11 @@ input[type="radio"].visually-hidden {
     inset 0 0 0 3px #b5c4bc,
     inset 0 0 0 7px #849d8f,
     inset 0 0 0 11px #849d8f;
-          box-shadow:
+          -moz-box-shadow:
+    inset 0 0 0 3px #b5c4bc,
+    inset 0 0 0 7px #849d8f,
+    inset 0 0 0 11px #849d8f;
+       box-shadow:
     inset 0 0 0 3px #b5c4bc,
     inset 0 0 0 7px #849d8f,
     inset 0 0 0 11px #849d8f;
@@ -2378,7 +2831,11 @@ input[type="radio"].visually-hidden {
     inset 0 0 0 3px #b5c4bc,
     inset 0 0 0 7px #849d8f,
     inset 0 0 0 11px #b5c4bc;
-          box-shadow:
+          -moz-box-shadow:
+    inset 0 0 0 3px #b5c4bc,
+    inset 0 0 0 7px #849d8f,
+    inset 0 0 0 11px #b5c4bc;
+       box-shadow:
     inset 0 0 0 3px #b5c4bc,
     inset 0 0 0 7px #849d8f,
     inset 0 0 0 11px #b5c4bc;
@@ -2421,7 +2878,9 @@ input[type="radio"].visually-hidden {
 
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
-          transform: scale(0.9);
+          -moz-transform: scale(0.9);
+            -o-transform: scale(0.9);
+       transform: scale(0.9);
 }
 
 .checkbox-indicator path {
@@ -2460,7 +2919,9 @@ input[type="radio"].visually-hidden {
 
   background-color: #9cb0a4;
   border: 2px solid #ffffff;
-  border-radius: 50px;
+  -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+          border-radius: 50px;
   outline: none;
 
   cursor: pointer;
@@ -2484,7 +2945,8 @@ input[type="radio"].visually-hidden {
   background-color: #eaeaea;
   border: none;
   -webkit-box-shadow: inset 0 2px 2px #696969;
-          box-shadow: inset 0 2px 2px #696969;
+          -moz-box-shadow: inset 0 2px 2px #696969;
+       box-shadow: inset 0 2px 2px #696969;
 }
 
 .catalog-page .catalog {
@@ -2494,16 +2956,25 @@ input[type="radio"].visually-hidden {
 .catalog-page .list-paginator {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+             -moz-box-orient: horizontal;
+             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
+          -webkit-justify-content: flex-end;
+             -moz-box-pack: end;
           justify-content: flex-end;
   -webkit-box-align: start;
       -ms-flex-align: start;
+          -webkit-align-items: flex-start;
+             -moz-box-align: start;
           align-items: flex-start;
   width: 1146px;
   margin: 0 auto;
@@ -2536,7 +3007,11 @@ input[type="radio"].visually-hidden {
   padding: 4px 8px;
   padding-bottom: 3px;
 
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+
+     -moz-border-radius: 50%;
+
+          border-radius: 50%;
   text-decoration: none;
 }
 
@@ -2552,7 +3027,9 @@ input[type="radio"].visually-hidden {
 
   -webkit-transform: scale(1.8);
       -ms-transform: scale(1.8);
-          transform: scale(1.8);
+          -moz-transform: scale(1.8);
+            -o-transform: scale(1.8);
+       transform: scale(1.8);
 }
 
 .list-paginator button:disabled {
@@ -2575,7 +3052,9 @@ input[type="radio"].visually-hidden {
 
   -webkit-transform: scale(3);
       -ms-transform: scale(3);
-          transform: scale(3);
+          -moz-transform: scale(3);
+            -o-transform: scale(3);
+       transform: scale(3);
 }
 
 .list-paginator .button-paginator-current,
