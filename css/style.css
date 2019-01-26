@@ -13,9 +13,11 @@ body {
 .js-color-1 {
   background-color: #849d8f;
 }
+
 .js-color-2 {
   background-color: #8996a6;
 }
+
 .js-color-3 {
   background-color: #9d8b84;
 }
@@ -23,27 +25,28 @@ body {
 a {
   display: block;
 
-  text-align: center;
   vertical-align: center;
+  text-align: center;
 
   outline: none;
 }
 
 a:not(.button) {
-  -webkit-text-decoration: underline solid rgba(255, 255, 255, 0.3);
-          -moz-text-decoration: underline solid rgba(255, 255, 255, 0.3);
-       text-decoration: underline solid rgba(255, 255, 255, 0.3);
-  text-underline-position: under;
   color: #ffffff;
+  -webkit-text-decoration: underline solid rgba(255, 255, 255, 0.3);
+     -moz-text-decoration: underline solid rgba(255, 255, 255, 0.3);
+          text-decoration: underline solid rgba(255, 255, 255, 0.3);
+
+  text-underline-position: under;
 }
 
 a:not(.button):hover,
 a:not(.button):active,
 a:not(.button):focus {
-  -webkit-text-decoration: underline solid rgba(255, 188, 158, 0.3);
-          -moz-text-decoration: underline solid rgba(255, 188, 158, 0.3);
-       text-decoration: underline solid rgba(255, 188, 158, 0.3);
   color: #ffbc9e;
+  -webkit-text-decoration: underline solid rgba(255, 188, 158, 0.3);
+     -moz-text-decoration: underline solid rgba(255, 188, 158, 0.3);
+          text-decoration: underline solid rgba(255, 188, 158, 0.3);
 }
 
 img {
@@ -66,15 +69,16 @@ input[type="radio"].visually-hidden {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  overflow: hidden;
 
   white-space: nowrap;
 
+  border: 0;
+
+  clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .container {
@@ -86,24 +90,23 @@ input[type="radio"].visually-hidden {
   min-width: 100px;
   padding: 10px 15px;
 
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
 
   background-color: #f26843;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f26843), to(#e74a35));
   background-image: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-  background-image: -o-linear-gradient(top, #f26843 0%, #e74a35 100%);
-  background-image: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
-  background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  background-image:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background-image:      -o-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background-image:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border: none;
   -webkit-border-radius: 50px;
      -moz-border-radius: 50px;
           border-radius: 50px;
-  -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-          -moz-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-       box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   outline: none;
-
+  -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+     -moz-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+          box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   cursor: pointer;
 }
 
@@ -112,23 +115,23 @@ input[type="radio"].visually-hidden {
   background-color: #f07a63;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
   background-image: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background-image: -o-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background-image: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background-image: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  background-image:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background-image:      -o-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background-image:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
-          -moz-box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
-       box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+     -moz-box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+          box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .button:active {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d84732), to(#e1613e));
   background-image: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background-image: -o-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background-image: -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background-image: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  background-image:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background-image:      -o-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background-image:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   -webkit-box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-          -moz-box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-       box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+     -moz-box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+          box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 /* ПРАВИЛА HEADER САЙТА */
@@ -136,21 +139,21 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
-          -webkit-flex-direction: row;
-             -moz-box-orient: horizontal;
-             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
       -ms-flex-pack: justify;
-          -webkit-justify-content: space-between;
-             -moz-box-pack: justify;
           justify-content: space-between;
   width: 1146px;
   margin: 0 auto;
@@ -158,10 +161,11 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header .logo-gllacyshop {
+  z-index: 10;
+
   width: 154px;
   height: 64px;
   margin-right: 10px;
-  z-index: 10;
 }
 
 .main-header .logo-gllacyshop:focus {
@@ -170,74 +174,74 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header .main-navigation {
+  z-index: 10;
+
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
-          -webkit-flex-direction: row;
-             -moz-box-orient: horizontal;
-             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
       -ms-flex-pack: justify;
-          -webkit-justify-content: space-between;
-             -moz-box-pack: justify;
           justify-content: space-between;
   -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+     -moz-box-align: stretch;
       -ms-flex-align: stretch;
-          -webkit-align-items: stretch;
-             -moz-box-align: stretch;
           align-items: stretch;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          -webkit-flex-grow: 1;
-             -moz-box-flex: 1;
-          flex-grow: 1;
-  z-index: 10;
 }
 
 .main-navigation .list-navigation-site {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+     -moz-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
-          -webkit-flex-direction: row;
-             -moz-box-orient: horizontal;
-             -moz-box-direction: normal;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          -webkit-justify-content: flex-start;
-             -moz-box-pack: start;
-          justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -ms-flex-line-pack: stretch;
-      -webkit-align-content: stretch;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
           align-content: stretch;
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          -webkit-flex-grow: 2;
-             -moz-box-flex: 2;
-          flex-grow: 2;
   margin: 0;
   margin-right: 25px;
   padding: 0;
 
+  list-style: none;
+  font-weight: 700;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 700;
-
-  list-style: none;
 }
 
 .list-navigation-site .item-navigation-site {
@@ -256,8 +260,8 @@ input[type="radio"].visually-hidden {
 
 .item-navigation-site .button-navigation:hover,
 .item-navigation-site .button-navigation:focus {
-  text-decoration: none;
   color: #000000;
+  text-decoration: none;
 
   background-color: #ffffff;
   -webkit-border-radius: 50px;
@@ -266,21 +270,21 @@ input[type="radio"].visually-hidden {
 }
 
 .item-navigation-site .button-navigation:active {
-  text-decoration: none;
   color: #000000;
+  text-decoration: none;
 
   background-color: #ededed;
   -webkit-border-radius: 50px;
      -moz-border-radius: 50px;
           border-radius: 50px;
   -webkit-box-shadow: inset 0 2px 2px #696969;
-          -moz-box-shadow: inset 0 2px 2px #696969;
-       box-shadow: inset 0 2px 2px #696969;
+     -moz-box-shadow: inset 0 2px 2px #696969;
+          box-shadow: inset 0 2px 2px #696969;
 }
 
 .item-navigation-site .button-navigation-current {
-  text-decoration: none;
   color: #000000;
+  text-decoration: none;
 
   background-color: #d07058;
   -webkit-border-radius: 50px;
@@ -297,18 +301,18 @@ input[type="radio"].visually-hidden {
   margin-left: -6px;
   padding: 0;
 
+  list-style: none;
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400;
 
   background-color: #f8f7f4;
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-          -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-       box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-  list-style: none;
+     -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .modal-list-navigation-catalog .modal-item-navigation-catalog {
@@ -324,7 +328,6 @@ input[type="radio"].visually-hidden {
 
 .modal-list-navigation-catalog .modal-item-navigation-catalog:first-child::after {
   content: "";
-
   position: absolute;
   right: 5%;
   bottom: 0;
@@ -360,8 +363,8 @@ input[type="radio"].visually-hidden {
 
 .modal-item-navigation-catalog .modal-button-navigation-catalog-current,
 .modal-item-navigation-catalog .modal-button-navigation-catalog-current:hover {
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
 
   background-color: #d07058;
   -webkit-border-radius: 0;
@@ -379,41 +382,40 @@ input[type="radio"].visually-hidden {
 
 .main-navigation .list-navigation-user {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
-          -webkit-flex-direction: row;
-             -moz-box-orient: horizontal;
-             -moz-box-direction: normal;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          -webkit-justify-content: flex-end;
-             -moz-box-pack: end;
-          justify-content: flex-end;
-  -ms-flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -ms-flex-line-pack: stretch;
-      -webkit-align-content: stretch;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+     -moz-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
           align-content: stretch;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          -webkit-flex-grow: 1;
-             -moz-box-flex: 1;
-          flex-grow: 1;
   margin: 0;
   padding: 0;
 
+  list-style: none;
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 500;
-
-  list-style: none;
 }
 
 .list-navigation-user .item-navigation-user {
@@ -431,8 +433,8 @@ input[type="radio"].visually-hidden {
   padding-bottom: 6px;
   padding-left: 45px;
 
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
 
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 50px;
@@ -446,17 +448,15 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   -webkit-border-radius: 50%;
-
      -moz-border-radius: 50%;
-
           border-radius: 50%;
 }
 
 .item-navigation-user .button-navigation-user:hover,
 .item-navigation-user .button-navigation-user:focus,
 .item-navigation-user .button-navigation-user-basket-full {
-  text-decoration: none;
   color: #000000;
+  text-decoration: none;
 
   background-color: #ffffff;
 }
@@ -500,8 +500,8 @@ input[type="radio"].visually-hidden {
      -moz-border-radius: 5px;
           border-radius: 5px;
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-          -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-       box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+     -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .form-search p {
@@ -511,15 +511,15 @@ input[type="radio"].visually-hidden {
 
 .form-search input[type="search"] {
   -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-       box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   padding: 10px 15px;
 
-  font-family: inherit;
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
+  font-family: inherit;
   color: #000000;
 
   background-color: #ffffff;
@@ -542,10 +542,10 @@ input[type="radio"].visually-hidden {
 .form-search input[type="search"]:-ms-input-placeholder,
 .form-search input[type="search"]::-ms-input-placeholder,
 .form-search input[type="search"]::-webkit-input-placeholder {
-  font-family: inherit;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+  font-family: inherit;
   color: #999999;
 }
 
@@ -553,10 +553,10 @@ input[type="radio"].visually-hidden {
 .form-search input[type="search"]:-ms-input-placeholder,
 .form-search input[type="search"]::-ms-input-placeholder,
 .form-search input[type="search"]::placeholder {
-  font-family: inherit;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+  font-family: inherit;
   color: #999999;
 }
 
@@ -579,8 +579,8 @@ input[type="radio"].visually-hidden {
      -moz-border-radius: 5px;
           border-radius: 5px;
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-          -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-       box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+     -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .modal-user p {
@@ -592,15 +592,15 @@ input[type="radio"].visually-hidden {
 .form-user input[type="email"],
 .form-user input[type="password"] {
   -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-       box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   padding: 10px 15px;
 
-  font-family: inherit;
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
+  font-family: inherit;
   color: #000000;
 
   background-color: #ffffff;
@@ -624,62 +624,47 @@ input[type="radio"].visually-hidden {
 .form-user input[type="email"]::-webkit-input-placeholder,
 .form-user input[type="email"]:-ms-input-placeholder,
 .form-user input[type="email"]::-ms-input-placeholder,
-.form-user input[type="email"]::-webkit-input-placeholder,
-.form-user input[type="password"]::-webkit-input-placeholder,
-.form-user input[type="password"]:-ms-input-placeholder,
-.form-user input[type="password"]::-ms-input-placeholder,
-.form-user input[type="password"]::-webkit-input-placeholder {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #999999;
-}
-
-.form-user input[type="email"]::-webkit-input-placeholder,
-.form-user input[type="email"]:-ms-input-placeholder,
-.form-user input[type="email"]::-ms-input-placeholder,
 .form-user input[type="email"]::placeholder,
 .form-user input[type="password"]::-webkit-input-placeholder,
 .form-user input[type="password"]:-ms-input-placeholder,
 .form-user input[type="password"]::-ms-input-placeholder,
 .form-user input[type="password"]::placeholder {
-  font-family: inherit;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+  font-family: inherit;
   color: #999999;
 }
 
 .form-user .wrapper {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
-          -webkit-flex-direction: row;
-             -moz-box-orient: horizontal;
-             -moz-box-direction: normal;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          -webkit-justify-content: space-between;
-             -moz-box-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          -webkit-align-items: center;
-             -moz-box-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      -webkit-align-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
           align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .form-user .button {
@@ -687,18 +672,18 @@ input[type="radio"].visually-hidden {
   padding-right: 25px;
   padding-left: 25px;
 
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
 }
 
 .form-user a {
+  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  font-weight: 400;
   text-align: left;
-  text-decoration: underline;
   color: #000000;
+  text-decoration: underline;
 }
 
 .item-navigation-user-login-link:hover .modal-user {
@@ -714,9 +699,9 @@ input[type="radio"].visually-hidden {
   margin-top: 4px;
   padding: 15px;
 
+  font-weight: 400;
   font-size: 13px;
   line-height: 16px;
-  font-weight: 400;
   color: #000000;
 
   background-color: #f8f7f4;
@@ -724,8 +709,8 @@ input[type="radio"].visually-hidden {
      -moz-border-radius: 5px;
           border-radius: 5px;
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-          -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-       box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+     -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .modal-basket .table-basket {
@@ -738,8 +723,8 @@ input[type="radio"].visually-hidden {
 .table-basket td {
   padding: 10px 12px;
 
-  text-align: center;
   vertical-align: center;
+  text-align: center;
 }
 
 .table-basket .cell-basket-close {
@@ -749,17 +734,17 @@ input[type="radio"].visually-hidden {
 
 .table-basket .button-basket-close {
   position: relative;
+
   width: 11px;
   height: 11px;
 
-  border: none;
   background-color: transparent;
+  border: none;
 }
 
 .table-basket .button-basket-close::before,
 .table-basket .button-basket-close::after {
   content: "";
-
   position: absolute;
   top: 5px;
   left: 0;
@@ -772,40 +757,40 @@ input[type="radio"].visually-hidden {
 
 .table-basket .button-basket-close::before {
   -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
-          -moz-transform: rotate(45deg);
-            -o-transform: rotate(45deg);
-       transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .table-basket .button-basket-close::after {
   -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
-          -moz-transform: rotate(-45deg);
-            -o-transform: rotate(-45deg);
-       transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .table-basket .button-basket-close:hover {
   -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
       -ms-transform: scale(1.2);
-          -moz-transform: scale(1.2);
-            -o-transform: scale(1.2);
-       transform: scale(1.2);
+       -o-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .table-basket .button-basket-close:active {
   -webkit-transform: scale(0.9);
+     -moz-transform: scale(0.9);
       -ms-transform: scale(0.9);
-          -moz-transform: scale(0.9);
-            -o-transform: scale(0.9);
-       transform: scale(0.9);
+       -o-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .table-basket td:nth-of-type(2) {
   position: relative;
 
-  width:228px;
+  width: 228px;
   padding-left: 53px;
 }
 
@@ -819,19 +804,17 @@ input[type="radio"].visually-hidden {
   margin-top: -16px;
 
   -webkit-border-radius: 50%;
-
      -moz-border-radius: 50%;
-
           border-radius: 50%;
 }
 
 .table-basket a {
+  font-weight: 400;
   font-size: 13px;
   line-height: 16px;
-  font-weight: 400;
   text-align: left;
-  text-decoration: none;
   color: #000000;
+  text-decoration: none;
 }
 
 .table-basket span {
@@ -839,42 +822,45 @@ input[type="radio"].visually-hidden {
 }
 
 .table-basket .row-total {
+  font-weight: 700;
   font-size: 15px;
   line-height: 18px;
-  font-weight: 700;
 }
 
 .row-total th {
   padding: 15px 0;
+
   text-align: right;
 }
+
 .row-total td {
   padding: 15px 0;
   padding-left: 4px;
 
   text-align: left;
 }
+
 .table-basket tr:nth-last-child(2) {
   border-bottom: 1px solid #cacac7;
 }
 
 .modal-basket .wrapper {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
-          -webkit-flex-direction: row;
-             -moz-box-orient: horizontal;
-             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+     -moz-box-align: end;
       -ms-flex-align: end;
-          -webkit-align-items: flex-end;
-             -moz-box-align: end;
           align-items: flex-end;
 }
 
@@ -883,9 +869,9 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   padding: 15px;
 
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
 }
 
 .item-navigation-user-basket-full:hover .modal-basket {
@@ -897,26 +883,26 @@ input[type="radio"].visually-hidden {
 
 .operation-main {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
       -ms-flex-direction: column;
-          -webkit-flex-direction: column;
-             -moz-box-orient: vertical;
-             -moz-box-direction: normal;
           flex-direction: column;
   -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
       -ms-flex-pack: start;
-          -webkit-justify-content: flex-start;
-             -moz-box-pack: start;
           justify-content: flex-start;
   -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+     -moz-box-align: end;
       -ms-flex-align: end;
-          -webkit-align-items: flex-end;
-             -moz-box-align: end;
           align-items: flex-end;
   width: 1146px;
   margin: 0 auto;
@@ -934,15 +920,15 @@ input[type="radio"].visually-hidden {
 .operation .mode {
   margin-bottom: 4px;
 
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 700;
 }
 
 .operation .phone {
+  font-weight: 700;
   font-size: 22px;
   line-height: 24px;
-  font-weight: 700;
 }
 
 .advertising {
@@ -958,8 +944,8 @@ input[type="radio"].visually-hidden {
 
   background-color: transparent;
   background-image: url("../img/advertising-sentence-1.png");
-  background-position: top center;
   background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .advertising::before,
@@ -1009,7 +995,6 @@ input[type="radio"].visually-hidden {
   -webkit-border-radius: 50%;
      -moz-border-radius: 50%;
           border-radius: 50%;
-
   cursor: pointer;
 }
 
@@ -1060,19 +1045,19 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   margin-bottom: 31px;
 
+  font-weight: 700;
   font-size: 60px;
   line-height: 60px;
-  font-weight: 700;
 }
 
 .list-advertising .button {
   display: inline-block;
   padding: 10px 40px;
 
-  vertical-align: baseline;
+  font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  font-weight: 700;
+  vertical-align: baseline;
   color: #ffffff;
 }
 
@@ -1086,27 +1071,27 @@ input[type="radio"].visually-hidden {
 
 .presents .list-presents {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
-          -webkit-flex-direction: row;
-             -moz-box-orient: horizontal;
-             -moz-box-direction: normal;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          -webkit-justify-content: space-between;
-             -moz-box-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -ms-flex-line-pack: start;
-      -webkit-align-content: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
           align-content: flex-start;
   margin: 0;
   padding: 0;
@@ -1116,26 +1101,26 @@ input[type="radio"].visually-hidden {
 
 .presents li {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
       -ms-flex-direction: column;
-          -webkit-flex-direction: column;
-             -moz-box-orient: vertical;
-             -moz-box-direction: normal;
           flex-direction: column;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
       -ms-flex-pack: justify;
-          -webkit-justify-content: space-between;
-             -moz-box-pack: justify;
           justify-content: space-between;
   -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
       -ms-flex-align: start;
-          -webkit-align-items: flex-start;
-             -moz-box-align: start;
           align-items: flex-start;
   width: 560px;
   min-height: 229px;
@@ -1144,17 +1129,15 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   -webkit-border-radius: 15px;
-
      -moz-border-radius: 15px;
-
           border-radius: 15px;
 }
 
 .presents .item-raspberry {
   background-color: #671223;
   background-image: url("../img/background-presents-raspberry.jpg");
-  background-position: center center;
   background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
@@ -1164,8 +1147,8 @@ input[type="radio"].visually-hidden {
 .presents .item-chocolate {
   background-color: #3c2317;
   background-image: url("../img/background-presents-chocolate.jpg");
-  background-position: center center;
   background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
@@ -1179,9 +1162,9 @@ input[type="radio"].visually-hidden {
   margin-bottom: 15px;
   padding: 0;
 
+  font-weight: 700;
   font-size: 35px;
   line-height: 41px;
-  font-weight: 700;
 }
 
 .presents p {
@@ -1190,27 +1173,26 @@ input[type="radio"].visually-hidden {
   margin-bottom: 25px;
   padding: 0;
 
-  white-space: pre-wrap;
-
+  font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  font-weight: 700;
+  white-space: pre-wrap;
 }
 
 .presents .button {
-  max-width: 475px;
-  -ms-flex-item-align: end;
-      -webkit-align-self: flex-end;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
           align-self: flex-end;
+  max-width: 475px;
   margin: auto;
   margin-right: 21px;
   margin-bottom: 24px;
   padding-right: 23px;
   padding-left: 22px;
 
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
 }
 
 .catalog {
@@ -1222,38 +1204,38 @@ input[type="radio"].visually-hidden {
   position: relative;
   z-index: 2;
 
-  margin-bottom: 6px
+  margin-bottom: 6px;
 }
 
 .catalog .list-catalog {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
-          -webkit-flex-direction: row;
-             -moz-box-orient: horizontal;
-             -moz-box-direction: normal;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          -webkit-justify-content: flex-start;
-             -moz-box-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          -webkit-align-items: stretch;
-             -moz-box-align: stretch;
-          align-items: stretch;
-  -ms-flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -ms-flex-line-pack: stretch;
-      -webkit-align-content: stretch;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
           align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+     -moz-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   margin: 0;
   padding: 0;
 
@@ -1264,31 +1246,32 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
       -ms-flex-direction: column;
-          -webkit-flex-direction: column;
-             -moz-box-orient: vertical;
-             -moz-box-direction: normal;
           flex-direction: column;
   -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
       -ms-flex-pack: start;
-          -webkit-justify-content: flex-start;
-             -moz-box-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
       -ms-flex-align: center;
-          -webkit-align-items: center;
-             -moz-box-align: center;
           align-items: center;
   width: 265px;
   margin: 0;
   margin-bottom: -50px;
   padding: 6px 14px;
+
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
@@ -1299,17 +1282,16 @@ input[type="radio"].visually-hidden {
 
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-          -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-       box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+     -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .item-catalog .title-item-catalog {
   -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+     -moz-box-ordinal-group: 2;
       -ms-flex-order: 1;
-          -webkit-order: 1;
-             -moz-box-ordinal-group: 2;
           order: 1;
-
   width: 258px;
   min-height: 42px;
 }
@@ -1318,9 +1300,9 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 500;
   text-align: center;
 }
 
@@ -1335,9 +1317,7 @@ input[type="radio"].visually-hidden {
   height: 267px;
 
   -webkit-border-radius: 50%;
-
      -moz-border-radius: 50%;
-
           border-radius: 50%;
 }
 
@@ -1348,24 +1328,23 @@ input[type="radio"].visually-hidden {
 }
 
 .block-price .price {
+  font-weight: 700;
   font-size: 45px;
   line-height: 45px;
-  font-weight: 700;
 }
 
 .block-price .weight {
+  font-weight: 700;
   font-size: 30px;
   line-height: 45px;
-  font-weight: 700;
 }
 
 .item-catalog .block-button {
   -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+     -moz-box-ordinal-group: 3;
       -ms-flex-order: 2;
-          -webkit-order: 2;
-             -moz-box-ordinal-group: 3;
           order: 2;
-
   width: 286px;
   min-height: 76px;
   margin: 0;
@@ -1382,14 +1361,13 @@ input[type="radio"].visually-hidden {
   margin: 0 40px;
   margin-top: 17px;
 
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
 }
 
 .catalog .item-catalog-hit::before {
   content: "";
-
   position: absolute;
   top: 4px;
   left: 11px;
@@ -1399,8 +1377,8 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   background-image: url("../img/icon-catalog-hit.svg");
-  background-position: center center;
   background-repeat: no-repeat;
+  background-position: center center;
   -webkit-border-radius: 50%;
      -moz-border-radius: 50%;
           border-radius: 50%;
@@ -1421,8 +1399,8 @@ input[type="radio"].visually-hidden {
 
   background-color: #ebdec1;
   background-image: url("../img/background-features-wafer.jpg");
-  background-position: center center;
   background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
@@ -1436,44 +1414,44 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 
+  font-weight: 500;
   font-size: 24px;
   line-height: 30px;
-  font-weight: 500;
 }
 
 .features .list-features {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-content: flex-start;
+        -ms-flex-line-pack: start;
+          align-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 0;
   padding: 0;
   padding-right: 5px;
   padding-bottom: 22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          -webkit-flex-direction: row;
-             -moz-box-orient: horizontal;
-             -moz-box-direction: normal;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          -webkit-justify-content: space-between;
-             -moz-box-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          -webkit-align-items: flex-start;
-             -moz-box-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -ms-flex-line-pack: start;
-      -webkit-align-content: flex-start;
-          align-content: flex-start;
 
   list-style: none;
 }
@@ -1487,14 +1465,13 @@ input[type="radio"].visually-hidden {
   padding-top: 22px;
   padding-left: 56px;
 
+  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
 }
 
 .features .item-feature::before {
   content: "";
-
   position: absolute;
   top: 8px;
   left: 0;
@@ -1503,8 +1480,8 @@ input[type="radio"].visually-hidden {
   height: 49px;
 
   background-color: transparent;
-  background-position: center center;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .features .item-feature-ice-cream::before {
@@ -1528,21 +1505,21 @@ input[type="radio"].visually-hidden {
   z-index: 1;
 
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
-          -webkit-flex-direction: row;
-             -moz-box-orient: horizontal;
-             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
       -ms-flex-pack: justify;
-          -webkit-justify-content: space-between;
-             -moz-box-pack: justify;
           justify-content: space-between;
   width: 1146px;
   margin: 0 auto;
@@ -1559,8 +1536,8 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   background-image: url("../img/background-blog-strawberry.jpg");
-  background-position: center center;
   background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
@@ -1576,24 +1553,24 @@ input[type="radio"].visually-hidden {
   margin-bottom: 4px;
   padding: 0;
 
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 500;
 }
 
 .new-blog a {
   width: 285px;
   margin-bottom: 25px;
 
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  font-weight: 700;
   text-align: left;
   color: #000000;
-
   -webkit-text-decoration: underline solid #000000;
-          -moz-text-decoration: underline solid #000000;
-       text-decoration: underline solid #000000;
+     -moz-text-decoration: underline solid #000000;
+          text-decoration: underline solid #000000;
+
   text-underline-position: auto;
 }
 
@@ -1610,18 +1587,18 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   width: 548px;
   min-height: 178px;
   padding: 6px;
 
   background-image: -webkit-repeating-linear-gradient(315deg, #ffffff, #ffffff 10px, #92cdff 10px, #92cdff 20px, #ffffff 20px, #ffffff 30px, #fe9e90 30px, #fe9e90 40px);
-  background-image: -o-repeating-linear-gradient(315deg, #ffffff, #ffffff 10px, #92cdff 10px, #92cdff 20px, #ffffff 20px, #ffffff 30px, #fe9e90 30px, #fe9e90 40px);
-  background-image: -moz-repeating-linear-gradient(315deg, #ffffff, #ffffff 10px, #92cdff 10px, #92cdff 20px, #ffffff 20px, #ffffff 30px, #fe9e90 30px, #fe9e90 40px);
-  background-image: repeating-linear-gradient(135deg, #ffffff, #ffffff 10px, #92cdff 10px, #92cdff 20px, #ffffff 20px, #ffffff 30px, #fe9e90 30px, #fe9e90 40px);
+  background-image:    -moz-repeating-linear-gradient(315deg, #ffffff, #ffffff 10px, #92cdff 10px, #92cdff 20px, #ffffff 20px, #ffffff 30px, #fe9e90 30px, #fe9e90 40px);
+  background-image:      -o-repeating-linear-gradient(315deg, #ffffff, #ffffff 10px, #92cdff 10px, #92cdff 20px, #ffffff 20px, #ffffff 30px, #fe9e90 30px, #fe9e90 40px);
+  background-image:         repeating-linear-gradient(135deg, #ffffff, #ffffff 10px, #92cdff 10px, #92cdff 20px, #ffffff 20px, #ffffff 30px, #fe9e90 30px, #fe9e90 40px);
   -webkit-border-radius: 15px;
      -moz-border-radius: 15px;
           border-radius: 15px;
@@ -1645,42 +1622,42 @@ input[type="radio"].visually-hidden {
   margin-bottom: 35px;
   padding: 0;
 
+  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
 }
 
 .appointment .form-appointment {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
-          -webkit-flex-direction: row;
-             -moz-box-orient: horizontal;
-             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
       -ms-flex-pack: justify;
-          -webkit-justify-content: space-between;
-             -moz-box-pack: justify;
           justify-content: space-between;
   -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
       -ms-flex-align: start;
-          -webkit-align-items: flex-start;
-             -moz-box-align: start;
           align-items: flex-start;
   margin-bottom: 30px;
 }
 
 .form-appointment .row-form-appointment {
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
       -ms-flex-positive: 1;
-          -webkit-flex-grow: 1;
-             -moz-box-flex: 1;
           flex-grow: 1;
   margin: 0;
   margin-right: 10px;
@@ -1689,15 +1666,15 @@ input[type="radio"].visually-hidden {
 
 .appointment input[type="email"] {
   -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-       box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   padding: 10px 15px;
 
-  font-family: inherit;
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
+  font-family: inherit;
   color: #000000;
 
   background-color: #ffffff;
@@ -1719,22 +1696,11 @@ input[type="radio"].visually-hidden {
 .appointment input[type="email"]::-webkit-input-placeholder,
 .appointment input[type="email"]:-ms-input-placeholder,
 .appointment input[type="email"]::-ms-input-placeholder,
-.appointment input[type="email"]::-webkit-input-placeholder {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #999999;
-}
-
-.appointment input[type="email"]::-webkit-input-placeholder,
-.appointment input[type="email"]:-ms-input-placeholder,
-.appointment input[type="email"]::-ms-input-placeholder,
 .appointment input[type="email"]::placeholder {
-  font-family: inherit;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+  font-family: inherit;
   color: #999999;
 }
 
@@ -1745,9 +1711,9 @@ input[type="radio"].visually-hidden {
   padding-bottom: 13px;
   padding-left: 17px;
 
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
 }
 
 .map {
@@ -1761,6 +1727,7 @@ input[type="radio"].visually-hidden {
 .map-yandex {
   position: relative;
   z-index: 2;
+
   border: 0;
 }
 
@@ -1782,8 +1749,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 29px 25px;
 
-  font-style: normal;
   color: #000000;
+  font-style: normal;
 
   background-color: #ffffff;
   -webkit-border-radius: 15px;
@@ -1796,9 +1763,9 @@ input[type="radio"].visually-hidden {
   margin-bottom: 19px;
   padding: 0;
 
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
 }
 
 .address-connection .block-phone {
@@ -1812,9 +1779,9 @@ input[type="radio"].visually-hidden {
 .address-connection b {
   display: block;
 
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
 }
 
 .address-connection .row-address {
@@ -1832,9 +1799,9 @@ input[type="radio"].visually-hidden {
   padding-bottom: 12px;
   padding-left: 28px;
 
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
 }
 
 .modal-connection {
@@ -1861,11 +1828,10 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-connection b {
-  color: #000000;
-
+  font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  font-weight: 500;
+  color: #000000;
 }
 
 .modal-connection .block-connection-call {
@@ -1894,15 +1860,15 @@ input[type="radio"].visually-hidden {
 .form-connection input[type="text"],
 .form-connection input[type="email"] {
   -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-       box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   width: 62%;
   padding: 10px 15px;
 
-  font-family: inherit;
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
+  font-family: inherit;
   color: #000000;
 
   background-color: #ffffff;
@@ -1914,16 +1880,16 @@ input[type="radio"].visually-hidden {
 
 .form-connection textarea {
   -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-       box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   min-height: 125px;
   padding: 10px 15px;
 
-  font-family: inherit;
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
+  font-family: inherit;
   color: #000000;
 
   background-color: #ffffff;
@@ -1949,25 +1915,6 @@ input[type="radio"].visually-hidden {
 .form-connection input[type="text"]::-webkit-input-placeholder,
 .form-connection input[type="text"]:-ms-input-placeholder,
 .form-connection input[type="text"]::-ms-input-placeholder,
-.form-connection input[type="text"]::-webkit-input-placeholder,
-.form-connection input[type="email"]::-webkit-input-placeholder,
-.form-connection input[type="email"]:-ms-input-placeholder,
-.form-connection input[type="email"]::-ms-input-placeholder,
-.form-connection input[type="email"]::-webkit-input-placeholder,
-.form-connection textarea::-webkit-input-placeholder,
-.form-connection textarea:-ms-input-placeholder,
-.form-connection textarea::-ms-input-placeholder,
-.form-connection textarea::-webkit-input-placeholder {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #999999;
-}
-
-.form-connection input[type="text"]::-webkit-input-placeholder,
-.form-connection input[type="text"]:-ms-input-placeholder,
-.form-connection input[type="text"]::-ms-input-placeholder,
 .form-connection input[type="text"]::placeholder,
 .form-connection input[type="email"]::-webkit-input-placeholder,
 .form-connection input[type="email"]:-ms-input-placeholder,
@@ -1977,30 +1924,30 @@ input[type="radio"].visually-hidden {
 .form-connection textarea:-ms-input-placeholder,
 .form-connection textarea::-ms-input-placeholder,
 .form-connection textarea::placeholder {
-  font-family: inherit;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+  font-family: inherit;
   color: #999999;
 }
 
 .form-connection .wrapper {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
-          -webkit-flex-direction: row;
-             -moz-box-orient: horizontal;
-             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+     -moz-box-pack: end;
       -ms-flex-pack: end;
-          -webkit-justify-content: flex-end;
-             -moz-box-pack: end;
           justify-content: flex-end;
 }
 
@@ -2010,9 +1957,9 @@ input[type="radio"].visually-hidden {
   padding-bottom: 12px;
   padding-left: 24px;
 
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
 }
 
 .modal-connection .modal-close {
@@ -2023,14 +1970,13 @@ input[type="radio"].visually-hidden {
   width: 17px;
   height: 17px;
 
-  border: none;
   background-color: transparent;
+  border: none;
 }
 
 .modal-connection .modal-close::before,
 .modal-connection .modal-close::after {
   content: "";
-
   position: absolute;
   top: 7px;
   left: 0;
@@ -2043,108 +1989,238 @@ input[type="radio"].visually-hidden {
 
 .modal-connection .modal-close::before {
   -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
-          -moz-transform: rotate(45deg);
-            -o-transform: rotate(45deg);
-       transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .modal-connection .modal-close::after {
   -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
-          -moz-transform: rotate(-45deg);
-            -o-transform: rotate(-45deg);
-       transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .modal-connection .modal-close:hover {
   -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
       -ms-transform: scale(1.2);
-          -moz-transform: scale(1.2);
-            -o-transform: scale(1.2);
-       transform: scale(1.2);
+       -o-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .modal-connection .modal-close:active {
   -webkit-transform: scale(0.9);
+     -moz-transform: scale(0.9);
       -ms-transform: scale(0.9);
-          -moz-transform: scale(0.9);
-            -o-transform: scale(0.9);
-       transform: scale(0.9);
+       -o-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 @-webkit-keyframes open-modal-connection {
-0% { -webkit-transform: translateX(-2000px); transform: translateX(-2000px); }
-50% { -webkit-transform: translateX(300px); transform: translateX(300px); }
-75% { -webkit-transform: translateX(-40px); transform: translateX(-40px); }
-100% { -webkit-transform: translateX(0); transform: translateX(0); }
+  0% {
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px);
+  }
+  50% {
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+  }
+  75% {
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 @-moz-keyframes open-modal-connection {
-0% { -webkit-transform: translateX(-2000px); -moz-transform: translateX(-2000px); transform: translateX(-2000px); }
-50% { -webkit-transform: translateX(300px); -moz-transform: translateX(300px); transform: translateX(300px); }
-75% { -webkit-transform: translateX(-40px); -moz-transform: translateX(-40px); transform: translateX(-40px); }
-100% { -webkit-transform: translateX(0); -moz-transform: translateX(0); transform: translateX(0); }
+  0% {
+    -moz-transform: translateX(-2000px);
+         transform: translateX(-2000px);
+  }
+  50% {
+    -moz-transform: translateX(300px);
+         transform: translateX(300px);
+  }
+  75% {
+    -moz-transform: translateX(-40px);
+         transform: translateX(-40px);
+  }
+  100% {
+    -moz-transform: translateX(0);
+         transform: translateX(0);
+  }
 }
 
 @-o-keyframes open-modal-connection {
-0% { -webkit-transform: translateX(-2000px); -o-transform: translateX(-2000px); transform: translateX(-2000px); }
-50% { -webkit-transform: translateX(300px); -o-transform: translateX(300px); transform: translateX(300px); }
-75% { -webkit-transform: translateX(-40px); -o-transform: translateX(-40px); transform: translateX(-40px); }
-100% { -webkit-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+  0% {
+    -o-transform: translateX(-2000px);
+       transform: translateX(-2000px);
+  }
+  50% {
+    -o-transform: translateX(300px);
+       transform: translateX(300px);
+  }
+  75% {
+    -o-transform: translateX(-40px);
+       transform: translateX(-40px);
+  }
+  100% {
+    -o-transform: translateX(0);
+       transform: translateX(0);
+  }
 }
 
 @keyframes open-modal-connection {
-0% { -webkit-transform: translateX(-2000px); -moz-transform: translateX(-2000px); -o-transform: translateX(-2000px); transform: translateX(-2000px); }
-50% { -webkit-transform: translateX(300px); -moz-transform: translateX(300px); -o-transform: translateX(300px); transform: translateX(300px); }
-75% { -webkit-transform: translateX(-40px); -moz-transform: translateX(-40px); -o-transform: translateX(-40px); transform: translateX(-40px); }
-100% { -webkit-transform: translateX(0); -moz-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+  0% {
+    -webkit-transform: translateX(-2000px);
+       -moz-transform: translateX(-2000px);
+         -o-transform: translateX(-2000px);
+            transform: translateX(-2000px);
+  }
+  50% {
+    -webkit-transform: translateX(300px);
+       -moz-transform: translateX(300px);
+         -o-transform: translateX(300px);
+            transform: translateX(300px);
+  }
+  75% {
+    -webkit-transform: translateX(-40px);
+       -moz-transform: translateX(-40px);
+         -o-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+       -moz-transform: translateX(0);
+         -o-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .js-animation-modal-open {
   -webkit-animation-name: open-modal-connection;
-          -moz-animation-name: open-modal-connection;
-            -o-animation-name: open-modal-connection;
-       animation-name: open-modal-connection;
+     -moz-animation-name: open-modal-connection;
+       -o-animation-name: open-modal-connection;
+          animation-name: open-modal-connection;
   -webkit-animation-duration: 0.6s;
-          -moz-animation-duration: 0.6s;
-            -o-animation-duration: 0.6s;
-       animation-duration: 0.6s;
+     -moz-animation-duration: 0.6s;
+       -o-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 @-webkit-keyframes error-modal-connection {
-0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
-10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
-20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
 }
 
 @-moz-keyframes error-modal-connection {
-0%, 100% { -webkit-transform: translateX(0); -moz-transform: translateX(0); transform: translateX(0); }
-10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); -moz-transform: translateX(-10px); transform: translateX(-10px); }
-20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); -moz-transform: translateX(10px); transform: translateX(10px); }
+  0%,
+  100% {
+    -moz-transform: translateX(0);
+         transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -moz-transform: translateX(-10px);
+         transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -moz-transform: translateX(10px);
+         transform: translateX(10px);
+  }
 }
 
 @-o-keyframes error-modal-connection {
-0%, 100% { -webkit-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
-10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); -o-transform: translateX(-10px); transform: translateX(-10px); }
-20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); -o-transform: translateX(10px); transform: translateX(10px); }
+  0%,
+  100% {
+    -o-transform: translateX(0);
+       transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -o-transform: translateX(-10px);
+       transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -o-transform: translateX(10px);
+       transform: translateX(10px);
+  }
 }
 
 @keyframes error-modal-connection {
-0%, 100% { -webkit-transform: translateX(0); -moz-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
-10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); -moz-transform: translateX(-10px); -o-transform: translateX(-10px); transform: translateX(-10px); }
-20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); -moz-transform: translateX(10px); -o-transform: translateX(10px); transform: translateX(10px); }
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+       -moz-transform: translateX(0);
+         -o-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+       -moz-transform: translateX(-10px);
+         -o-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+       -moz-transform: translateX(10px);
+         -o-transform: translateX(10px);
+            transform: translateX(10px);
+  }
 }
 
 .js-animation-modal-error {
   -webkit-animation-name: error-modal-connection;
-          -moz-animation-name: error-modal-connection;
-            -o-animation-name: error-modal-connection;
-       animation-name: error-modal-connection;
+     -moz-animation-name: error-modal-connection;
+       -o-animation-name: error-modal-connection;
+          animation-name: error-modal-connection;
   -webkit-animation-duration: 0.5s;
-          -moz-animation-duration: 0.5s;
-            -o-animation-duration: 0.5s;
-       animation-duration: 0.5s;
+     -moz-animation-duration: 0.5s;
+       -o-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 .overlay {
@@ -2171,26 +2247,26 @@ input[type="radio"].visually-hidden {
   z-index: 1;
 
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
-          -webkit-flex-direction: row;
-             -moz-box-orient: horizontal;
-             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
       -ms-flex-pack: justify;
-          -webkit-justify-content: space-between;
-             -moz-box-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
       -ms-flex-align: center;
-          -webkit-align-items: center;
-             -moz-box-align: center;
           align-items: center;
   width: 1146px;
   min-height: 75px;
@@ -2200,33 +2276,33 @@ input[type="radio"].visually-hidden {
 
 .main-footer .list-social {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
-          -webkit-flex-direction: row;
-             -moz-box-orient: horizontal;
-             -moz-box-direction: normal;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          -webkit-justify-content: flex-start;
-             -moz-box-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          -webkit-align-items: center;
-             -moz-box-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      -webkit-align-content: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
           align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   margin-right: 149px;
   padding: 0;
@@ -2257,7 +2333,7 @@ input[type="radio"].visually-hidden {
 
 .button-social path,
 .button-social rect {
-  fill: rgba(255, 255, 255, 0.8)
+  fill: rgba(255, 255, 255, 0.8);
 }
 
 .list-social .button-social:hover,
@@ -2282,19 +2358,19 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-top: 4px;
   padding: 0;
-  -webkit-column-count: 2;
-          -moz-column-count: 2;
-       column-count: 2;
-
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 400;
 
   list-style: none;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
 }
 
 .list-useful a {
   text-align: left;
+
   outline: none;
 }
 
@@ -2313,7 +2389,6 @@ input[type="radio"].visually-hidden {
 
 .list-useful .item-useful-heart::before {
   content: "";
-
   position: absolute;
   top: 2px;
   left: 0;
@@ -2323,8 +2398,8 @@ input[type="radio"].visually-hidden {
 
   background-color: transparent;
   background-image: url("../img/icon-heart.svg");
-  background-position: center center;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .main-footer b {
@@ -2335,9 +2410,9 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 
+  font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  font-weight: 400;
 }
 
 .footer-copyright {
@@ -2368,21 +2443,21 @@ input[type="radio"].visually-hidden {
 
 .header-catalog {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
-          -webkit-flex-direction: row;
-             -moz-box-orient: horizontal;
-             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
       -ms-flex-pack: justify;
-          -webkit-justify-content: space-between;
-             -moz-box-pack: justify;
           justify-content: space-between;
   width: 1146px;
   margin: 0 auto;
@@ -2391,42 +2466,41 @@ input[type="radio"].visually-hidden {
 
 .header-catalog .list-breadcrubs {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
-          -webkit-flex-direction: row;
-             -moz-box-orient: horizontal;
-             -moz-box-direction: normal;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          -webkit-justify-content: flex-start;
-             -moz-box-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          -webkit-align-items: flex-end;
-             -moz-box-align: end;
-          align-items: flex-end;
-  -ms-flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      -webkit-align-content: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
           align-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+     -moz-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin: 0;
   margin-right: 25px;
   padding: 0;
 
+  list-style: none;
+  font-weight: 700;
   font-size: 13px;
   line-height: 18px;
-  font-weight: 700;
-
-  list-style: none;
 }
 
 .list-breadcrubs .item-breadcrubs {
@@ -2444,7 +2518,6 @@ input[type="radio"].visually-hidden {
 
 .list-breadcrubs li:not(.item-breadcrubs-first)::before {
   content: "»";
-
   position: absolute;
   left: 0;
 
@@ -2458,7 +2531,6 @@ input[type="radio"].visually-hidden {
 
 .list-breadcrubs .breadcrubs-current:hover {
   color: #ffffff;
-
   text-decoration: none;
 }
 
@@ -2468,9 +2540,9 @@ input[type="radio"].visually-hidden {
   margin-bottom: 25px;
   padding: 0;
 
+  font-weight: 700;
   font-size: 35px;
   line-height: 41px;
-  font-weight: 700;
 }
 
 .filters {
@@ -2481,58 +2553,58 @@ input[type="radio"].visually-hidden {
 
 .filters .form-filters {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
-          -webkit-flex-direction: row;
-             -moz-box-orient: horizontal;
-             -moz-box-direction: normal;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          -webkit-justify-content: flex-start;
-             -moz-box-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          -webkit-align-items: flex-start;
-             -moz-box-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -ms-flex-line-pack: justify;
-      -webkit-align-content: space-between;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-content: space-between;
+      -ms-flex-line-pack: justify;
           align-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   min-height: 130px;
 }
 
 .form-filters .block-filters {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
       -ms-flex-direction: column;
-          -webkit-flex-direction: column;
-             -moz-box-orient: vertical;
-             -moz-box-direction: normal;
           flex-direction: column;
   -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
       -ms-flex-pack: start;
-          -webkit-justify-content: flex-start;
-             -moz-box-pack: start;
           justify-content: flex-start;
   -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+     -moz-box-align: stretch;
       -ms-flex-align: stretch;
-          -webkit-align-items: stretch;
-             -moz-box-align: stretch;
           align-items: stretch;
   margin: 0;
   margin-right: 10px;
@@ -2546,15 +2618,15 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-left: 15px;
 
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 500;
 }
 
 .form-filters .background-block-filters {
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 500;
 
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
@@ -2571,7 +2643,6 @@ input[type="radio"].visually-hidden {
 
 .form-filters .block-sorting::after {
   content: "▼";
-
   position: absolute;
   right: 6.4%;
   bottom: 17%;
@@ -2587,11 +2658,11 @@ input[type="radio"].visually-hidden {
 
   color: #ffffff;
 
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
   cursor: pointer;
+
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .block-sorting:hover .sorting-block-filters {
@@ -2601,10 +2672,10 @@ input[type="radio"].visually-hidden {
 }
 
 .block-sorting .sorting-block-filters:focus {
-  -webkit-box-shadow: 0 0 0 2px #ffffff;
-          -moz-box-shadow: 0 0 0 2px #ffffff;
-       box-shadow: 0 0 0 2px #ffffff;
   outline: none;
+  -webkit-box-shadow: 0 0 0 2px #ffffff;
+     -moz-box-shadow: 0 0 0 2px #ffffff;
+          box-shadow: 0 0 0 2px #ffffff;
 }
 
 .block-sorting:hover::after {
@@ -2636,7 +2707,7 @@ input[type="radio"].visually-hidden {
   height: 4px;
   margin-top: -2px;
 
-  background-color: rgba(255, 255, 255, 0.5)
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .range-block-filter .bar {
@@ -2661,7 +2732,6 @@ input[type="radio"].visually-hidden {
   -webkit-border-radius: 50%;
      -moz-border-radius: 50%;
           border-radius: 50%;
-
   cursor: pointer;
 }
 
@@ -2680,33 +2750,33 @@ input[type="radio"].visually-hidden {
 .block-fat .list-fat,
 .block-fillers .list-filler {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
-          -webkit-flex-direction: row;
-             -moz-box-orient: horizontal;
-             -moz-box-direction: normal;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          -webkit-justify-content: flex-start;
-             -moz-box-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          -webkit-align-items: center;
-             -moz-box-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -ms-flex-line-pack: start;
-      -webkit-align-content: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
           align-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0;
 
@@ -2731,6 +2801,7 @@ input[type="radio"].visually-hidden {
 
 .block-fat .label-fat {
   position: relative;
+
   margin: 0;
   padding: 0;
   padding-left: 30px;
@@ -2755,14 +2826,14 @@ input[type="radio"].visually-hidden {
     inset 0 0 0 3px #e6ebe9,
     inset 0 0 0 7px #849d8f,
     inset 0 0 0 11px #849d8f;
-          -moz-box-shadow:
-    inset 0 0 0 3px #e6ebe9,
-    inset 0 0 0 7px #849d8f,
-    inset 0 0 0 11px #849d8f;
-       box-shadow:
-    inset 0 0 0 3px #e6ebe9,
-    inset 0 0 0 7px #849d8f,
-    inset 0 0 0 11px #849d8f;
+     -moz-box-shadow:
+      inset 0 0 0 3px #e6ebe9,
+      inset 0 0 0 7px #849d8f,
+      inset 0 0 0 11px #849d8f;
+          box-shadow:
+            inset 0 0 0 3px #e6ebe9,
+            inset 0 0 0 7px #849d8f,
+            inset 0 0 0 11px #849d8f;
 }
 
 .block-fat input:checked + .radio-indicator {
@@ -2770,14 +2841,14 @@ input[type="radio"].visually-hidden {
     inset 0 0 0 3px #e6ebe9,
     inset 0 0 0 7px #849d8f,
     inset 0 0 0 11px #e6ebe9;
-          -moz-box-shadow:
-    inset 0 0 0 3px #e6ebe9,
-    inset 0 0 0 7px #849d8f,
-    inset 0 0 0 11px #e6ebe9;
-       box-shadow:
-    inset 0 0 0 3px #e6ebe9,
-    inset 0 0 0 7px #849d8f,
-    inset 0 0 0 11px #e6ebe9;
+     -moz-box-shadow:
+      inset 0 0 0 3px #e6ebe9,
+      inset 0 0 0 7px #849d8f,
+      inset 0 0 0 11px #e6ebe9;
+          box-shadow:
+            inset 0 0 0 3px #e6ebe9,
+            inset 0 0 0 7px #849d8f,
+            inset 0 0 0 11px #e6ebe9;
 }
 
 .block-fat input:hover + .radio-indicator {
@@ -2785,14 +2856,14 @@ input[type="radio"].visually-hidden {
     inset 0 0 0 3px #ffffff,
     inset 0 0 0 7px #849d8f,
     inset 0 0 0 11px #849d8f;
-          -moz-box-shadow:
-    inset 0 0 0 3px #ffffff,
-    inset 0 0 0 7px #849d8f,
-    inset 0 0 0 11px #849d8f;
-       box-shadow:
-    inset 0 0 0 3px #ffffff,
-    inset 0 0 0 7px #849d8f,
-    inset 0 0 0 11px #849d8f;
+     -moz-box-shadow:
+      inset 0 0 0 3px #ffffff,
+      inset 0 0 0 7px #849d8f,
+      inset 0 0 0 11px #849d8f;
+          box-shadow:
+            inset 0 0 0 3px #ffffff,
+            inset 0 0 0 7px #849d8f,
+            inset 0 0 0 11px #849d8f;
 }
 
 .block-fat input:checked:hover + .radio-indicator,
@@ -2801,29 +2872,29 @@ input[type="radio"].visually-hidden {
     inset 0 0 0 3px #ffffff,
     inset 0 0 0 7px #849d8f,
     inset 0 0 0 11px #ffffff;
-          -moz-box-shadow:
-    inset 0 0 0 3px #ffffff,
-    inset 0 0 0 7px #849d8f,
-    inset 0 0 0 11px #ffffff;
-       box-shadow:
-    inset 0 0 0 3px #ffffff,
-    inset 0 0 0 7px #849d8f,
-    inset 0 0 0 11px #ffffff;
+     -moz-box-shadow:
+      inset 0 0 0 3px #ffffff,
+      inset 0 0 0 7px #849d8f,
+      inset 0 0 0 11px #ffffff;
+          box-shadow:
+            inset 0 0 0 3px #ffffff,
+            inset 0 0 0 7px #849d8f,
+            inset 0 0 0 11px #ffffff;
 }
 
-.block-fat input:disabled + .radio-indicator{
+.block-fat input:disabled + .radio-indicator {
   -webkit-box-shadow:
     inset 0 0 0 3px #b5c4bc,
     inset 0 0 0 7px #849d8f,
     inset 0 0 0 11px #849d8f;
-          -moz-box-shadow:
-    inset 0 0 0 3px #b5c4bc,
-    inset 0 0 0 7px #849d8f,
-    inset 0 0 0 11px #849d8f;
-       box-shadow:
-    inset 0 0 0 3px #b5c4bc,
-    inset 0 0 0 7px #849d8f,
-    inset 0 0 0 11px #849d8f;
+     -moz-box-shadow:
+      inset 0 0 0 3px #b5c4bc,
+      inset 0 0 0 7px #849d8f,
+      inset 0 0 0 11px #849d8f;
+          box-shadow:
+            inset 0 0 0 3px #b5c4bc,
+            inset 0 0 0 7px #849d8f,
+            inset 0 0 0 11px #849d8f;
 }
 
 .block-fat input:checked:disabled + .radio-indicator {
@@ -2831,14 +2902,14 @@ input[type="radio"].visually-hidden {
     inset 0 0 0 3px #b5c4bc,
     inset 0 0 0 7px #849d8f,
     inset 0 0 0 11px #b5c4bc;
-          -moz-box-shadow:
-    inset 0 0 0 3px #b5c4bc,
-    inset 0 0 0 7px #849d8f,
-    inset 0 0 0 11px #b5c4bc;
-       box-shadow:
-    inset 0 0 0 3px #b5c4bc,
-    inset 0 0 0 7px #849d8f,
-    inset 0 0 0 11px #b5c4bc;
+     -moz-box-shadow:
+      inset 0 0 0 3px #b5c4bc,
+      inset 0 0 0 7px #849d8f,
+      inset 0 0 0 11px #b5c4bc;
+          box-shadow:
+            inset 0 0 0 3px #b5c4bc,
+            inset 0 0 0 7px #849d8f,
+            inset 0 0 0 11px #b5c4bc;
 }
 
 .filters .block-fillers {
@@ -2860,6 +2931,7 @@ input[type="radio"].visually-hidden {
 
 .block-fillers .label-filler {
   position: relative;
+
   margin: 0;
   padding: 0;
   padding-left: 34px;
@@ -2877,10 +2949,10 @@ input[type="radio"].visually-hidden {
   margin-top: -11px;
 
   -webkit-transform: scale(0.9);
+     -moz-transform: scale(0.9);
       -ms-transform: scale(0.9);
-          -moz-transform: scale(0.9);
-            -o-transform: scale(0.9);
-       transform: scale(0.9);
+       -o-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .checkbox-indicator path {
@@ -2911,10 +2983,9 @@ input[type="radio"].visually-hidden {
   padding: 7px 28px;
   padding-right: 27px;
 
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 500;
-
   color: #ffffff;
 
   background-color: #9cb0a4;
@@ -2923,12 +2994,11 @@ input[type="radio"].visually-hidden {
      -moz-border-radius: 50px;
           border-radius: 50px;
   outline: none;
-
   cursor: pointer;
 }
 
 .filters .button-filters:hover,
-.filters .button-filters:focus  {
+.filters .button-filters:focus {
   padding: 9px 30px;
 
   color: #000000;
@@ -2945,8 +3015,8 @@ input[type="radio"].visually-hidden {
   background-color: #eaeaea;
   border: none;
   -webkit-box-shadow: inset 0 2px 2px #696969;
-          -moz-box-shadow: inset 0 2px 2px #696969;
-       box-shadow: inset 0 2px 2px #696969;
+     -moz-box-shadow: inset 0 2px 2px #696969;
+          box-shadow: inset 0 2px 2px #696969;
 }
 
 .catalog-page .catalog {
@@ -2955,26 +3025,26 @@ input[type="radio"].visually-hidden {
 
 .catalog-page .list-paginator {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
+  display: -ms-flexbox;
+  display:    -moz-box;
+  display:         flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
       -ms-flex-direction: row;
-          -webkit-flex-direction: row;
-             -moz-box-orient: horizontal;
-             -moz-box-direction: normal;
           flex-direction: row;
   -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+     -moz-box-pack: end;
       -ms-flex-pack: end;
-          -webkit-justify-content: flex-end;
-             -moz-box-pack: end;
           justify-content: flex-end;
   -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
       -ms-flex-align: start;
-          -webkit-align-items: flex-start;
-             -moz-box-align: start;
           align-items: flex-start;
   width: 1146px;
   margin: 0 auto;
@@ -2982,11 +3052,10 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-bottom: 30px;
 
+  list-style: none;
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 500;
-
-  list-style: none;
 }
 
 .list-paginator .item-paginator-left {
@@ -3007,29 +3076,27 @@ input[type="radio"].visually-hidden {
   padding: 4px 8px;
   padding-bottom: 3px;
 
-  -webkit-border-radius: 50%;
-
-     -moz-border-radius: 50%;
-
-          border-radius: 50%;
   text-decoration: none;
+
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
 }
 
 .list-paginator .button-paginator-left,
 .list-paginator .button-paginator-right {
-  text-align: center;
   vertical-align: middle;
+  text-align: center;
   color: #ffffff;
 
   background-color: transparent;
   border: none;
   outline: none;
-
   -webkit-transform: scale(1.8);
+     -moz-transform: scale(1.8);
       -ms-transform: scale(1.8);
-          -moz-transform: scale(1.8);
-            -o-transform: scale(1.8);
-       transform: scale(1.8);
+       -o-transform: scale(1.8);
+          transform: scale(1.8);
 }
 
 .list-paginator button:disabled {
@@ -3038,8 +3105,8 @@ input[type="radio"].visually-hidden {
 
 .list-paginator .button-paginator:hover,
 .list-paginator .button-paginator:focus {
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
 
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -3048,20 +3115,19 @@ input[type="radio"].visually-hidden {
 .list-paginator .button-paginator-left:not(:disabled):focus,
 .list-paginator .button-paginator-right:not(:disabled):hover,
 .list-paginator .button-paginator-right:not(:disabled):focus {
-  cursor: pointer;
-
   -webkit-transform: scale(3);
+     -moz-transform: scale(3);
       -ms-transform: scale(3);
-          -moz-transform: scale(3);
-            -o-transform: scale(3);
-       transform: scale(3);
+       -o-transform: scale(3);
+          transform: scale(3);
+  cursor: pointer;
 }
 
 .list-paginator .button-paginator-current,
 .list-paginator .button-paginator-current:hover,
 .list-paginator .button-paginator:active {
-  text-decoration: none;
   color: #000000;
+  text-decoration: none;
 
   background-color: #ffffff;
 }
@@ -3072,7 +3138,6 @@ input[type="radio"].visually-hidden {
 
 .catalog-page::after {
   content: "";
-
   position: absolute;
   bottom: 0;
   left: 27px;
